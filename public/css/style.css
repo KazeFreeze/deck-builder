@@ -440,6 +440,7 @@ button:hover,
   border-radius: 12px;
   font-size: 1.5rem;
   color: white;
+  overflow-y: auto; /* THIS IS THE FIX */
 }
 .flashcard-front {
   background: linear-gradient(
