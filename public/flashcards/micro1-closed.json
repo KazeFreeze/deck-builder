@@ -1,206 +1,206 @@
 [
   {
-    "question": "The curriculum for Electronics or Computer Engineering majors follows the __________ layers of the field of computers, moving from more general topics to more specific ones.",
-    "answer": "abstraction"
+    "q": "The curriculum for Electronics or Computer Engineering majors follows the __________ layers of the field of computers, moving from more general topics to more specific ones.",
+    "a": "abstraction"
   },
   {
-    "question": "The course ENGG 121 covers __________.",
-    "answer": "Logic Circuits and Switching Theory"
+    "q": "The course ENGG 121 covers __________.",
+    "a": "Logic Circuits and Switching Theory"
   },
   {
-    "question": "After ENGG 122 (Microprocessors and Microcontrollers), your next courses will be Computer Architecture, Embedded Systems, and __________.",
-    "answer": "Operating Systems"
+    "q": "After ENGG 122 (Microprocessors and Microcontrollers), your next courses will be Computer Architecture, Embedded Systems, and __________.",
+    "a": "Operating Systems"
   },
   {
-    "question": "The fundamental parts of a digital computer, integrated into a single component and commonly used in digital electronics, are called __________.",
-    "answer": "microprocessors"
+    "q": "The fundamental parts of a digital computer, integrated into a single component and commonly used in digital electronics, are called __________.",
+    "a": "microprocessors"
   },
   {
-    "question": "A microprocessor contains all the parts of a __________.",
-    "answer": "CPU"
+    "q": "A microprocessor contains all the parts of a __________.",
+    "a": "CPU"
   },
   {
-    "question": "The parts of a microprocessor include the Arithmetic Logic Unit, Register Array, Control, Memory, and __________.",
-    "answer": "I/O"
+    "q": "The parts of a microprocessor include the Arithmetic Logic Unit, Register Array, Control, Memory, and __________.",
+    "a": "I/O"
   },
   {
-    "question": "A single-chip microcomputer which is a complete system that includes the microprocessor plus other devices like memory and data input/output circuits, designed for control applications, is known as a __________.",
-    "answer": "microcontroller"
+    "q": "A single-chip microcomputer which is a complete system that includes the microprocessor plus other devices like memory and data input/output circuits, designed for control applications, is known as a __________.",
+    "a": "microcontroller"
   },
   {
-    "question": "The parts of a microcontroller include the CPU, RAM, ROM, Clock, I/O, ADC, and __________.",
-    "answer": "DAC"
+    "q": "The parts of a microcontroller include the CPU, RAM, ROM, Clock, I/O, ADC, and __________.",
+    "a": "DAC"
   },
   {
-    "question": "The way in which the components of a computer system are interrelated is referred to as its __________.",
-    "answer": "Structure"
+    "q": "The way in which the components of a computer system are interrelated is referred to as its __________.",
+    "a": "Structure"
   },
   {
-    "question": "The operation of each individual component as part of the structure in a computer system is called its __________.",
-    "answer": "Function"
+    "q": "The operation of each individual component as part of the structure in a computer system is called its __________.",
+    "a": "Function"
   },
   {
-    "question": "The four basic functions a computer can perform are Data processing, Data storage, Data movement, and __________.",
-    "answer": "Control"
+    "q": "The four basic functions a computer can perform are Data processing, Data storage, Data movement, and __________.",
+    "a": "Control"
   },
   {
-    "question": "A simple single-processor computer has the following parts: CPU, Main memory, I/O, and __________.",
-    "answer": "System interconnection"
+    "q": "A simple single-processor computer has the following parts: CPU, Main memory, I/O, and __________.",
+    "a": "System interconnection"
   },
   {
-    "question": "The parts of a CPU include the Control unit, Arithmetic and logic unit, Registers, and __________.",
-    "answer": "CPU interconnection"
+    "q": "The parts of a CPU include the Control unit, Arithmetic and logic unit, Registers, and __________.",
+    "a": "CPU interconnection"
   },
   {
-    "question": "According to __________ Law, the number of transistors on a single chip was doubling every year, then slowed to every 18 months, sustaining that rate ever since.",
-    "answer": "Moore's"
+    "q": "According to __________ Law, the number of transistors on a single chip was doubling every year, then slowed to every 18 months, sustaining that rate ever since.",
+    "a": "Moore's"
   },
   {
-    "question": "In a multicore computer structure, a __________ is defined as a single processing unit, while a processor may contain multiple of these units.",
-    "answer": "Core"
+    "q": "In a multicore computer structure, a __________ is defined as a single processing unit, while a processor may contain multiple of these units.",
+    "a": "Core"
   },
   {
-    "question": "The IAS computer, attributed to John von Neumann, is the first example of a computer that follows the __________ architecture.",
-    "answer": "von Neumann"
+    "q": "The IAS computer, attributed to John von Neumann, is the first example of a computer that follows the __________ architecture.",
+    "a": "von Neumann"
   },
   {
-    "question": "In the IAS computer, the control unit operates by fetching instructions from memory and executing them one at a time, repetitively performing an __________.",
-    "answer": "instruction cycle"
+    "q": "In the IAS computer, the control unit operates by fetching instructions from memory and executing them one at a time, repetitively performing an __________.",
+    "a": "instruction cycle"
   },
   {
-    "question": "In a Von Neumann architecture, both data and instructions are stored in the __________.",
-    "answer": "memory"
+    "q": "In a Von Neumann architecture, both data and instructions are stored in the __________.",
+    "a": "memory"
   },
   {
-    "question": "Computer __________ refers to the attributes of a system visible to a programmer or those that have a direct impact on the logical execution of a program, such as Von Neumann vs. Harvard architecture.",
-    "answer": "architecture"
+    "q": "Computer __________ refers to the attributes of a system visible to a programmer or those that have a direct impact on the logical execution of a program, such as Von Neumann vs. Harvard architecture.",
+    "a": "architecture"
   },
   {
-    "question": "Instruction set architecture (ISA) defines instruction formats, instruction opcodes, registers, and __________.",
-    "answer": "instruction and data memory"
+    "q": "Instruction set architecture (ISA) defines instruction formats, instruction opcodes, registers, and __________.",
+    "a": "instruction and data memory"
   },
   {
-    "question": "Computer __________ refers to the operational units and their interconnections that realize the architectural specifications, such as the instruction set or I/O mechanisms.",
-    "answer": "organization"
+    "q": "Computer __________ refers to the operational units and their interconnections that realize the architectural specifications, such as the instruction set or I/O mechanisms.",
+    "a": "organization"
   },
   {
-    "question": "Deciding if your architecture will include a MULTIPLY instruction is an example of __________ design.",
-    "answer": "Architectural"
+    "q": "Deciding if your architecture will include a MULTIPLY instruction is an example of __________ design.",
+    "a": "Architectural"
   },
   {
-    "question": "Deciding how to implement a MULTIPLY instruction, whether needing a special multiply unit or a mechanism that repeatedly uses the ADD instruction, is an example of __________ design.",
-    "answer": "Organizational"
+    "q": "Deciding how to implement a MULTIPLY instruction, whether needing a special multiply unit or a mechanism that repeatedly uses the ADD instruction, is an example of __________ design.",
+    "a": "Organizational"
   },
   {
-    "question": "The invention of the transistor in 1948 is credited to William Shockley of __________.",
-    "answer": "AT&T Bell Labs"
+    "q": "The invention of the transistor in 1948 is credited to William Shockley of __________.",
+    "a": "AT&T Bell Labs"
   },
   {
-    "question": "The first monolithic integrated circuit was invented by Jack Kilby in __________.",
-    "answer": "1958"
+    "q": "The first monolithic integrated circuit was invented by Jack Kilby in __________.",
+    "a": "1958"
   },
   {
-    "question": "The first generation of microprocessors (1971-1972) had a __________-bit word size, with the Intel 4004 as an example.",
-    "answer": "4"
+    "q": "The first generation of microprocessors (1971-1972) had a __________-bit word size, with the Intel 4004 as an example.",
+    "a": "4"
   },
   {
-    "question": "The second generation of microprocessors (1973-1978) introduced the first commercially available microprocessors with an __________-bit word size.",
-    "answer": "8"
+    "q": "The second generation of microprocessors (1973-1978) introduced the first commercially available microprocessors with an __________-bit word size.",
+    "a": "8"
   },
   {
-    "question": "The third generation of microprocessors (1979-1980) introduced the foundation of the __________ architecture from the Intel 8086, at 16-bit word size.",
-    "answer": "x86"
+    "q": "The third generation of microprocessors (1979-1980) introduced the foundation of the __________ architecture from the Intel 8086, at 16-bit word size.",
+    "a": "x86"
   },
   {
-    "question": "Currently, microprocessors are in the fifth generation, characterized by a __________-bit word size and multi-core processors.",
-    "answer": "64"
+    "q": "Currently, microprocessors are in the fifth generation, characterized by a __________-bit word size and multi-core processors.",
+    "a": "64"
   },
   {
-    "question": "The Intel 4004, developed by Federico Faggin in 1971, was the first commercially available __________.",
-    "answer": "microprocessor"
+    "q": "The Intel 4004, developed by Federico Faggin in 1971, was the first commercially available __________.",
+    "a": "microprocessor"
   },
   {
-    "question": "The first application of a microprocessor was in the __________ Calculator in 1971.",
-    "answer": "Busicom"
+    "q": "The first application of a microprocessor was in the __________ Calculator in 1971.",
+    "a": "Busicom"
   },
   {
-    "question": "The first microcontroller, the TMS 1000, was created by Gary Boone and Michael Cochran of __________ in 1971.",
-    "answer": "Texas Instruments"
+    "q": "The first microcontroller, the TMS 1000, was created by Gary Boone and Michael Cochran of __________ in 1971.",
+    "a": "Texas Instruments"
   },
   {
-    "question": "The Motorola 6800 and Intel 8080 were popular __________-bit microprocessors released in 1974.",
-    "answer": "8"
+    "q": "The Motorola 6800 and Intel 8080 were popular __________-bit microprocessors released in 1974.",
+    "a": "8"
   },
   {
-    "question": "The MOS Technology 6502, released in 1975, was the cheapest __________ on the market and sparked the home computer revolution.",
-    "answer": "microprocessor"
+    "q": "The MOS Technology 6502, released in 1975, was the cheapest __________ on the market and sparked the home computer revolution.",
+    "a": "microprocessor"
   },
   {
-    "question": "The __________ architecture, co-designed by Steve Furber and Sophie Wilson, is an example of a RISC (reduced instruction set computer) known for lower power and cheaper systems.",
-    "answer": "ARM"
+    "q": "The __________ architecture, co-designed by Steve Furber and Sophie Wilson, is an example of a RISC (reduced instruction set computer) known for lower power and cheaper systems.",
+    "a": "ARM"
   },
   {
-    "question": "The Arduino microcontroller platform, created in Italy in 2005, is known for being commercially available and __________.",
-    "answer": "user-friendly"
+    "q": "The Arduino microcontroller platform, created in Italy in 2005, is known for being commercially available and __________.",
+    "a": "user-friendly"
   },
   {
-    "question": "A group of eight bits is known as a __________.",
-    "answer": "Byte"
+    "q": "A group of eight bits is known as a __________.",
+    "a": "Byte"
   },
   {
-    "question": "A group of four bits, or half a byte, also representing one hexadecimal number, is called a __________.",
-    "answer": "Nibble"
+    "q": "A group of four bits, or half a byte, also representing one hexadecimal number, is called a __________.",
+    "a": "Nibble"
   },
   {
-    "question": "Microprocessors handle data in chunks called __________, the size of which depends on the architecture of the microprocessor.",
-    "answer": "words"
+    "q": "Microprocessors handle data in chunks called __________, the size of which depends on the architecture of the microprocessor.",
+    "a": "words"
   },
   {
-    "question": "The representation of signed binary numbers where the most significant bit position has a weight of -2^(N-1) instead of 2^(N-1) is called __________.",
-    "answer": "Two’s complement"
+    "q": "The representation of signed binary numbers where the most significant bit position has a weight of -2^(N-1) instead of 2^(N-1) is called __________.",
+    "a": "Two’s complement"
   },
   {
-    "question": "Logic gates are simple digital circuits that take one or more binary inputs and produce a binary __________.",
-    "answer": "output"
+    "q": "Logic gates are simple digital circuits that take one or more binary inputs and produce a binary __________.",
+    "a": "output"
   },
   {
-    "question": "The mapping of a continuous variable onto a discrete binary variable is done by defining logic __________.",
-    "answer": "levels"
+    "q": "The mapping of a continuous variable onto a discrete binary variable is done by defining logic __________.",
+    "a": "levels"
   },
   {
-    "question": "Circuits are composed of nodes and __________, where a node is a wire whose voltage conveys a discrete-valued variable.",
-    "answer": "elements"
+    "q": "Circuits are composed of nodes and __________, where a node is a wire whose voltage conveys a discrete-valued variable.",
+    "a": "elements"
   },
   {
-    "question": "__________ equations deal with variables that are either TRUE or FALSE, making them perfect for describing digital logic.",
-    "answer": "Boolean"
+    "q": "__________ equations deal with variables that are either TRUE or FALSE, making them perfect for describing digital logic.",
+    "a": "Boolean"
   },
   {
-    "question": "Logic whose outputs depend on both current and prior input values, and therefore has memory, is called __________ logic.",
-    "answer": "Sequential"
+    "q": "Logic whose outputs depend on both current and prior input values, and therefore has memory, is called __________ logic.",
+    "a": "Sequential"
   },
   {
-    "question": "The set of bits that contains all the information about the past necessary to explain the future behavior of a digital sequential circuit is called its __________.",
-    "answer": "state"
+    "q": "The set of bits that contains all the information about the past necessary to explain the future behavior of a digital sequential circuit is called its __________.",
+    "a": "state"
   },
   {
-    "question": "An __________ is composed of two cross-coupled NOR gates.",
-    "answer": "SR Latch"
+    "q": "An __________ is composed of two cross-coupled NOR gates.",
+    "a": "SR Latch"
   },
   {
-    "question": "A D latch updates its state continuously while __________ = 1.",
-    "answer": "CLK"
+    "q": "A D latch updates its state continuously while __________ = 1.",
+    "a": "CLK"
   },
   {
-    "question": "A D Flip-Flop can be built from two back-to-back D latches controlled by complementary clocks, where the first latch is called the master and the second is called the __________.",
-    "answer": "slave"
+    "q": "A D Flip-Flop can be built from two back-to-back D latches controlled by complementary clocks, where the first latch is called the master and the second is called the __________.",
+    "a": "slave"
   },
   {
-    "question": "A __________ is a bank of N flip-flops that share a common CLK input, so that all bits of the register are updated at the same time.",
-    "answer": "Register"
+    "q": "A __________ is a bank of N flip-flops that share a common CLK input, so that all bits of the register are updated at the same time.",
+    "a": "Register"
   },
   {
-    "question": "Synchronous sequential circuits can be drawn in forms called __________ because a circuit with k registers can be in one of a finite number (2^k) of unique states.",
-    "answer": "finite state machines (FSMs)"
+    "q": "Synchronous sequential circuits can be drawn in forms called __________ because a circuit with k registers can be in one of a finite number (2^k) of unique states.",
+    "a": "finite state machines (FSMs)"
   }
 ]

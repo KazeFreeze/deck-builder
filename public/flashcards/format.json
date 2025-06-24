@@ -1,6 +1,6 @@
 [
   {
-    "question": "The question to be answered with a blank, indicated by '__________'.",
-    "answer": "The word or phrase that fills the blank to correctly answer the question."
+    "q": "The question to be answered with a blank, indicated by '__________'.",
+    "a": "The word or phrase that fills the blank to correctly answer the question."
   }
 ]
