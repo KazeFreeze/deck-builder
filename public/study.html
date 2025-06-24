@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Session</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="controls">
+      <button id="backToMenu"><i class="fas fa-home"></i> Back to Menu</button>
+    </div>
+
+    <div class="container">
+      <h1 id="quiz-title">Loading Study Session...</h1>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div id="timer" class="status-item">
+          <i class="fas fa-clock"></i> Time: <span>0:00</span>
+        </div>
+        <div id="progress" class="status-item">
+          <i class="fas fa-tasks"></i> Progress: <span>0 / 0</span>
+        </div>
+        <div id="score" class="status-item">
+          <i class="fas fa-star"></i> Score: <span>0 / 0</span>
+        </div>
+      </div>
+
+      <!-- Question/Card Indicators -->
+      <div id="question-indicators-container"></div>
+
+      <!-- Main Content Area -->
+      <div id="study-item-container">
+        <!-- This container will hold either a multiple choice question or a flashcard -->
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <button id="back" class="btn-secondary">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+        <button id="next" class="btn-primary">
+          Next <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Results container will be inserted here when the quiz is completed -->
+    <script src="js/study.js"></script>
+  </body>
+</html>

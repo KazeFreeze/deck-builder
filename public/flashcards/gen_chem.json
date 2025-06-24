@@ -1,0 +1,386 @@
+[
+  {
+    "q": "What is the mass of a proton in kilograms?",
+    "a": "1.67x10^-27 kg"
+  },
+  {
+    "q": "The mass of a neutron is ________ kg.",
+    "a": "1.67x10^-27"
+  },
+  {
+    "q": "An electron has a mass of ________ kg.",
+    "a": "9.11x10^-31"
+  },
+  {
+    "q": "True or False: Atomic mass (A) depends on the number of protons, neutrons, and electrons in an atom.",
+    "a": "False"
+  },
+  {
+    "q": "In modern atomic models, electrons travel in ________ orbitals.",
+    "a": "discrete"
+  },
+  {
+    "q": "The movement of electrons from one orbital to another is described as being ________.",
+    "a": "quantized"
+  },
+  {
+    "q": "The wave-mechanical model of the atom views orbitals as regions of ________.",
+    "a": "probability"
+  },
+  {
+    "q": "The electron ________ is equivalent to the electron orbital in the wave-mechanical model.",
+    "a": "cloud"
+  },
+  {
+    "q": "What quantum number defines the size of the orbital?",
+    "a": "Principal Quantum Number (n)"
+  },
+  {
+    "q": "The Azimuthal Quantum Number (l) corresponds to what aspect of the orbital?",
+    "a": "shape"
+  },
+  {
+    "q": "What are the possible values for the Magnetic spin quantum number (m_s)?",
+    "a": "-1/2, +1/2"
+  },
+  {
+    "q": "In the periodic table, horizontal rows are called ________.",
+    "a": "periods"
+  },
+  {
+    "q": "Vertical columns in the periodic table are known as ________ or families.",
+    "a": "groups"
+  },
+  {
+    "q": "________ is defined as the willingness of an atom to accept an electron through either sharing or donation.",
+    "a": "Electronegativity"
+  },
+  {
+    "q": "Elements with low electronegativity are more likely to be ________ of electrons.",
+    "a": "donors"
+  },
+  {
+    "q": "Write the electron configuration for sodium (Na) using noble gas shorthand.",
+    "a": "[Ne]3s1"
+  },
+  {
+    "q": "What is the electron configuration of chlorine (Cl) using noble gas shorthand?",
+    "a": "[Ne]3s23p5"
+  },
+  {
+    "q": "Write the electron configuration for potassium (K) using noble gas shorthand.",
+    "a": "[Ar]4s1"
+  },
+  {
+    "q": "What is the electron configuration of calcium (Ca) using noble gas shorthand?",
+    "a": "[Ar]4s2"
+  },
+  {
+    "q": "Write the electron configuration for iron (Fe) using noble gas shorthand.",
+    "a": "[Ar]4s23d6"
+  },
+  {
+    "q": "What is the electron configuration of copper (Cu) using noble gas shorthand?",
+    "a": "[Ar]4s13d10"
+  },
+  {
+    "q": "Write the electron configuration for zinc (Zn) using noble gas shorthand.",
+    "a": "[Ar]4s23d10"
+  },
+  {
+    "q": "What is the electron configuration of bromine (Br) using noble gas shorthand?",
+    "a": "[Ar]4s23d104p5"
+  },
+  {
+    "q": "Write the electron configuration for silver (Ag) using noble gas shorthand.",
+    "a": "[Kr]5s14d10"
+  },
+  {
+    "q": "What is the electron configuration of gold (Au) using noble gas shorthand?",
+    "a": "[Xe]6s14f145d10"
+  },
+  {
+    "q": "Materials Science and Engineering studies the relationships between the ________ and ________ of materials.",
+    "a": "structure, properties"
+  },
+  {
+    "q": "The ________ of a material depends on how it's processed.",
+    "a": "structure"
+  },
+  {
+    "q": "A material's ________ is due to its properties.",
+    "a": "performance"
+  },
+  {
+    "q": "Metals contain a combination of one or more ________ elements and ________ elements.",
+    "a": "metallic, nonmetallic"
+  },
+  {
+    "q": "Metals typically have a(n) ________ and ________ atomic arrangement.",
+    "a": "ordered, dense"
+  },
+  {
+    "q": "The ________ electrons in metals allow them to be good conductors of electricity and heat.",
+    "a": "nonlocalized"
+  },
+  {
+    "q": "Metals generally have poor ________ clarity for visible light.",
+    "a": "optical"
+  },
+  {
+    "q": "Ceramics are compounds of ________ and ________.",
+    "a": "metals, nonmetals"
+  },
+  {
+    "q": "Ceramics typically display ________ properties.",
+    "a": "insulative"
+  },
+  {
+    "q": "Ceramics are often used for ________ purposes, such as crowns.",
+    "a": "dental"
+  },
+  {
+    "q": "Polymers are made primarily of ________ and ________.",
+    "a": "carbon, hydrogen"
+  },
+  {
+    "q": "Polymers are often referred to as '________ ________ ________'.",
+    "a": "Long Molecular Chains"
+  },
+  {
+    "q": "Polymers exhibit low ________ conductivities.",
+    "a": "electrical"
+  },
+  {
+    "q": "The properties of polymers change greatly at ________ ranges.",
+    "a": "temperature"
+  },
+  {
+    "q": "________ are blends of materials that are either from the same or different categories.",
+    "a": "Composites"
+  },
+  {
+    "q": "________ are intermediates of electrical conductors and insulators.",
+    "a": "Semiconductors"
+  },
+  {
+    "q": "________ are normally implanted into the body and must be biocompatible.",
+    "a": "Biomaterials"
+  },
+  {
+    "q": "________ materials have the ability to sense environmental stimuli.",
+    "a": "Smart"
+  },
+  {
+    "q": "________ are the only material category classified due to size.",
+    "a": "Nanomaterials"
+  },
+  {
+    "q": "The ________ of a material involves its preparation, either through synthesis or mixing.",
+    "a": "processing"
+  },
+  {
+    "q": "The ________ of a material will determine how it behaves and the results of characterization.",
+    "a": "structure"
+  },
+  {
+    "q": "Material ________ include mechanical, electrical, thermal, magnetic, optical, and deteriorative characteristics.",
+    "a": "properties"
+  },
+  {
+    "q": "The ________ of a material is dependent on the start-to-finish process of its preparation and characterization.",
+    "a": "performance"
+  },
+  {
+    "q": "In the atomic model, electrons are only able to move from one orbital to another, so they are ________.",
+    "a": "quantized"
+  },
+  {
+    "q": "The wave-mechanical model accounts for electron-electron ________ and electron-nucleus ________.",
+    "a": "repulsion, attraction"
+  },
+  {
+    "q": "In the wave-mechanical model, orbitals are viewed as regions of ________.",
+    "a": "probability"
+  },
+  {
+    "q": "The Principle Quantum Number (n) defines the ________ of the orbital.",
+    "a": "size"
+  },
+  {
+    "q": "The Azimuthal Quantum Number (l) is defined as the ________.",
+    "a": "subshell"
+  },
+  {
+    "q": "The Magnetic quantum number (m_i) determines the ________ of the orbital in space.",
+    "a": "orientation"
+  },
+  {
+    "q": "Electrons spin in ________ directions to maximize repulsion.",
+    "a": "opposite"
+  },
+  {
+    "q": "The periodic table is usually classified into metals, ________, and nonmetals.",
+    "a": "metalloids"
+  },
+  {
+    "q": "An atom's electron configuration shows what kind of ________ we'll be working with.",
+    "a": "material"
+  },
+  {
+    "q": "Elements with high electronegativity are more likely to be ________ of electrons.",
+    "a": "acceptors"
+  },
+  {
+    "q": "________ is an exception in electronegativity trends due to its half-filled orbital.",
+    "a": "Hydrogen"
+  },
+  {
+    "q": "In d-block and f-block elements, ________ ________ causes more electrons to be inside rather than outside the atom.",
+    "a": "electron shielding"
+  },
+  {
+    "q": "The subshell corresponding to l = 0 is ________.",
+    "a": "s"
+  },
+  {
+    "q": "The subshell corresponding to l = 1 is ________.",
+    "a": "p"
+  },
+  {
+    "q": "The subshell corresponding to l = 2 is ________.",
+    "a": "d"
+  },
+  {
+    "q": "The subshell corresponding to l = 3 is ________.",
+    "a": "f"
+  },
+  {
+    "q": "The maximum number of electrons in an s subshell is ________.",
+    "a": "2"
+  },
+  {
+    "q": "The maximum number of electrons in a p subshell is ________.",
+    "a": "6"
+  },
+  {
+    "q": "The maximum number of electrons in a d subshell is ________.",
+    "a": "10"
+  },
+  {
+    "q": "The maximum number of electrons in an f subshell is ________.",
+    "a": "14"
+  },
+  {
+    "q": "Write the electron configuration for magnesium (Mg) using noble gas shorthand.",
+    "a": "[Ne]3s2"
+  },
+  {
+    "q": "What is the electron configuration of aluminum (Al) using noble gas shorthand?",
+    "a": "[Ne]3s23p1"
+  },
+  {
+    "q": "Write the electron configuration for argon (Ar) using noble gas shorthand.",
+    "a": "[Ne]3s23p6"
+  },
+  {
+    "q": "What is the electron configuration of scandium (Sc) using noble gas shorthand?",
+    "a": "[Ar]4s23d1"
+  },
+  {
+    "q": "Write the electron configuration for titanium (Ti) using noble gas shorthand.",
+    "a": "[Ar]4s23d2"
+  },
+  {
+    "q": "What is the electron configuration of chromium (Cr) using noble gas shorthand?",
+    "a": "[Ar]4s13d5"
+  },
+  {
+    "q": "Write the electron configuration for manganese (Mn) using noble gas shorthand.",
+    "a": "[Ar]4s23d5"
+  },
+  {
+    "q": "What is the electron configuration of nickel (Ni) using noble gas shorthand?",
+    "a": "[Ar]4s23d8"
+  },
+  {
+    "q": "Write the electron configuration for gallium (Ga) using noble gas shorthand.",
+    "a": "[Ar]4s23d104p1"
+  },
+  {
+    "q": "What is the electron configuration of krypton (Kr) using noble gas shorthand?",
+    "a": "[Ar]4s23d104p6"
+  },
+  {
+    "q": "Write the electron configuration for rubidium (Rb) using noble gas shorthand.",
+    "a": "[Kr]5s1"
+  },
+  {
+    "q": "What is the electron configuration of strontium (Sr) using noble gas shorthand?",
+    "a": "[Kr]5s2"
+  },
+  {
+    "q": "Write the electron configuration for yttrium (Y) using noble gas shorthand.",
+    "a": "[Kr]5s24d1"
+  },
+  {
+    "q": "What is the electron configuration of zirconium (Zr) using noble gas shorthand?",
+    "a": "[Kr]5s24d2"
+  },
+  {
+    "q": "Write the electron configuration for palladium (Pd) using noble gas shorthand.",
+    "a": "[Kr]4d10"
+  },
+  {
+    "q": "What is the electron configuration of cadmium (Cd) using noble gas shorthand?",
+    "a": "[Kr]5s24d10"
+  },
+  {
+    "q": "Write the electron configuration for indium (In) using noble gas shorthand.",
+    "a": "[Kr]5s24d105p1"
+  },
+  {
+    "q": "What is the electron configuration of xenon (Xe) using noble gas shorthand?",
+    "a": "[Kr]5s24d105p6"
+  },
+  {
+    "q": "Write the electron configuration for cesium (Cs) using noble gas shorthand.",
+    "a": "[Xe]6s1"
+  },
+  {
+    "q": "What is the electron configuration of barium (Ba) using noble gas shorthand?",
+    "a": "[Xe]6s2"
+  },
+  {
+    "q": "Write the electron configuration for lanthanum (La) using noble gas shorthand.",
+    "a": "[Xe]6s25d1"
+  },
+  {
+    "q": "What is the electron configuration of cerium (Ce) using noble gas shorthand?",
+    "a": "[Xe]6s24f15d1"
+  },
+  {
+    "q": "Write the electron configuration for europium (Eu) using noble gas shorthand.",
+    "a": "[Xe]6s24f7"
+  },
+  {
+    "q": "What is the electron configuration of gadolinium (Gd) using noble gas shorthand?",
+    "a": "[Xe]6s24f75d1"
+  },
+  {
+    "q": "Write the electron configuration for lead (Pb) using noble gas shorthand.",
+    "a": "[Xe]6s24f145d106p2"
+  },
+  {
+    "q": "What is the electron configuration of bismuth (Bi) using noble gas shorthand?",
+    "a": "[Xe]6s24f145d106p3"
+  },
+  {
+    "q": "Write the electron configuration for radon (Rn) using noble gas shorthand.",
+    "a": "[Xe]6s24f145d106p6"
+  },
+  {
+    "q": "What is the electron configuration of francium (Fr) using noble gas shorthand?",
+    "a": "[Rn]7s1"
+  }
+]

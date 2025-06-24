@@ -1,0 +1,134 @@
+[
+  {
+    "q": "Science is a __________.",
+    "a": "Perspective"
+  },
+  {
+    "q": "Science requires __________.",
+    "a": "logic"
+  },
+  {
+    "q": "Science is a way of __________.",
+    "a": "learning"
+  },
+  {
+    "q": "True or False: Science operates within many __________.",
+    "a": "assumptions"
+  },
+  {
+    "q": "One assumption of science is that the world is __________ within the scientist's capacity.",
+    "a": "knowable"
+  },
+  {
+    "q": "True or False: Science has an absolute body of knowledge.",
+    "a": "False"
+  },
+  {
+    "q": "Science is not __________, but rather a self-correcting contingent body of knowledge.",
+    "a": "static"
+  },
+  {
+    "q": "__________ appears scientific but has no scientific basis.",
+    "a": "Pseudoscience"
+  },
+  {
+    "q": "True or False: Not proving the hypothesis is part of the scientific process.",
+    "a": "True"
+  },
+  {
+    "q": "Failing to prove something can lead to new __________ and fresh __________.",
+    "a": "discovery, insight"
+  },
+  {
+    "q": "True or False: Science is largely a social exercise.",
+    "a": "True"
+  },
+  {
+    "q": "The __________ __________ process contributes to self-correction and building knowledge in science.",
+    "a": "peer review"
+  },
+  {
+    "q": "True or False: There is no creativity in science.",
+    "a": "False"
+  },
+  {
+    "q": "Scientific thinkers employ __________ __________ and healthy skepticism.",
+    "a": "critical thinking"
+  },
+  {
+    "q": "The authority of science is based on principles of practice and __________ __________, NOT on its claims.",
+    "a": "collective wisdom"
+  },
+  {
+    "q": "An unscientific thinker disregards __________ and __________.",
+    "a": "logic, methodology"
+  },
+  {
+    "q": "Critical thinking involves the ability to differentiate __________ from __________, and knowledge from beliefs.",
+    "a": "facts, opinions"
+  },
+  {
+    "q": "A __________ is a confirmed or agreed upon empirical observation or conclusion.",
+    "a": "fact"
+  },
+  {
+    "q": "A __________ is an educated proposal to explain certain facts.",
+    "a": "hypothesis"
+  },
+  {
+    "q": "A scientific __________ is an integrated, comprehensive explanation of collective facts.",
+    "a": "theory"
+  },
+  {
+    "q": "A scientific theory can be used to make __________ of real phenomena.",
+    "a": "predictions"
+  },
+  {
+    "q": "The __________ tradition in the historical roots of science involved passing on practical experiences and skills.",
+    "a": "technical"
+  },
+  {
+    "q": "The __________ tradition in the historical roots of science involved passing on and augmenting human aspirations and ideas.",
+    "a": "spiritual"
+  },
+  {
+    "q": "The scientific method is a form of __________ __________ thinking.",
+    "a": "comparative critical"
+  },
+  {
+    "q": "The first step in the scientific method is __________.",
+    "a": "observation"
+  },
+  {
+    "q": "Questions in the scientific method must be __________ and lead to the formation of a hypothesis.",
+    "a": "answerable"
+  },
+  {
+    "q": "A hypothesis must be __________ and __________.",
+    "a": "testable, falsifiable"
+  },
+  {
+    "q": "A hypothesis must exclude __________ explanations.",
+    "a": "supernatural"
+  },
+  {
+    "q": "An experiment must be __________ and __________.",
+    "a": "reproducible, verifiable"
+  },
+  {
+    "q": "In the evaluation step of the scientific method, all __________ and __________ must be analyzed.",
+    "a": "evidence, conclusions"
+  },
+  {
+    "q": "Scientific explanations are __________.",
+    "a": "tentative"
+  },
+  {
+    "q": "The scientific method can be used for making useful __________, avoiding __________, and allocating __________.",
+    "a": "predictions, mistakes, resources"
+  },
+  {
+    "q": "__________ precedes understanding, which is a key element to acceptance.",
+    "a": "Perception"
+  }
+]

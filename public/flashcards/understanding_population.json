@@ -1,0 +1,118 @@
+[
+  {
+    "q": "Understanding population is presented by __________.",
+    "a": "Milette U. Mendoza-Pascual, Ph.D."
+  },
+  {
+    "q": "__________ size refers to the number of individuals in a population.",
+    "a": "Population"
+  },
+  {
+    "q": "__________ density is the number of individuals per unit area or volume.",
+    "a": "Population"
+  },
+  {
+    "q": "Population density can be calculated by dividing population size by total __________ area.",
+    "a": "land"
+  },
+  {
+    "q": "Population __________ refers to the relative representation of a species in a particular ecosystem.",
+    "a": "abundance"
+  },
+  {
+    "q": "Population density may change as a result of __________ or human induced factors.",
+    "a": "natural"
+  },
+  {
+    "q": "Higher orangutan densities are found in __________ habitats that experience less extreme periods of fruit shortage.",
+    "a": "mosaic"
+  },
+  {
+    "q": "In logged areas, __________ orangutan densities are found in moderately to heavily logged forest than in unlogged or lightly logged areas.",
+    "a": "lower"
+  },
+  {
+    "q": "__________ rate (natality) is the number of individuals added annually to the present population through reproduction per 1000 individual.",
+    "a": "Birth"
+  },
+  {
+    "q": "__________ rate (mortality) is the number of individuals that die annually per 1000 individual.",
+    "a": "Death"
+  },
+  {
+    "q": "Growth rate is usually expressed in __________.",
+    "a": "percentage"
+  },
+  {
+    "q": "Growth rate = (number of births – number of deaths) / __________ x 100",
+    "a": "1000"
+  },
+  {
+    "q": "Doubling time = __________ / Growth rate (%)",
+    "a": "70"
+  },
+  {
+    "q": "The number 70 in the doubling time formula is called the __________ constant.",
+    "a": "demographic"
+  },
+  {
+    "q": "A population may have up to __________ different age groups in it.",
+    "a": "three"
+  },
+  {
+    "q": "__________ are immature organisms not yet reproductively active.",
+    "a": "Juveniles"
+  },
+  {
+    "q": "__________ are organisms that produce offspring.",
+    "a": "Reproductives"
+  },
+  {
+    "q": "__________ are organisms that have ceased to breed because of disease or old age.",
+    "a": "Post-reproductives"
+  },
+  {
+    "q": "__________ dispersion is a pattern of spacing found in forests & coral reefs.",
+    "a": "Random"
+  },
+  {
+    "q": "__________ dispersion is a pattern of spacing found in plantations & territorial animals.",
+    "a": "Uniform"
+  },
+  {
+    "q": "__________ dispersion is a pattern of spacing found in schooling fish, herding animals & flocking birds.",
+    "a": "Clumped"
+  },
+  {
+    "q": "__________ refers to the movement of members into a population.",
+    "a": "Immigration"
+  },
+  {
+    "q": "__________ refers to the movement of members out of a population.",
+    "a": "Emigration"
+  },
+  {
+    "q": "__________ ratio refers to the number of males compared to the number of females in a population.",
+    "a": "Sex"
+  },
+  {
+    "q": "The population __________ when carrying capacity is reached.",
+    "a": "crashes"
+  },
+  {
+    "q": "__________ are organisms that have long life spans and give birth only to a few offspring.",
+    "a": "K-strategists"
+  },
+  {
+    "q": "__________ are organisms that usually produce large number of eggs or offspring.",
+    "a": "R-strategists"
+  },
+  {
+    "q": "K-strategists provide __________ parental care compared to R-strategists.",
+    "a": "more"
+  },
+  {
+    "q": "R-strategists provide __________ parental care compared to K-strategists.",
+    "a": "less"
+  }
+]

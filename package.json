@@ -1,0 +1,12 @@
+{
+  "name": "dynamic-study-app",
+  "version": "1.0.0",
+  "description": "A study application with a dynamic deck manifest powered by Vercel Serverless Functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

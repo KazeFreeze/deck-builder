@@ -1,0 +1,130 @@
+[
+  {
+    "q": "The process by which atmospheric nitrogen is converted into a form that can be used by plants is called __________.",
+    "a": "Nitrogen Fixation"
+  },
+  {
+    "q": "The conversion of ammonium to nitrate in the nitrogen cycle is known as __________.",
+    "a": "Nitrification"
+  },
+  {
+    "q": "The process by which plants and microorganisms incorporate nitrogen compounds into their biomass is called __________.",
+    "a": "Nitrogen Assimilation"
+  },
+  {
+    "q": "The conversion of nitrate back to nitrogen gas, completing the nitrogen cycle, is called __________.",
+    "a": "Denitrification"
+  },
+  {
+    "q": "The process of converting organic nitrogen back into ammonia is known as __________.",
+    "a": "Ammonification"
+  },
+  {
+    "q": "In the oxygen cycle, the process by which animals take in oxygen from the atmosphere is called __________.",
+    "a": "Animal Absorption"
+  },
+  {
+    "q": "The breakdown of water molecules by sunlight in the upper atmosphere is called __________.",
+    "a": "Photolysis"
+  },
+  {
+    "q": "The process by which plants produce oxygen as a byproduct is called __________.",
+    "a": "Photosynthesis"
+  },
+  {
+    "q": "The release of carbon dioxide by plants during cellular respiration is part of both the oxygen and __________ cycles.",
+    "a": "Carbon"
+  },
+  {
+    "q": "The process of breaking down dead organic matter, which releases carbon dioxide, is called __________.",
+    "a": "Decomposition"
+  },
+  {
+    "q": "__________ and __________ are major sources of carbon that contribute to the carbon cycle when burned.",
+    "a": "Fossils, Fossil Fuels"
+  },
+  {
+    "q": "The release of carbon dioxide through human activities such as burning fossil fuels is called __________.",
+    "a": "Industrial Combustion"
+  },
+  {
+    "q": "The process by which rocks are broken down, releasing phosphorus into the environment, is called __________.",
+    "a": "Weathering"
+  },
+  {
+    "q": "The movement of phosphorus from land to water bodies via water flow is called __________.",
+    "a": "Runoff"
+  },
+  {
+    "q": "The long-term storage of phosphorus in ocean sediments is referred to as __________.",
+    "a": "Phosphate Sediments"
+  },
+  {
+    "q": "The process that brings phosphorus-rich rocks to the Earth's surface is called __________.",
+    "a": "geological uplift"
+  },
+  {
+    "q": "The process by which phosphorus moves from soil into plant tissues is called __________.",
+    "a": "Absorption by plants"
+  },
+  {
+    "q": "The movement of phosphorus through soil by water is called __________.",
+    "a": "Leaching"
+  },
+  {
+    "q": "In the water cycle, the process of water vapor turning into liquid water is called __________.",
+    "a": "Condensation"
+  },
+  {
+    "q": "The process of water changing directly from a solid to a gas, bypassing the liquid phase, is called __________.",
+    "a": "Sublimation"
+  },
+  {
+    "q": "The upper level of the zone of saturation in an aquifer is called the __________.",
+    "a": "Water Table"
+  },
+  {
+    "q": "The movement of water through soil and rock layers is called __________.",
+    "a": "Percolation"
+  },
+  {
+    "q": "What is the overall chemical equation for photosynthesis and cellular respiration, including energy?",
+    "a": "6CO2 + 6H2O + light energy ⇌ C6H12O6 + 6O2 + heat energy"
+  },
+  {
+    "q": "The organelle in plant cells where photosynthesis occurs is called the __________.",
+    "a": "Chloroplast"
+  },
+  {
+    "q": "The series of light-independent reactions in photosynthesis that produce glucose is called the __________.",
+    "a": "Calvin Cycle"
+  },
+  {
+    "q": "The two main products of the light-dependent reactions of photosynthesis are __________ and __________.",
+    "a": "ATP, NADPH"
+  },
+  {
+    "q": "The first stage of cellular respiration, which occurs in the cytoplasm and does not require oxygen, is called __________.",
+    "a": "Glycolysis"
+  },
+  {
+    "q": "The second stage of cellular respiration, which occurs in the mitochondrial matrix and produces CO2, is called the __________.",
+    "a": "Krebs Cycle"
+  },
+  {
+    "q": "The final stage of cellular respiration, where most ATP is produced, is called the __________.",
+    "a": "Electron Transport Chain"
+  },
+  {
+    "q": "The reduced form of nicotinamide adenine dinucleotide, which carries electrons in cellular respiration, is __________.",
+    "a": "NADH"
+  },
+  {
+    "q": "The primary substrate for cellular respiration is __________.",
+    "a": "Glucose"
+  },
+  {
+    "q": "The energy-carrying molecule produced in large quantities during cellular respiration is __________.",
+    "a": "ATP"
+  }
+]

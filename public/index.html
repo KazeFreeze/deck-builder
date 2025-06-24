@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Deck Builder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="app-header">
+        <h1>Study Deck Builder</h1>
+        <p>Select decks, arrange them, and start your study session!</p>
+      </header>
+
+      <!-- Pre-configured Sets Section -->
+      <div class="sets-section">
+        <h2><i class="fas fa-box-open"></i> Pre-configured Sets</h2>
+        <p>Or, select a pre-made study plan to get started quickly.</p>
+        <div id="sets-container" class="sets-container">
+          <!-- Pre-configured sets will be loaded here -->
+          <div class="placeholder">Loading sets...</div>
+        </div>
+      </div>
+
+      <div class="deck-builder-container">
+        <!-- Column for Available Decks -->
+        <div class="deck-column">
+          <h2><i class="fas fa-layer-group"></i> Available Decks</h2>
+          <div class="deck-list-container">
+            <h3>Multiple Choice Decks</h3>
+            <div id="multiplechoice-decks" class="available-decks">
+              <!-- Multiple choice decks will be loaded here -->
+              <div class="placeholder">Loading decks...</div>
+            </div>
+            <h3>Flashcard Decks</h3>
+            <div id="flashcard-decks" class="available-decks">
+              <!-- Flashcard decks will be loaded here -->
+              <div class="placeholder">Loading decks...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column for Selected Decks -->
+        <div class="deck-column">
+          <h2><i class="fas fa-stream"></i> Selected Study Plan</h2>
+          <div id="selected-decks" class="selected-decks-list">
+            <div class="placeholder">
+              Drag decks here to add them to your study plan.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Configuration Section -->
+      <div class="config-section">
+        <h2><i class="fas fa-cogs"></i> Configuration</h2>
+        <div class="config-options">
+          <div class="config-item">
+            <input type="checkbox" id="shuffle-toggle" checked />
+            <label for="shuffle-toggle">Shuffle All Items</label>
+          </div>
+          <div class="config-item">
+            <input type="checkbox" id="timer-toggle" checked />
+            <label for="timer-toggle">Enable Timer</label>
+          </div>
+          <div class="config-item">
+            <input type="checkbox" id="show-explanation-toggle" />
+            <label for="show-explanation-toggle"
+              >Show Explanation Immediately</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div class="start-button-container">
+        <button id="start-studying-btn" class="btn-primary">
+          <i class="fas fa-play-circle"></i> Start Studying
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript for this page -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

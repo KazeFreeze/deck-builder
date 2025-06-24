@@ -1,0 +1,126 @@
+[
+  {
+    "q": "Energy is the __________ property that must be transferred to an object in order to perform work on, or to heat the object.",
+    "a": "quantitative"
+  },
+  {
+    "q": "Energy is the capacity to do __________.",
+    "a": "work"
+  },
+  {
+    "q": "Energy is a __________ quantity.",
+    "a": "conserved"
+  },
+  {
+    "q": "The SI unit for energy is __________.",
+    "a": "Joule (J)"
+  },
+  {
+    "q": "The Law of Conservation of energy states that energy can be __________ in form, but not created or destroyed.",
+    "a": "converted"
+  },
+  {
+    "q": "__________ energy is one of the kinds of energy mentioned in the document.",
+    "a": "Thermal"
+  },
+  {
+    "q": "__________ energy is another kind of energy mentioned in the document.",
+    "a": "Potential"
+  },
+  {
+    "q": "__________ potential energy is a specific type of potential energy mentioned.",
+    "a": "Gravitational"
+  },
+  {
+    "q": "__________ energy is a form of energy stored in chemical bonds.",
+    "a": "Chemical"
+  },
+  {
+    "q": "__________ energy is a form of energy related to electric and magnetic fields.",
+    "a": "Electromagnetic"
+  },
+  {
+    "q": "In plants, energy transfer takes place through the process of __________.",
+    "a": "photosynthesis"
+  },
+  {
+    "q": "In photosynthesis, __________ energy is converted to chemical energy.",
+    "a": "light"
+  },
+  {
+    "q": "The chemical energy in plants is stored in the form of __________ or organic matter.",
+    "a": "biomass"
+  },
+  {
+    "q": "Energy resources can be classified as __________ or non-renewables.",
+    "a": "renewables"
+  },
+  {
+    "q": "__________, natural gas, and coal are examples of fossil fuels.",
+    "a": "Petroleum"
+  },
+  {
+    "q": "__________ gas liquids are another type of non-renewable energy resource.",
+    "a": "Hydrocarbon"
+  },
+  {
+    "q": "__________ energy is a non-renewable energy source that doesn't involve fossil fuels.",
+    "a": "Nuclear"
+  },
+  {
+    "q": "__________ energy, geothermal energy, and wind energy are examples of renewable energy sources.",
+    "a": "Solar"
+  },
+  {
+    "q": "__________ and hydropower are two other examples of renewable energy sources.",
+    "a": "Biomass"
+  },
+  {
+    "q": "Nonrenewable energy began replacing most renewable energy in the early __________.",
+    "a": "1800s"
+  },
+  {
+    "q": "By the early-1900s, __________ fuels were the main source of energy.",
+    "a": "fossil"
+  },
+  {
+    "q": "Fossil fuels are mixtures of __________ that formed from the remains of animals and plants that lived millions of years ago.",
+    "a": "hydrocarbons"
+  },
+  {
+    "q": "__________ are microscopic organisms whose remains contributed to the formation of fossil fuels.",
+    "a": "Diatoms"
+  },
+  {
+    "q": "Hydrocarbon gas liquids are categorized chemically as __________ and alkenes.",
+    "a": "alkanes"
+  },
+  {
+    "q": "HGLs can be used as feedstock in __________ plants to make chemicals, plastics, and synthetic rubber.",
+    "a": "petrochemical"
+  },
+  {
+    "q": "Nuclear energy is released during nuclear __________ or fusion.",
+    "a": "fission"
+  },
+  {
+    "q": "__________ energy is radiant light and heat from the sun that is harnessed using a range of ever-evolving technologies.",
+    "a": "Solar"
+  },
+  {
+    "q": "__________ energy is heat derived within the sub-surface of the earth.",
+    "a": "Geothermal"
+  },
+  {
+    "q": "Wind energy is created using a __________, a device that channels the power of the wind to generate electricity.",
+    "a": "wind turbine"
+  },
+  {
+    "q": "__________ or Biofuels are a renewable energy source made from organic matter or wastes.",
+    "a": "Biogas"
+  },
+  {
+    "q": "__________ or hydroelectricity refers to the conversion of energy from flowing water into electricity.",
+    "a": "Hydropower"
+  }
+]
