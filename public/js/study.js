@@ -29,9 +29,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const backBtn = document.getElementById("back");
   const backToMenuBtn = document.getElementById("backToMenu");
   const containerEl = document.querySelector(".container");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  // --- THEME SWITCHER LOGIC ---
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("studyAppTheme", theme);
+    if (themeToggle) {
+      themeToggle.checked = theme === "dark";
+    }
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener("change", () => {
+      applyTheme(themeToggle.checked ? "dark" : "light");
+    });
+  }
 
   // --- INITIALIZATION ---
   function initializeStudySession() {
+    // Apply theme first to avoid flash of unstyled content
+    const savedTheme = localStorage.getItem("studyAppTheme") || "light";
+    applyTheme(savedTheme);
+
     const urlParams = new URLSearchParams(window.location.search);
     const decksParam = urlParams.get("decks");
 
