@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- STATE MANAGEMENT ---
-  let allItems = []; // Combined list of questions and flashcards
-  let originalItems = []; // For unshuffling
-  let userAnswers = []; // To store user's answers for MCQs
+  let allItems = [];
+  let originalItems = [];
+  let userAnswers = [];
   let currentItemIndex = 0;
   let quizCompleted = false;
 
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const decksParam = urlParams.get("decks");
 
-    // Set configs from URL
     shuffleEnabled = urlParams.get("shuffle") === "true";
     timerEnabled = urlParams.get("timer") === "true";
     showExplanationImmediately = urlParams.get("showExplanation") === "true";
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const deckPaths = decksParam.split(",");
     loadAllDecks(deckPaths);
 
-    // Add event listeners
     nextBtn.addEventListener("click", nextItem);
     backBtn.addEventListener("click", previousItem);
     backToMenuBtn.addEventListener(
@@ -61,14 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  // --- THIS FUNCTION IS FIXED ---
   async function loadAllDecks(paths) {
     quizTitleEl.textContent = "Loading decks...";
     try {
-      const fetchPromises = paths.map((path) =>
-        fetch(path.split("/")[1] + "/" + path.split("/")[2]).then((res) =>
-          res.json().then((data) => ({ data, type: path.split("/")[0] }))
-        )
-      );
+      // Correctly map fetch promises using the full path
+      const fetchPromises = paths.map((path) => {
+        const type = path.split("/")[0];
+        return fetch(path).then((res) => {
+          if (!res.ok)
+            throw new Error(`Failed to load ${path}: ${res.statusText}`);
+          return res.json().then((data) => ({ data, type }));
+        });
+      });
+
       const results = await Promise.all(fetchPromises);
 
       let combinedItems = [];
@@ -80,8 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ...q,
             type: "multiplechoice",
           }));
-        } else if (type === "flashcards") {
-          // Assuming flashcard JSON is an array of {q, a}
+        } else if (type === "flashcards" && Array.isArray(data)) {
           itemsToAdd = data.map((fc) => ({
             question: fc.q,
             answer: fc.a,
@@ -91,18 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
         combinedItems = combinedItems.concat(itemsToAdd);
       });
 
+      if (combinedItems.length === 0) {
+        throw new Error("No valid items found in the selected decks.");
+      }
+
       originalItems = [...combinedItems];
       allItems = shuffleEnabled
         ? shuffleArray([...combinedItems])
         : [...combinedItems];
-
       userAnswers = new Array(allItems.length).fill(null);
 
       startSession();
     } catch (error) {
-      console.error("Failed to load one or more decks:", error);
-      quizTitleEl.textContent =
-        "Error loading decks. Please go back and try again.";
+      console.error("Failed to load or process decks:", error);
+      quizTitleEl.textContent = "Error: Could not load decks.";
+      studyItemContainerEl.innerHTML = `<div class="error">${error.message}<br>Please go back and try again.</div>`;
+      document.querySelector(".nav-buttons").style.display = "none";
     }
   }
 
@@ -123,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const item = allItems[currentItemIndex];
-    studyItemContainerEl.innerHTML = ""; // Clear previous item
+    studyItemContainerEl.innerHTML = "";
     studyItemContainerEl.className = `study-item-container ${item.type}`;
 
     if (item.type === "multiplechoice") {
@@ -141,25 +148,19 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const [key, value] of Object.entries(item.choices)) {
       choicesHtml += `<div class="choice" data-answer="${key}"><strong>${key}:</strong> ${value}</div>`;
     }
-
     studyItemContainerEl.innerHTML = `
-            <div id="question">${item.question}</div>
-            <div id="choices">${choicesHtml}</div>
-            <div id="explanation" class="explanation"></div>
-        `;
+            <div id="question">${item.question}</div><div id="choices">${choicesHtml}</div><div id="explanation" class="explanation"></div>`;
 
     const userAnswer = userAnswers[currentItemIndex];
     if (userAnswer) {
-      // If already answered, show results for this question
       highlightChoices(userAnswer.selected, item.correctAnswer);
       showExplanation(item.correctAnswer, item.explanation);
     } else {
-      // Add click handlers for choices
-      studyItemContainerEl.querySelectorAll(".choice").forEach((choice) => {
-        choice.addEventListener("click", handleAnswer);
-      });
+      studyItemContainerEl
+        .querySelectorAll(".choice")
+        .forEach((choice) => choice.addEventListener("click", handleAnswer));
       if (showExplanationImmediately) {
-        handleAnswer({ currentTarget: { dataset: { answer: null } } }); // Trigger answer with null to just reveal
+        handleAnswer({ currentTarget: { dataset: { answer: null } } });
       }
     }
   }
@@ -168,20 +169,15 @@ document.addEventListener("DOMContentLoaded", () => {
     studyItemContainerEl.innerHTML = `
             <div class="flashcard" tabindex="0">
                 <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>${item.question}</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <p>${item.answer}</p>
-                    </div>
+                    <div class="flashcard-front"><p>${item.question}</p></div>
+                    <div class="flashcard-back"><p>${item.answer}</p></div>
                 </div>
-            </div>
-        `;
+            </div>`;
 
     const flashcard = studyItemContainerEl.querySelector(".flashcard");
-    flashcard.addEventListener("click", () => {
-      flashcard.classList.toggle("is-flipped");
-    });
+    flashcard.addEventListener("click", () =>
+      flashcard.classList.toggle("is-flipped")
+    );
     flashcard.addEventListener("keydown", (e) => {
       if (e.code === "Space" || e.code === "Enter") {
         e.preventDefault();
@@ -191,25 +187,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- UI/UX HELPERS ---
-
   function createItemIndicators() {
     indicatorsContainerEl.innerHTML = '<div class="question-indicators"></div>';
     const container = indicatorsContainerEl.querySelector(
       ".question-indicators"
     );
-
     allItems.forEach((item, index) => {
       const indicator = document.createElement("div");
       indicator.className = "question-indicator";
-      indicator.textContent = index + 1;
-      indicator.dataset.index = index;
-
-      // Add icon based on type
       const iconClass = item.type === "flashcard" ? "fa-clone" : "fa-list-ul";
       indicator.innerHTML = `<span>${
         index + 1
       }</span> <i class="fas ${iconClass} type-icon"></i>`;
-
+      indicator.dataset.index = index;
       indicator.addEventListener("click", () => {
         currentItemIndex = index;
         displayCurrentItem();
@@ -225,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
     indicators.forEach((indicator, index) => {
       indicator.classList.remove("current", "answered", "correct", "incorrect");
       if (index === currentItemIndex) indicator.classList.add("current");
-
       const answer = userAnswers[index];
       if (answer) {
         indicator.classList.add("answered");
@@ -236,7 +225,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateStatus() {
-    progressEl.textContent = `${currentItemIndex + 1} / ${allItems.length}`;
+    progressEl.textContent = `${Math.min(
+      currentItemIndex + 1,
+      allItems.length
+    )} / ${allItems.length}`;
     const mcqItems = allItems.filter((i) => i.type === "multiplechoice");
     const answeredMcq = userAnswers.filter((a) => a !== null);
     const score = answeredMcq.reduce(
@@ -244,30 +236,24 @@ document.addEventListener("DOMContentLoaded", () => {
       0
     );
     scoreEl.textContent = `${score} / ${answeredMcq.length}`;
-
     updateItemIndicators();
   }
 
   function updateNavigation() {
     backBtn.style.display = currentItemIndex > 0 ? "block" : "none";
     nextBtn.textContent =
-      currentItemIndex === allItems.length - 1 ? "Finish" : "Next";
+      currentItemIndex >= allItems.length - 1 ? "Finish" : "Next";
   }
 
   // --- EVENT HANDLERS & LOGIC ---
-
   function handleAnswer(e) {
     const item = allItems[currentItemIndex];
     if (item.type !== "multiplechoice" || userAnswers[currentItemIndex]) return;
-
     const selectedAnswer = e.currentTarget.dataset.answer;
-    const isCorrect = selectedAnswer === item.correctAnswer;
-
     userAnswers[currentItemIndex] = {
       selected: selectedAnswer,
-      correct: isCorrect,
+      correct: selectedAnswer === item.correctAnswer,
     };
-
     highlightChoices(selectedAnswer, item.correctAnswer);
     showExplanation(item.correctAnswer, item.explanation);
     updateStatus();
@@ -277,13 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
     studyItemContainerEl.querySelectorAll(".choice").forEach((choice) => {
       const answerKey = choice.dataset.answer;
       choice.style.cursor = "not-allowed";
-
-      if (answerKey === correct) {
-        choice.classList.add("correct");
-      } else if (answerKey === selected) {
-        choice.classList.add("incorrect");
-      }
-      // Prevent further clicks
+      if (answerKey === correct) choice.classList.add("correct");
+      else if (answerKey === selected) choice.classList.add("incorrect");
       choice.removeEventListener("click", handleAnswer);
     });
   }
@@ -299,23 +280,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function nextItem() {
-    if (currentItemIndex < allItems.length) {
-      currentItemIndex++;
-    }
+    if (currentItemIndex < allItems.length) currentItemIndex++;
     displayCurrentItem();
   }
 
   function previousItem() {
-    if (currentItemIndex > 0) {
-      currentItemIndex--;
-      displayCurrentItem();
-    }
+    if (currentItemIndex > 0) currentItemIndex--;
+    displayCurrentItem();
   }
 
   function showResults() {
     quizCompleted = true;
     if (timerEnabled) stopTimer();
-
     const mcqTotal = allItems.filter((i) => i.type === "multiplechoice").length;
     const answeredMcq = userAnswers.filter((a) => a !== null);
     const finalScore = answeredMcq.reduce(
@@ -324,11 +300,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     const percentage =
       mcqTotal > 0 ? Math.round((finalScore / mcqTotal) * 100) : 0;
-
-    // Hide main study area
     document.getElementById("study-item-container").style.display = "none";
     document.querySelector(".nav-buttons").style.display = "none";
-
     const resultsContainer = document.createElement("div");
     resultsContainer.className = "results-container";
     resultsContainer.innerHTML = `
@@ -340,11 +313,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="result-actions">
                 <button id="retry-quiz" class="btn-primary"><i class="fas fa-redo"></i> Try Again</button>
                 <button id="return-menu" class="btn-secondary"><i class="fas fa-home"></i> Return to Menu</button>
-            </div>
-        `;
-
+            </div>`;
     containerEl.appendChild(resultsContainer);
-
     document
       .getElementById("retry-quiz")
       .addEventListener("click", () => location.reload());

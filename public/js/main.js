@@ -17,13 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fetch all necessary data from our new serverless API endpoint
   async function loadData() {
     try {
-      // Single API call to get all decks and sets
       const response = await fetch("/api/decks");
-
       if (!response.ok) {
         throw new Error(`API error! status: ${response.status}`);
       }
-
       const data = await response.json();
 
       availableDecks.multiplechoice = data.multiplechoice || [];
@@ -42,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // --- RENDERING FUNCTIONS (No changes below this line, but included for completeness) ---
+  // --- RENDERING FUNCTIONS ---
   function renderAvailableDecks() {
     renderDeckList(
       availableDecks.multiplechoice,
@@ -57,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderDeckList(decks, container, type) {
-    container.innerHTML = ""; // Clear loading placeholder
+    container.innerHTML = "";
     if (decks.length === 0) {
       container.innerHTML = '<div class="placeholder">No decks found.</div>';
       return;
@@ -78,17 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
     availableSets.forEach((set, index) => {
       const setEl = document.createElement("div");
       setEl.className = "set-card";
-      setEl.innerHTML = `
-                <h3>${set.title}</h3>
-                <p>${set.description}</p>
-            `;
+      setEl.innerHTML = `<h3>${set.title}</h3><p>${set.description}</p>`;
       setEl.addEventListener("click", () => handleSetSelection(index));
       setsContainer.appendChild(setEl);
     });
   }
 
   function renderSelectedDecks() {
-    selectedDecksContainer.innerHTML = ""; // Clear placeholder/previous content
+    selectedDecksContainer.innerHTML = "";
     if (selectedDecks.length === 0) {
       selectedDecksContainer.innerHTML =
         '<div class="placeholder">Drag or click decks here.</div>';
@@ -142,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- EVENT HANDLERS & LOGIC ---
-
   function handleSetSelection(setIndex) {
     const selectedSet = availableSets[setIndex];
     if (!selectedSet) return;
@@ -151,10 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .map((setDeck) => {
         const deckList = availableDecks[setDeck.type] || [];
         const foundDeck = deckList.find((d) => d.file === setDeck.file);
-        if (foundDeck) {
-          return { ...foundDeck, type: setDeck.type };
-        }
-        return null;
+        return foundDeck ? { ...foundDeck, type: setDeck.type } : null;
       })
       .filter(Boolean);
 
@@ -175,8 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Please select at least one deck to start studying.");
       return;
     }
-    // NOTE: The serverless function returns paths relative to the public subdirs.
-    // The study page expects paths including the subdirs.
     const deckFiles = selectedDecks
       .map((deck) => `${deck.type}/${deck.file}`)
       .join(",");
@@ -228,25 +216,30 @@ document.addEventListener("DOMContentLoaded", () => {
       const fromIndex = parseInt(dataStr, 10);
       const list = selectedDecksContainer;
       const y = e.clientY;
-      const items = [
+      const afterElement = [
         ...list.querySelectorAll(".selected-deck-item:not(.dragging)"),
-      ];
-      const target = items.find(
+      ].find(
         (item) =>
           y <
           item.getBoundingClientRect().top +
             item.getBoundingClientRect().height / 2
       );
-      const toIndex = target ? items.indexOf(target) : selectedDecks.length;
-      if (fromIndex !== toIndex) {
-        const [movedItem] = selectedDecks.splice(fromIndex, 1);
-        selectedDecks.splice(toIndex, 0, movedItem);
-        renderSelectedDecks();
-      }
+
+      const toIndex = afterElement
+        ? parseInt(afterElement.dataset.index, 10)
+        : selectedDecks.length;
+
+      const [movedItem] = selectedDecks.splice(fromIndex, 1);
+      selectedDecks.splice(
+        fromIndex < toIndex ? toIndex - 1 : toIndex,
+        0,
+        movedItem
+      );
+
+      renderSelectedDecks();
     }
   });
 
   // Initial load
   loadData();
-  renderSelectedDecks();
 });
