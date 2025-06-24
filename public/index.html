@@ -16,14 +16,22 @@
       <header class="app-header">
         <h1>Study Deck Builder</h1>
         <p>Select decks, arrange them, and start your study session!</p>
+        <div class="theme-switcher">
+          <i class="fas fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider round"></span>
+          </label>
+          <i class="fas fa-moon"></i>
+        </div>
       </header>
 
       <!-- Pre-configured Sets Section -->
       <div class="sets-section">
         <h2><i class="fas fa-box-open"></i> Pre-configured Sets</h2>
-        <p>Or, select a pre-made study plan to get started quickly.</p>
-        <div id="sets-container" class="sets-container">
-          <!-- Pre-configured sets will be loaded here -->
+        <p>Select a pre-made study plan to get started quickly.</p>
+        <div id="sets-container" class="sets-radio-container">
+          <!-- Pre-configured sets radio buttons will be loaded here -->
           <div class="placeholder">Loading sets...</div>
         </div>
       </div>
@@ -35,12 +43,10 @@
           <div class="deck-list-container">
             <h3>Multiple Choice Decks</h3>
             <div id="multiplechoice-decks" class="available-decks">
-              <!-- Multiple choice decks will be loaded here -->
               <div class="placeholder">Loading decks...</div>
             </div>
             <h3>Flashcard Decks</h3>
             <div id="flashcard-decks" class="available-decks">
-              <!-- Flashcard decks will be loaded here -->
               <div class="placeholder">Loading decks...</div>
             </div>
           </div>
@@ -86,7 +92,6 @@
       </div>
     </div>
 
-    <!-- JavaScript for this page -->
     <script src="js/main.js"></script>
   </body>
 </html>

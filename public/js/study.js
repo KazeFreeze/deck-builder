@@ -59,11 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  // --- THIS FUNCTION IS FIXED ---
+  // --- DECK LOADING ---
   async function loadAllDecks(paths) {
     quizTitleEl.textContent = "Loading decks...";
     try {
-      // Correctly map fetch promises using the full path
       const fetchPromises = paths.map((path) => {
         const type = path.split("/")[0];
         return fetch(path).then((res) => {
@@ -128,7 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!quizCompleted) showResults();
       return;
     }
-
+    // The visual height fix is handled by the #study-area-wrapper div in the HTML/CSS.
+    // This JS code simply populates the content inside it.
     const item = allItems[currentItemIndex];
     studyItemContainerEl.innerHTML = "";
     studyItemContainerEl.className = `study-item-container ${item.type}`;
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     const percentage =
       mcqTotal > 0 ? Math.round((finalScore / mcqTotal) * 100) : 0;
-    document.getElementById("study-item-container").style.display = "none";
+    document.getElementById("study-area-wrapper").style.display = "none";
     document.querySelector(".nav-buttons").style.display = "none";
     const resultsContainer = document.createElement("div");
     resultsContainer.className = "results-container";

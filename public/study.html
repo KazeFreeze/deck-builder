@@ -13,7 +13,9 @@
   </head>
   <body>
     <div class="controls">
-      <button id="backToMenu"><i class="fas fa-home"></i> Back to Menu</button>
+      <button id="backToMenu" class="icon-btn" title="Back to Menu">
+        <i class="fas fa-home"></i>
+      </button>
     </div>
 
     <div class="container">
@@ -35,9 +37,11 @@
       <!-- Question/Card Indicators -->
       <div id="question-indicators-container"></div>
 
-      <!-- Main Content Area -->
-      <div id="study-item-container">
-        <!-- This container will hold either a multiple choice question or a flashcard -->
+      <!-- Main Content Area Wrapper to fix height glitches -->
+      <div id="study-area-wrapper">
+        <div id="study-item-container">
+          <!-- This container will hold either a multiple choice question or a flashcard -->
+        </div>
       </div>
 
       <!-- Navigation Buttons -->
@@ -51,7 +55,6 @@
       </div>
     </div>
 
-    <!-- Results container will be inserted here when the quiz is completed -->
     <script src="js/study.js"></script>
   </body>
 </html>
