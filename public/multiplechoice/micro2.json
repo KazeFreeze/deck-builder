@@ -1,0 +1,538 @@
+{
+  "title": "ENGG122.01 - Module 2 Exam Questions",
+  "questions": [
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "Which of the following statements is true regarding a Half Adder?",
+      "choices": {
+        "A": "It can accept the carry-in from a previous adder.",
+        "B": "It has two inputs, A and B, and two outputs, S and Cout.",
+        "C": "It is typically used for multiple-bit addition by chaining.",
+        "D": "It is a type of Carry Propagate Adder."
+      },
+      "correctAnswer": "B",
+      "explanation": "A Half Adder has two inputs, A and B, and two outputs, S and Cout [1]. It cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition [1]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "What is a key distinction between a Full Adder and a Half Adder?",
+      "choices": {
+        "A": "A Half Adder can accept a carry-in (Cin) from a previous adder, while a Full Adder cannot.",
+        "B": "A Full Adder can accept a carry-in (Cin) from a previous adder, while a Half Adder cannot.",
+        "C": "Both Half Adders and Full Adders are capable of performing multiple-bit addition independently.",
+        "D": "A Full Adder produces fewer outputs than a Half Adder."
+      },
+      "correctAnswer": "B",
+      "explanation": "A Half Adder cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition, whereas a Full Adder can accept the carry-in Cin from a previous adder [1]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "Why is an N-bit adder commonly called a Carry Propagate Adder (CPA)?",
+      "choices": {
+        "A": "Because it generates a carry out for every bit regardless of input.",
+        "B": "Because the carry out of one bit propagates into the next bit.",
+        "C": "Because it primarily focuses on propagating input bits to the output.",
+        "D": "Because it is designed to prevent carry propagation."
+      },
+      "correctAnswer": "B",
+      "explanation": "An N-bit adder is commonly called a carry propagate adder because the carry out of one bit propagates into the next bit [1]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "Which statement best describes a Ripple-Carry Adder (RCA)?",
+      "choices": {
+        "A": "It divides the adder into blocks to quickly determine carry out.",
+        "B": "It uses floating-gate transistors for faster carry propagation.",
+        "C": "It chains together N full adders where the Cout of one stage acts as the Cin of the next stage.",
+        "D": "It computes generate and propagate logic for pairs of columns first."
+      },
+      "correctAnswer": "C",
+      "explanation": "The Ripple-Carry Adder is the simplest way to build an N-bit carry propagate adder by chaining together N full adders, where the Cout of one stage acts as the Cin of the next stage [2]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "How is the time it takes for a Ripple-Carry Adder (RCA) to perform addition calculated?",
+      "choices": {
+        "A": "It is proportional to the square of the number of full adders (N^2).",
+        "B": "It is constant, regardless of the number of full adders.",
+        "C": "It is N times tFA, where N is the number of full adders and tFA is the time it takes for a full adder to add.",
+        "D": "It depends solely on the clock frequency."
+      },
+      "correctAnswer": "C",
+      "explanation": "The time it takes for the RCA to add is N times tFA where N is the number of full adders and tfa is the time it takes for a full adder to add [2]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "What is the primary advantage of a Carry-Lookahead Adder (CLA) over a Ripple-Carry Adder?",
+      "choices": {
+        "A": "It uses fewer full adders for the same bit width.",
+        "B": "It simplifies the overall circuitry by removing multiplexers.",
+        "C": "It quickly determines the carry out of a block as soon as the carry in is known.",
+        "D": "It is specifically designed for subtraction operations."
+      },
+      "correctAnswer": "C",
+      "explanation": "A Carry-Lookahead Adder divides the adder into blocks and provides circuitry to quickly determine the carry out of a block as soon as the carry in is known [2]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "How does a Prefix Adder achieve faster addition compared to a Carry-Lookahead Adder?",
+      "choices": {
+        "A": "By eliminating the need for generate and propagate logic.",
+        "B": "By computing G and P for pairs of columns, then blocks of 4, 8, 16, and so forth, until the generate signal for every column is known.",
+        "C": "By relying on a single, global carry signal.",
+        "D": "By using a smaller number of full adders."
+      },
+      "correctAnswer": "B",
+      "explanation": "Prefix adders extend the generate and propagate logic of the carry-lookahead adder to perform addition even faster. They first compute G and P for pairs of columns, then for blocks of 4, then for blocks of 8, then 16, and so forth until the generate signal for every column is known [3]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "How is subtraction performed using the two's complement method according to the sources?",
+      "choices": {
+        "A": "By inverting all bits of the second number and then subtracting.",
+        "B": "By directly subtracting the second number from the first.",
+        "C": "By flipping the sign of the second number, which involves inverting its bits and adding 1, then adding the result to the first number.",
+        "D": "By shifting the second number left by one position before addition."
+      },
+      "correctAnswer": "C",
+      "explanation": "Subtraction is the same as addition except using the two’s-complement of the second number. Flipping the sign of a two’s complement number is done by inverting the bits and adding 1, and then adding [3]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "A magnitude comparator produces outputs indicating what?",
+      "choices": {
+        "A": "Whether two binary numbers are exactly equal.",
+        "B": "The relative values of two N-bit binary numbers, such as A is greater than B.",
+        "C": "Only if the sum of two numbers is zero.",
+        "D": "The carry-out of an arithmetic operation."
+      },
+      "correctAnswer": "B",
+      "explanation": "A magnitude comparator produces one or more outputs indicating the relative values of A and B [4]. An equality comparator specifically produces a single output indicating whether A is equal to B [4]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "When a logical shifter performs a right shift (LSR), how does it fill the empty spots?",
+      "choices": {
+        "A": "With copies of the old most significant bit (msb).",
+        "B": "With the bits shifted off the other end.",
+        "C": "With 0's.",
+        "D": "With 1's."
+      },
+      "correctAnswer": "C",
+      "explanation": "A logical shifter shifts the number to the left (LSL) or right (LSR) and fills empty spots with 0’s [5]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "What is a distinguishing feature of an arithmetic shifter compared to a logical shifter when performing a right shift?",
+      "choices": {
+        "A": "It fills empty spots with 0's.",
+        "B": "It rotates the number in a circle.",
+        "C": "It fills the most significant bits with a copy of the old most significant bit (msb).",
+        "D": "It only supports left shifts."
+      },
+      "correctAnswer": "C",
+      "explanation": "An arithmetic shifter is the same as a logical shifter, but on right shifts fills the most significant bits with a copy of the old most significant bit (msb) [5]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "Which type of shifter moves bits such that empty spots are filled with bits shifted off the other end?",
+      "choices": {
+        "A": "Logical shifter",
+        "B": "Arithmetic shifter",
+        "C": "Rotator",
+        "D": "Barrel shifter"
+      },
+      "correctAnswer": "C",
+      "explanation": "A Rotator rotates number in a circle such that empty spots are filled with bits shifted off the other end [5]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "What is the purpose of the 2-bit control signal ALUControl in an Arithmetic/Logical Unit (ALU)?",
+      "choices": {
+        "A": "To specify the size of the N-bit inputs and outputs.",
+        "B": "To determine the number of flags produced by the ALU.",
+        "C": "To specify which function the ALU should perform.",
+        "D": "To enable or disable the ALU entirely."
+      },
+      "correctAnswer": "C",
+      "explanation": "The ALU receives a 2-bit control signal ALUControl that specifies which function to perform [6]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "Which of the following components are part of the ALU implementation described in the sources?",
+      "choices": {
+        "A": "Only an N-bit adder and a single inverter.",
+        "B": "An N-bit adder, N two-input AND and OR gates, inverters, and a multiplexer.",
+        "C": "A dedicated multiplier and divider.",
+        "D": "Only registers and a program counter."
+      },
+      "correctAnswer": "B",
+      "explanation": "The ALU contains an N-bit adder and N two-input AND and OR gates. It also contains inverters and a multiplexer to invert input B when ALUControl0 is asserted. A 4:1 multiplexer chooses the desired function based on ALUControl [6]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "What does the 'Carry' flag indicate as an output of an ALU?",
+      "choices": {
+        "A": "A negative result.",
+        "B": "A zero result.",
+        "C": "Overflow of a logic operation.",
+        "D": "Overflow of an arithmetic operation."
+      },
+      "correctAnswer": "D",
+      "explanation": "The Carry flag indicates overflow of an arithmetic operation [7]."
+    },
+    {
+      "module": "Module 2: Arithmetic Logic Unit",
+      "section": "Arithmetic Logic Unit",
+      "question": "If an ALU produces a 'Zero' flag output, what does this signify?",
+      "choices": {
+        "A": "An overflow has occurred in an arithmetic operation.",
+        "B": "The result of the operation is negative.",
+        "C": "The ALU output is a zero result.",
+        "D": "An invalid operation was attempted."
+      },
+      "correctAnswer": "C",
+      "explanation": "The Zero flag indicates a zero result [7]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Addressing",
+      "question": "In a memory array organized as a two-dimensional array of memory cells, what does the 'Address' specify?",
+      "choices": {
+        "A": "The data value to be read or written.",
+        "B": "The number of columns in the array.",
+        "C": "The specific row of the array to be accessed.",
+        "D": "The type of memory (RAM or ROM)."
+      },
+      "correctAnswer": "C",
+      "explanation": "The memory is organized as a two-dimensional array of memory cells. The Address specifies the row [8]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Addressing",
+      "question": "An array with N-bit addresses and M-bit data has how many M-bit words?",
+      "choices": {
+        "A": "N * M words.",
+        "B": "2^(N+M) words.",
+        "C": "2^N M-bit words.",
+        "D": "2^M N-bit words."
+      },
+      "correctAnswer": "C",
+      "explanation": "An array with N-bit addresses and M-bit data has 2^N rows and M columns. Thus, the array contains 2^N M-bit words [9]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Organization",
+      "question": "During a memory read operation, what happens after a wordline is asserted?",
+      "choices": {
+        "A": "The bitlines are driven HIGH or LOW first.",
+        "B": "The corresponding row of bit cells drives the bitlines HIGH or LOW.",
+        "C": "The memory immediately loses its data.",
+        "D": "The address bus carries control and timing signals."
+      },
+      "correctAnswer": "B",
+      "explanation": "During a memory read, a wordline is asserted, and the corresponding row of bit cells drives the bitlines HIGH or LOW [9]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Ports",
+      "question": "What is the primary advantage of multi-ported memories?",
+      "choices": {
+        "A": "They are nonvolatile, retaining data indefinitely.",
+        "B": "They can access several addresses simultaneously.",
+        "C": "They require less power than single-ported memories.",
+        "D": "They have a simpler internal structure."
+      },
+      "correctAnswer": "B",
+      "explanation": "Multi-ported memories can access several addresses simultaneously [10]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Types",
+      "question": "What defines a volatile memory type?",
+      "choices": {
+        "A": "It retains its data indefinitely, even without a power source.",
+        "B": "It is a type of Read Only Memory (ROM).",
+        "C": "It stores data as the presence or absence of a transistor.",
+        "D": "It loses its data when the power is turned off."
+      },
+      "correctAnswer": "D",
+      "explanation": "RAM is volatile, meaning that it loses its data when the power is turned off. ROM is nonvolatile, meaning that it retains its data indefinitely, even without a power source [10]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Types",
+      "question": "How does Dynamic RAM (DRAM) store a bit of data?",
+      "choices": {
+        "A": "On cross-coupled inverters.",
+        "B": "As the presence or absence of a transistor.",
+        "C": "As the presence or absence of charge on a capacitor.",
+        "D": "In a register file."
+      },
+      "correctAnswer": "C",
+      "explanation": "Dynamic RAM (DRAM) stores a bit as the presence or absence of charge on a capacitor [11]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Types",
+      "question": "Which statement is true about Static RAM (SRAM)?",
+      "choices": {
+        "A": "It stores a bit as charge on a capacitor and requires refreshing.",
+        "B": "Stored bits do not need to be refreshed, and data is stored on cross-coupled inverters.",
+        "C": "Its latency is longer than DRAM because its bitline is not actively driven.",
+        "D": "It is primarily used for large, inexpensive, long-term storage."
+      },
+      "correctAnswer": "B",
+      "explanation": "Static RAM (SRAM) is static because stored bits do not need to be refreshed. The data bit is stored on cross-coupled inverters [12]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Memory Comparison",
+      "question": "According to the sources, what is a characteristic of flip-flops in memory comparison?",
+      "choices": {
+        "A": "They have longer latency than DRAM.",
+        "B": "They require fewer transistors to build than SRAM.",
+        "C": "The data bit stored is available immediately at its output.",
+        "D": "They are nonvolatile memories."
+      },
+      "correctAnswer": "C",
+      "explanation": "The data bit stored in a flip-flop is available immediately at its output [12]. Flip-flops take at least 20 transistors to build, generally more area, power, and cost [12]. Flip-flops, SRAMs, and DRAMs are all volatile memories [12]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Registers",
+      "question": "How are register files typically built, and why?",
+      "choices": {
+        "A": "As large, single-ported DRAM arrays for high density.",
+        "B": "As a small, multi-ported SRAM array, because it is more compact than an array of flip-flops.",
+        "C": "As a collection of ROM cells for non-volatile storage.",
+        "D": "As a shift register for serial data processing."
+      },
+      "correctAnswer": "B",
+      "explanation": "A register file is usually built as a small, multi-ported SRAM array, because it is more compact than an array of flip-flops [13]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "ROM",
+      "question": "How does Read Only Memory (ROM) store a bit?",
+      "choices": {
+        "A": "As a charge on a capacitor.",
+        "B": "On cross-coupled inverters.",
+        "C": "As the presence or absence of a transistor.",
+        "D": "By dynamically refreshing a bit cell."
+      },
+      "correctAnswer": "C",
+      "explanation": "Read only memory (ROM) stores a bit as the presence or absence of a transistor [13]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "ROM",
+      "question": "How are Erasable PROMs (EPROMs) typically erased?",
+      "choices": {
+        "A": "By individually erasing bit cells using on-chip circuitry.",
+        "B": "By applying a high voltage pulse to the wordline.",
+        "C": "By exposing them to intense ultraviolet (UV) light.",
+        "D": "By turning off the power supply."
+      },
+      "correctAnswer": "C",
+      "explanation": "When the EPROM is exposed to intense ultraviolet (UV) light for about half an hour, the electrons are knocked off the floating gate, turning the transistor off [14]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "ROM",
+      "question": "What is a key difference between Electrically Erasable PROMs (EEPROMs) and Flash memory?",
+      "choices": {
+        "A": "EEPROMs require UV light for erasing, while Flash memory does not.",
+        "B": "Flash memory erases larger blocks of bits and is cheaper, while EEPROM bit cells are individually erasable.",
+        "C": "EEPROMs are volatile, while Flash memory is nonvolatile.",
+        "D": "Flash memory stores bits on capacitors, while EEPROMs use cross-coupled inverters."
+      },
+      "correctAnswer": "B",
+      "explanation": "EEPROM bit cells are individually erasable; Flash memory erases larger blocks of bits and is cheaper because fewer erasing circuits are needed [14]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Counters",
+      "question": "What is the behavior of an N-bit binary counter after its output is initialized to 0 by the reset input?",
+      "choices": {
+        "A": "It decrements through all possible outputs in binary order.",
+        "B": "It remains at 0 until a new value is loaded.",
+        "C": "It advances through all 2^N possible outputs in binary order, incrementing on the rising edge of the clock.",
+        "D": "It shifts its contents left or right based on control signals."
+      },
+      "correctAnswer": "C",
+      "explanation": "The counter then advances through all 2N possible outputs in binary order, incrementing on the rising edge of the clock [15]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Shift Register",
+      "question": "A shift register can be viewed as what type of converter?",
+      "choices": {
+        "A": "Parallel-to-serial converter.",
+        "B": "Analog-to-digital converter.",
+        "C": "Serial-to-parallel converter.",
+        "D": "Voltage-to-frequency converter."
+      },
+      "correctAnswer": "C",
+      "explanation": "Shift registers can be viewed as serial-to-parallel converters [15]."
+    },
+    {
+      "module": "Module 2: Memory",
+      "section": "Programmable Logic Arrays and HDL",
+      "question": "When memory arrays are used to perform combinational logic functions, what are they called?",
+      "choices": {
+        "A": "Register files.",
+        "B": "Dynamic RAM (DRAM).",
+        "C": "Lookup tables (LUTs).",
+        "D": "Finite State Machines (FSMs)."
+      },
+      "correctAnswer": "C",
+      "explanation": "Memory arrays used to perform logic are called lookup tables (LUTs) [16]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Computer-Level Abstraction",
+      "question": "What fundamental principle underlies the modern general-use computer according to the sources?",
+      "choices": {
+        "A": "The exclusive use of magnetic core memory.",
+        "B": "The stored-program concept.",
+        "C": "The use of only analog circuits.",
+        "D": "The direct connection of all devices without a bus."
+      },
+      "correctAnswer": "B",
+      "explanation": "The fundamental principles underlying the modern general-use computer rely especially on the stored-program concept [17]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Computer-Level Abstraction",
+      "question": "What is the role of an interconnection bus in a computer system?",
+      "choices": {
+        "A": "To process arithmetic and logical operations.",
+        "B": "To store temporary variables.",
+        "C": "To enable communication between subsystems like the microprocessor and memory.",
+        "D": "To generate clock signals for timing."
+      },
+      "correctAnswer": "C",
+      "explanation": "The Interconnection bus is a communication system that enables communication between the subsystems (P, M, I/O, D) [17]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Bus",
+      "question": "What type of information does a data bus primarily carry?",
+      "choices": {
+        "A": "Memory addresses.",
+        "B": "Control and timing signals.",
+        "C": "Data and instruction codes.",
+        "D": "Power supply signals."
+      },
+      "correctAnswer": "C",
+      "explanation": "The data bus carries data and instruction codes [17]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Bus",
+      "question": "What is the primary function of an address bus?",
+      "choices": {
+        "A": "To transfer data between the CPU and I/O devices.",
+        "B": "To carry memory addresses.",
+        "C": "To transmit control signals for memory operations.",
+        "D": "To exchange status register flags."
+      },
+      "correctAnswer": "B",
+      "explanation": "The address bus carries memory addresses [18]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Processor-Level Abstraction",
+      "question": "Which of the following is NOT listed as a component of the processor at the processor-level abstraction?",
+      "choices": {
+        "A": "Integer Processing Unit (IPU)",
+        "B": "Control Unit (CU)",
+        "C": "Registers (R)",
+        "D": "Input-Output Exchange Units (I/O)"
+      },
+      "correctAnswer": "D",
+      "explanation": "At the processor level, the processor is made up of the Integer Processing Unit (IPU) (also called the ALU), Control Unit (CU), and Registers (R) [18]. I/O units are mentioned at the computer-level abstraction [17]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Control Unit",
+      "question": "The Control Unit (CU), also known as the Instruction Control Unit (ICU), is made up of which two sub-units?",
+      "choices": {
+        "A": "Integer Processing Unit (IPU) and Registers (R).",
+        "B": "Computer Control Unit (CCU) and Program Control Unit (PCU).",
+        "C": "Memory Address Register (MAR) and Memory Data Register (MDR).",
+        "D": "Program Counter (PC) and Stack Pointer (SP)."
+      },
+      "correctAnswer": "B",
+      "explanation": "The Control unit (also referred to as the Instruction Control Unit (ICU)) is made up of the Computer Control Unit (CCU) and the Program Control Unit (PCU) [18]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Control Unit",
+      "question": "What is the primary role of the Computer Control Unit (CCU) within the Control Unit?",
+      "choices": {
+        "A": "To manage the stack with a stack pointer.",
+        "B": "To carry out external addressing at the processor level.",
+        "C": "To act as the sequencer (Finite State Machine) and provide timing.",
+        "D": "To store the program being executed in main memory."
+      },
+      "correctAnswer": "C",
+      "explanation": "The CCU is the sequencer, in other words, the Finite State Machine. Timing is provided by the clock signal generator [18]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Control Unit",
+      "question": "Which of the following components are part of the Program Control Unit (PCU)?",
+      "choices": {
+        "A": "Instruction Register (IR) and Status Register Flags.",
+        "B": "N-bit adder and AND/OR gates.",
+        "C": "Program Counter (PC), Stack Pointer (SP), and MAR/MDR register interfaces.",
+        "D": "Data bus and Control bus."
+      },
+      "correctAnswer": "C",
+      "explanation": "The PCU is made up of a Program Counter (PC), a Stack Pointer (SP) and the MAR and MDR register interfaces [19]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Microarchitecture",
+      "question": "What is defined as the set of components participating in computations on data, including storing, transferring, and performing arithmetic/logical operations?",
+      "choices": {
+        "A": "Control Unit (CU)",
+        "B": "Data Path (DP)",
+        "C": "Memory (M)",
+        "D": "Interconnection bus"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Data Path (DP) is the set of components or logical subsystems participating in computations on data, in other words the components responsible for storing and transferring data and carrying out arithmetic and logical operations on the latter [19]."
+    },
+    {
+      "module": "Module 2: Control and Datapaths",
+      "section": "Internal Information Flow",
+      "question": "In the internal information flow, what action does the control unit perform to access information?",
+      "choices": {
+        "A": "It directly executes the instruction without prior decoding.",
+        "B": "It writes data to main memory without specifying an address.",
+        "C": "It presents the information's address on the address bus and indicates read or write access.",
+        "D": "It generates clock signals for the entire system."
+      },
+      "correctAnswer": "C",
+      "explanation": "The control unit (command portion) accesses information (i.e. machine code or data) by presenting its address on the address bus, first internally, then externally. It must also indicate whether it is a read or write access [20]."
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "title": "ENGG122.01 - Module 3: Processor Architecture and Timing",
+  "questions": [
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Fetch-Decode-Execute Cycle",
+      "question": "What are the three successive stages of the Fetch-Decode-Execute cycle as ordered by the Control Unit?",
+      "choices": {
+        "A": "Instruction Fetch (IF), Execution (EX), Instruction Decode (ID)",
+        "B": "Instruction Decode (ID), Instruction Fetch (IF), Execution (EX)",
+        "C": "Instruction Fetch (IF), Instruction Decode (ID), Execute (EX)",
+        "D": "Execute (EX), Instruction Fetch (IF), Instruction Decode (ID)"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Control Unit gives orders to carry out the requested instruction in three successive stages or steps, which are the Instruction Fetch (IF) stage, the Instruction Decode (ID) stage and the Execute (EX) stage, referred to as the Fetch-Decode-Execute cycle (FDE) [1]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Instruction Fetch Phase",
+      "question": "During the Instruction Fetch Phase, where is the instruction code transferred from and to?",
+      "choices": {
+        "A": "From main memory to the program counter (PC)",
+        "B": "From an inaccessible register to main memory",
+        "C": "From the instruction register (IR) to main memory",
+        "D": "From main memory to an inaccessible register by the user, which is the instruction register (IR)"
+      },
+      "correctAnswer": "D",
+      "explanation": "In the Instruction Fetch Phase, the instruction code pointed by the program counter is transferred from main memory to an inaccessible register by the user, which is the instruction register IR [1]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Decoding Phase",
+      "question": "What happens to the program counter (PC) during the Decoding Phase?",
+      "choices": {
+        "A": "It is decremented by a value k, depending on instruction size.",
+        "B": "It remains unchanged until the Execute Phase.",
+        "C": "It is incremented by a value k such that it contains the address of the next instruction to be executed.",
+        "D": "It is reset to zero after decoding."
+      },
+      "correctAnswer": "C",
+      "explanation": "During the Decoding Phase, the program counter is incremented by a value k such that it contains the address of the next instruction to be executed. This value k will depend on the location in memory occupied by the instruction being executed [2]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Execution Phase",
+      "question": "What information can the execution unit provide via the status register’s indicators or status flags during the Execution Phase?",
+      "choices": {
+        "A": "The address of the next instruction.",
+        "B": "The type of operation requested.",
+        "C": "Information about the properties of the result, particularly its validity (i.e., whether the result is correct).",
+        "D": "The value of the program counter."
+      },
+      "correctAnswer": "C",
+      "explanation": "In the Execution Phase, the execution unit may provide information about the properties of the result, particularly its validity (i.e. whether the result is correct), via the intermediary of the status register’s indicators or status flags [2]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Execution Cycle Flowchart",
+      "question": "Which of the following correctly lists the stages of the five-stage execution cycle?",
+      "choices": {
+        "A": "IF - Instruction Fetch, ID - Instruction Decode, EX - Execute, WB - Write Back, OF - Operand Fetch",
+        "B": "IF - Instruction Fetch, ID - Instruction Decode, OF - Operand Fetch, EX - Execute, WB - Write Back",
+        "C": "IF - Instruction Fetch, OF - Operand Fetch, ID - Instruction Decode, EX - Execute, WB - Write Back",
+        "D": "ID - Instruction Decode, IF - Instruction Fetch, OF - Operand Fetch, EX - Execute, WB - Write Back"
+      },
+      "correctAnswer": "B",
+      "explanation": "When fetching one or more operands in memory that are required for execution and storage of the result are carried out in separate cycles, the cycle becomes a five-stage cycle: IF - Instruction Fetch, ID - Instruction Decode, OF - Operand Fetch, EX - Execute, WB - Write Back [3]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Functional Steps & Pipelining",
+      "question": "What are the five functional steps into which a Microprocessor Unit (MPU) can be broken down from a functional point of view, which also provide a reference for the concept of a pipeline?",
+      "choices": {
+        "A": "Procurement of instructions, their decoding, procurement of associated operands, effective computation, and storage of the result.",
+        "B": "Instruction fetching, execution, decoding, operand writing, and status checking.",
+        "C": "Program counter incrementing, register transfer, memory access, ALU operation, and interrupt handling.",
+        "D": "Clock generation, signal synchronization, address strobe, data transfer, and instruction validation."
+      },
+      "correctAnswer": "A",
+      "explanation": "A processor can be studied from a functional point of view, breaking down the MPU into five functions: procurement of instructions, their decoding, procurement (if necessary) of associated operands, effective computation, and storage of the result. These steps can provide a reference for the concept of a pipeline [3]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Transfers in Von Neumann Architecture",
+      "question": "In the von Neumann architecture, besides the three traditional directions of transfer (register to register, register to memory, memory to register), what two additional transfers are connected to immediate addressing?",
+      "choices": {
+        "A": "Memory to memory and register to immediate value.",
+        "B": "Immediate value to register and immediate value to memory.",
+        "C": "Immediate value to I/O and I/O to register.",
+        "D": "Register to I/O and memory to I/O."
+      },
+      "correctAnswer": "B",
+      "explanation": "Traditionally, there are three directions of transfer: register to register, register to memory, and memory to register. To this, we must add the two transfers connected to immediate addressing: immediate value to register and immediate value to memory [4, 5]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Transfers in Von Neumann Architecture",
+      "question": "According to the 'golden rule of transfer in the von Neumann model for architectures with one or two buses,' memory-to-memory transfers generally cannot take place. Which type of instructions are exceptions to this rule?",
+      "choices": {
+        "A": "Arithmetic logic unit (ALU) operations like ADD and SUB.",
+        "B": "Conditional branching instructions like JUMP.",
+        "C": "Stack manipulation instructions, such as PUSH, and character manipulation instructions, such as MOVSB.",
+        "D": "Input/Output (I/O) instructions."
+      },
+      "correctAnswer": "C",
+      "explanation": "Memory to memory transfer cannot take place because it would violate what we can call the golden rule of transfer in the von Neumann model for architectures with one or two buses. Exceptions to this rule occur for stack manipulation instructions, such as PUSH, and character manipulation instructions such as MOVSB [5]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Clock Signals",
+      "question": "What is the primary function of a 'Clock' in a logic system?",
+      "choices": {
+        "A": "To store program instructions.",
+        "B": "To perform arithmetic and logic operations.",
+        "C": "To generate periodic logic signals which rates or synchronizes the operation of a circuit or a system.",
+        "D": "To manage data transfers between registers."
+      },
+      "correctAnswer": "C",
+      "explanation": "A Clock is a signal generator responsible for generating the clock signals or time references of the logic system. It is called clock source because of its function. A clock signal is a periodic logic signal which rates or synchronizes the operation of a circuit or a system [6]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Clock Cycle and Machine Cycle",
+      "question": "What is the key difference between a 'clock cycle' and a 'machine cycle'?",
+      "choices": {
+        "A": "A clock cycle is a discrete time interval, while a machine cycle is a clock period during which internal operation is carried out.",
+        "B": "A clock cycle is the time reference for operating the MPU, while a machine cycle is a discrete time interval.",
+        "C": "A clock cycle is always longer than a machine cycle.",
+        "D": "A machine cycle is made up of several instruction cycles, each consisting of one or more clock periods."
+      },
+      "correctAnswer": "B",
+      "explanation": "Clock cycle is the time reference for operating the MPU. This clock cycle is a clock period during which the internal operation is carried out, hence the name of cycle time. Machine cycle is a discrete time interval [7]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Execution Time",
+      "question": "What does a 'T-state' correspond to in the context of MPU operation?",
+      "choices": {
+        "A": "The total execution time of an instruction.",
+        "B": "A period of the internal clock which cadences the operation of the MPU, and is a subdivision of an execution cycle.",
+        "C": "The time required for an instruction fetch.",
+        "D": "The duration of an entire instruction cycle."
+      },
+      "correctAnswer": "B",
+      "explanation": "A T-state corresponds to a period of the internal clock which cadences the operation of the MPU. It is a subdivision of an execution cycle. The number of T-states can be variable, depending on the component [8]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Execution Time Characteristics",
+      "question": "How does the execution time of an instruction, expressed in the number of cycles (c), typically differ between RISC and CISC architectures?",
+      "choices": {
+        "A": "For both RISC and CISC, the execution time (c) is constant.",
+        "B": "For CISC, the execution time (c) is constant, whereas for RISC, it is variable.",
+        "C": "For RISC (Reduced Instruction Set Computer) architecture, this is constant, whereas this is not the case in a CISC (Complex Instruction Set Computer) architecture like x86.",
+        "D": "The execution time (c) is always 1 cycle for RISC, and always multiple cycles for CISC."
+      },
+      "correctAnswer": "C",
+      "explanation": "The execution time of an instruction is preferably in number of cycles c to be independent of the frequency of the clock. For the RISC (Reduced Instruction Set Computer) architecture, this is constant, whereas this is not the case in a CISC (Complex Instruction Set Computer) architecture like x86 [8, 9]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Phase-Locked Loop (PLL)",
+      "question": "Which of the following is NOT a basic function performed by a Phase-Locked Loop (PLL)?",
+      "choices": {
+        "A": "Eliminates propagation times linked to the dispersion of characteristics between buffers.",
+        "B": "Amplifies the signal using an electronic buffer (driver).",
+        "C": "Adjusts the phase and corrects of the duty cycle.",
+        "D": "Eliminates of the clock jitter and eliminates synthesis frequency."
+      },
+      "correctAnswer": "B",
+      "explanation": "The basic functions performed by a Phase-Locked Loop (PLL) are: eliminating propagation times linked to dispersion, adjusting the phase, correcting the duty cycle, eliminating clock jitter, and eliminating synthesis frequency by performing division or multiplication of a reference signal [10, 11]. While the signal *is* amplified using an electronic buffer D called a driver or fan-out buffer, this is a separate action mentioned, not listed as one of the PLL's basic functions [11]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Overclocking",
+      "question": "What are the main physical consequences of 'Overclocking' a logic system?",
+      "choices": {
+        "A": "Decreased electrical consumption and reduced temperature.",
+        "B": "Increased electrical consumption and, above all, an increase in temperature, which risks destroying the components if suitable cooling is not implemented.",
+        "C": "Improved signal quality and reduced propagation delay.",
+        "D": "Simplified clock generation and reduced jitter."
+      },
+      "correctAnswer": "B",
+      "explanation": "Overclocking is a technique that involves increasing the operating frequency to increase speed and performance [11]. The physical consequences are increased electrical consumption and, above all, an increase in temperature, which risks destroying the components if suitable cooling is not implemented [12]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Internal Frequency",
+      "question": "Regarding a processor's clock system, what is the relationship between the external oscillator frequency and the internal frequency of the processor?",
+      "choices": {
+        "A": "They are always identical.",
+        "B": "The external oscillator frequency is always higher than the internal frequency.",
+        "C": "The internal frequency is always higher than the external oscillator frequency.",
+        "D": "The frequency of the external oscillator is not necessarily the internal frequency; it can be divided or multiplied by a factor k’."
+      },
+      "correctAnswer": "D",
+      "explanation": "The figure shows a model of the clock system. The frequency of the external oscillator is not necessarily the internal frequency of the processor. It can be divided or multiplied by a factor k’ [12]. An example is the MC680x microprocessor, whose oscillator frequency was 4 MHz, divided by a factor k = 4 to give the internal reference frequency [12]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "Exchange Protocol",
+      "question": "When a processor communicates with memory for a WRITE operation, what information does it send in addition to the address and type of access?",
+      "choices": {
+        "A": "The data to be read.",
+        "B": "The internal register name.",
+        "C": "The data.",
+        "D": "The program counter value."
+      },
+      "correctAnswer": "C",
+      "explanation": "The processor must send an address and the type of access (read or write) to communicate with the memory. If it is a write, it also sends the data [13]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "READ Timing Diagram",
+      "question": "What is the first step in the READ Timing Diagram as described in the sources?",
+      "choices": {
+        "A": "Fetches operand address portion of an instruction from program memory (high).",
+        "B": "Fetches data from memory or an input device during execution phase.",
+        "C": "Fetches op code portion of instruction from program memory.",
+        "D": "Fetches operand address (low)."
+      },
+      "correctAnswer": "C",
+      "explanation": "The first step in the READ Timing Diagram is: 'fetches op code portion of instruction from program memory' [13]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "6811 READ Cycle - Critical Points",
+      "question": "In the 6811 READ Cycle, what happens at Point 1, which corresponds to the rising edge of the AS (Address Strobe) signal?",
+      "choices": {
+        "A": "The MPU latches data into an internal register.",
+        "B": "The MPU increments the Program Counter (PC) internal to the MPU.",
+        "C": "The MPU places [PC] onto the address bus (Ports B and C), and sets R/~W = 1 for READ.",
+        "D": "The MPU removes the low-order byte of the address from Port C."
+      },
+      "correctAnswer": "C",
+      "explanation": "At Point 'a' [14] or Point 1 [15], on the rising edge of the AS signal, the MPU places [PC] = C300 onto the address bus (Ports B and C), and sets R/~W = 1 for READ [14]. Prior to this, R/~W’= 0, and then R/~W’ = 1 signals a READ operation [16]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "6811 READ Cycle - Critical Points",
+      "question": "In the 6811 READ Cycle, what significant event occurs at Point 3, which is the falling edge of the AS (Address Strobe) signal?",
+      "choices": {
+        "A": "Data is latched into the Instruction Register (IR).",
+        "B": "The MPU places the Program Counter value on the address bus.",
+        "C": "The low-order byte of address from Port C is latched in an external 8-bit latch, and the full new address is on the address bus.",
+        "D": "The E-clock goes HIGH, enabling selected memory."
+      },
+      "correctAnswer": "C",
+      "explanation": "At Point 'c' [14] or Point 3 [15], on the falling edge of the AS signal, the low-order byte of address from Port C is latched in external 8-bit latch, and the full new address is on the address bus. This selects the memory or I/O device which MPU is to READ [14, 16, 17]. Shortly after, the MPU removes the low-order byte of address from Port C [17]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "6811 READ Cycle - Critical Points",
+      "question": "In the 6811 READ Cycle, what is the final action that takes place at Point 5, the falling edge of the E-clock?",
+      "choices": {
+        "A": "The selected memory device is enabled, and data is placed on the data bus.",
+        "B": "The MPU increments the Program Counter (PC).",
+        "C": "The MPU takes data from the data bus (Port C) and latches them into one of its internal registers, such as IR or ACC.",
+        "D": "The address bus transitions, and R/~W signal is set to READ."
+      },
+      "correctAnswer": "C",
+      "explanation": "At Point 'e' [14] or Point 5 [15], on the falling edge of the E-clock, the MPU takes data from the data bus (Port C) and latches them into one of its internal registers, such as IR or ACC [14, 18]. After the E-clock returns LOW, the selected memory or I/O device is disabled, and the data bus returns to high-Z state [18]."
+    },
+    {
+      "module": "Module 3: Processor Architecture and Timing",
+      "section": "WRITE Operation Timing",
+      "question": "What is the primary purpose of a WRITE operation according to the provided sources?",
+      "choices": {
+        "A": "To fetch op codes from program memory.",
+        "B": "To fetch data from memory or an input device during execution.",
+        "C": "To transfer data from an internal MPU register to a RAM location for storage or to an output device.",
+        "D": "To determine the type of operation requested."
+      },
+      "correctAnswer": "C",
+      "explanation": "The WRITE Operation Timing describes two main purposes: 1.) transfers data from internal MPU register to a RAM location for storage (e.g., STAA) and 2.) transfers data from an internal MPU register to an output device [19]."
+    }
+  ]
+}

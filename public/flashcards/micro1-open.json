@@ -1,0 +1,22 @@
+[
+{
+"question": "How does the curriculum for Electronics or Computer Engineering majors follow the abstraction layers of the field of computers?",
+"answer": "The curriculum begins with more general topics like physics and mathematics, and then progresses to more specific courses and topics as students continue through their studies [1]. This progression from general to specific mirrors the concept of **abstraction layers**, where complex systems are understood by dealing with different levels of detail at a time [1, 2]."
+},
+{
+"question": "Differentiate between a microprocessor and a microcontroller, including their core purpose and typical components.",
+"answer": "A **microprocessor** is a fundamental part of a digital computer, integrated into a single component, primarily used for complex arithmetical and logical calculations [3]. It contains all the parts of a CPU: the Arithmetic Logic Unit, Register Array, Control, Memory, and I/O [4]. They are found in general-purpose computing devices like personal computers, tablets, and smartphones [3]. \n\nA **microcontroller** is a type of single-chip microcomputer, a complete system designed specifically for **control applications** [4]. It integrates a CPU along with other essential devices such as RAM, ROM, Clock, I/O, ADC, and DAC on a single chip [2, 4]. Microcontrollers are often 'embedded' within more complex systems for dedicated control tasks [4]."
+},
+{
+"question": "Explain the difference between 'Computer Architecture' and 'Computer Organization', providing an example related to instruction design.",
+"answer": "**Computer Architecture** refers to the attributes of a system visible to a programmer or those that have a direct impact on the logical execution of a program, focusing on _what_ the system does [5]. An example is deciding **if your architecture will include a MULTIPLY instruction**, based on the microprocessor's intended use [6, 7]. \n\n**Computer Organization** refers to the operational units and their interconnections that realize the architectural specifications, focusing on _how_ the system's capabilities are implemented [6]. For the MULTIPLY instruction, organizational design involves **how to implement it** – whether with a special multiply unit or by repeatedly using the ADD instruction – considering factors like frequency of use, speed, cost, and physical size [7]."
+},
+{
+"question": "Describe the implications of Moore's Law on computer development.",
+"answer": "Moore's Law observes that the number of transistors on a single chip has been doubling approximately every 18 months [8]. This trend has two significant implications for computer development: \n\n1. **Reduced Cost:** The cost of a chip remains virtually unchanged, making the cost of computer logic and memory circuitry progressively cheaper per unit [8]. \n2. **Increased Speed:** As logic and memory elements are packed closer together on chips, the electrical path length shortens, directly leading to an increase in the operating speed of computers [8]."
+},
+{
+"question": "Discuss the significance of at least two key historical developments in microprocessors or microcontrollers, citing specific examples from the sources.",
+"answer": "Several historical developments significantly impacted computing: \n\n* The **Intel 4004 (1971)**, developed by Federico Faggin, was the **first commercially available microprocessor** [9]. Its initial use in the Busicom Calculator marked the beginning of integrating a CPU onto a single chip, revolutionizing digital electronics [10]. \n* The **TMS 1000 (1971)**, created by Texas Instruments engineers Gary Boone and Michael Cochran, was the **first microcontroller** [10]. By combining ROM, RAM, processor, and clock on one chip, it pioneered embedded systems and dedicated control applications [10]. \n* The **MOS Technology 6502 (1975)** was notable for being the **cheapest microprocessor on the market**, and along with the Zilog Z80, it was instrumental in sparking the **home computer revolution** of the early 1980s, making computers accessible to a wider audience [11]. \n* The **ARM architecture**, co-designed by Steve Furber and Sophie Wilson, is a key example of a **RISC (Reduced Instruction Set Computer)** [11]. Its design prioritizes lower power consumption and cheaper systems, contributing to its pervasive use in modern mobile and embedded devices [11]."
+}
+]

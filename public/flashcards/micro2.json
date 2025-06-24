@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Explain the primary function and key components of an Arithmetic Logic Unit (ALU) as described in the sources.",
+    "answer": "An Arithmetic Logic Unit (ALU) combines a variety of **mathematical and logical operations** into a single unit [1]. It receives N-bit inputs and produces N-bit outputs [1]. A key aspect of its functionality is the **2-bit control signal (ALUControl)**, which specifies which function the ALU should perform [1]. The implementation of an ALU often includes an **N-bit adder**, **N two-input AND and OR gates**, inverters, and a **multiplexer (e.g., a 4:1 multiplexer)** to select the desired function [1]."
+  },
+  {
+    "question": "Describe the main differences between a Half Adder and a Full Adder, particularly regarding their capabilities in multi-bit addition.",
+    "answer": "A **Half Adder** has two inputs (A and B) and two outputs (S for sum, and Cout for carry-out) [2]. Its significant limitation is that it **cannot accept the carry-out from a previous adder (Cin)**, which restricts its ability to perform multiple-bit addition [2]. In contrast, a **Full Adder** is designed to **accept the carry-in (Cin) from a previous adder**, making it suitable for constructing multi-bit adders like the Ripple-Carry Adder [2, 3]."
+  },
+  {
+    "question": "How does a Ripple-Carry Adder (RCA) operate, and what is its primary limitation regarding speed?",
+    "answer": "A **Ripple-Carry Adder (RCA)** is the simplest way to build an N-bit carry propagate adder by **chaining together N full adders** [3]. In this configuration, the **Cout (carry-out) of one stage acts as the Cin (carry-in) of the next stage** [3]. The primary limitation of an RCA is its **speed**, as the time it takes to add is **N times tFA**, where N is the number of full adders and tFA is the time it takes for a single full adder to perform its operation [3]. This sequential propagation of the carry signal can be slow for large N."
+  },
+  {
+    "question": "Explain the concept of memory organization in terms of its two-dimensional array structure, and define 'depth' and 'width'.",
+    "answer": "Memory is organized as a **two-dimensional array of memory cells**, where the memory reads or writes the contents of one of the **rows** [4]. The **Address** specifies the row to be accessed [4]. In this organization: **Depth** refers to the **number of rows** in the array [5]. **Width** refers to the **number of columns**, also known as the **word size** [5]. For an array with N-bit addresses and M-bit data, it contains 2^N rows and M columns, storing 2^N M-bit words [5]."
+  },
+  {
+    "question": "Differentiate between Random Access Memory (RAM) and Read Only Memory (ROM) based on their volatility.",
+    "answer": "Memories are classified based on how they store bits, with the broadest classification being RAM versus ROM [6]. **Random Access Memory (RAM) is volatile**, meaning that it **loses its data when the power is turned off** [6]. Conversely, **Read Only Memory (ROM) is nonvolatile**, which means it **retains its data indefinitely, even without a power source** [6]."
+  },
+  {
+    "question": "Describe how Static RAM (SRAM) stores a bit and explain why it does not need to be refreshed, unlike DRAM.",
+    "answer": "**Static RAM (SRAM) stores a bit on cross-coupled inverters** [7]. Each cell in an SRAM has two outputs, bitline and bitline’ [7]. When the wordline is asserted, nMOS transistors turn on, facilitating data transfer to or from the bitlines [7]. SRAM is considered static because its **stored bits do not need to be refreshed** [7]. This is because if noise degrades the value of the stored bit, the **cross-coupled inverters automatically restore the value**, ensuring data retention without periodic refresh cycles, unlike DRAM which relies on charge on a capacitor [7]."
+  },
+  {
+    "question": "What are 'flags' in the context of an ALU, and what specific information can they indicate?",
+    "answer": "In some ALUs, **flags are extra outputs that provide additional information about the ALU output** [8]. The sources show a 4-bit ALUFlags output [8]. These flags can indicate: **Overflow**, which signals an overflow in a logic operation [8]. **Carry**, indicating an overflow in an arithmetic operation [8]. **Negative**, which shows that the result is negative [8]. And **Zero**, which indicates that the result of the operation is zero [8]."
+  },
+  {
+    "question": "Explain the function of the Program Control Unit (PCU) within a processor's Control Unit, and list its key components.",
+    "answer": "The **Program Control Unit (PCU)** is a component of the processor's Control Unit (Instruction Control Unit) [9]. Its primary function is to carry out **(external) addressing at the processor level**, providing access to unified memory [10]. The PCU is typically made up of a **Program Counter (PC)**, a **Stack Pointer (SP)**, and the **MAR (Memory Address Register) and MDR (Memory Data Register) register interfaces** [10]. It also includes an **incrementer** and, for certain addressing types like relative addressing, an **adder** [10]. Additionally, it manages the stack using the stack pointer and may utilize an internal stack [10]."
+  },
+  {
+    "question": "Describe the main characteristic that distinguishes an 'Arithmetic shifter' from a 'Logical shifter' during a right shift operation.",
+    "answer": "Both logical and arithmetic shifters move bits left or right [11]. For a left shift, both a **Logical shifter** and an **Arithmetic shifter** fill empty spots with 0's [11]. However, the distinction appears during a right shift: a **Logical shifter fills empty spots with 0's** [11]. An **Arithmetic shifter**, on the other hand, fills the **most significant bits (msb)** with a **copy of the old most significant bit (msb)** during a right shift [11]. This preserves the sign of the number for signed arithmetic operations."
+  },
+  {
+    "question": "Explain the concept of an 'Interconnection bus' in a computer system and identify the three types of buses mentioned.",
+    "answer": "The fundamental principles of a modern general-use computer rely on the stored-program concept, which involves subsystems like a microprocessor (P), memory (M), and input-output exchange units (I/O) [12]. The **Interconnection bus is the communication system that enables communication between these subsystems** [12]. In a more general sense, a **bus is a set of communication paths through which information circulates** [12]. The sources identify three types of buses: the **Data bus**, which carries data and instruction codes [12]; the **Address bus**, which carries memory addresses [9]; and the **Control bus**, which carries control and timing signals [9]."
+  }
+]
