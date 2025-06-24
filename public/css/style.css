@@ -434,13 +434,13 @@ button:hover,
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* THIS IS THE FIX: Changed from 'center' */
   padding: 25px;
   box-sizing: border-box;
   border-radius: 12px;
   font-size: 1.5rem;
   color: white;
-  overflow-y: auto; /* THIS IS THE FIX */
+  overflow-y: auto;
 }
 .flashcard-front {
   background: linear-gradient(
