@@ -15,5 +15,18 @@
        { "type": "multiplechoice", "file": "q1_questions.json" },
        { "type": "multiplechoice", "file": "q2_questions.json" }
     ]
+  },
+  {
+    "title":"Microprocessors: Midterm",
+    "description": "Covers midterm topics",
+    "decks": [
+      {"type": "multiplechoice", "file": "micro1.json" },
+      {"type": "flashcards", "file": "micro1-open.json" },
+      { "type": "flashcards", "file": "micro1-closed.json" },
+      {"type": "multiplechoice", "file": "micro2.json" },
+      {"type": "multiplechoice", "file": "micro3.json" },
+      { "type": "flashcards", "file": "micro2.json" },
+      { "type": "flashcards", "file": "micro3.json" }
+    ]
   }
 ]
