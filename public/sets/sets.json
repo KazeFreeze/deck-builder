@@ -24,8 +24,8 @@
       {"type": "flashcards", "file": "micro1-open.json" },
       { "type": "flashcards", "file": "micro1-closed.json" },
       {"type": "multiplechoice", "file": "micro2.json" },
-      {"type": "multiplechoice", "file": "micro3.json" },
       { "type": "flashcards", "file": "micro2.json" },
+      {"type": "multiplechoice", "file": "micro3.json" },
       { "type": "flashcards", "file": "micro3.json" }
     ]
   }
