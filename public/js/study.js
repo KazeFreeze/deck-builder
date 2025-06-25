@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let userAnswers = [];
   let currentItemIndex = 0;
   let quizCompleted = false;
+  let deckTitles = [];
 
   // Timer state
   let startTime;
@@ -30,6 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToMenuBtn = document.getElementById("backToMenu");
   const containerEl = document.querySelector(".container");
   const themeToggle = document.getElementById("theme-toggle");
+
+  // --- ANALYTICS FUNCTION ---
+  /**
+   * Sends an event to the logging endpoint.
+   * @param {string} eventType - The type of event (e.g., 'Page View').
+   * @param {object} [eventData] - Optional data associated with the event.
+   */
+  async function logEvent(eventType, eventData) {
+    try {
+      await fetch("/api/log", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ eventType, eventData }),
+      });
+    } catch (error) {
+      console.error("Failed to log event:", error);
+    }
+  }
 
   // --- HELPER FUNCTION ---
   /**
@@ -67,6 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const decksParam = urlParams.get("decks");
+    const deckNamesParam = urlParams.get("deckNames");
+
+    deckTitles = deckNamesParam
+      ? decodeURIComponent(deckNamesParam).split(",")
+      : [];
 
     shuffleEnabled = urlParams.get("shuffle") === "true";
     timerEnabled = urlParams.get("timer") === "true";
@@ -160,8 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!quizCompleted) showResults();
       return;
     }
-    // The visual height fix is handled by the #study-area-wrapper div in the HTML/CSS.
-    // This JS code simply populates the content inside it.
     const item = allItems[currentItemIndex];
     studyItemContainerEl.innerHTML = "";
     studyItemContainerEl.className = `study-item-container ${item.type}`;
@@ -341,6 +365,15 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     const percentage =
       mcqTotal > 0 ? Math.round((finalScore / mcqTotal) * 100) : 0;
+
+    // --- Log the "Quiz Finished" event ---
+    logEvent("Quiz Finished", {
+      score: `${finalScore} / ${mcqTotal}`,
+      percentage: `${percentage}%`,
+      decks: deckTitles,
+      completionTime: formatTime(elapsedSeconds),
+    });
+
     document.getElementById("study-area-wrapper").style.display = "none";
     document.querySelector(".nav-buttons").style.display = "none";
     const resultsContainer = document.createElement("div");

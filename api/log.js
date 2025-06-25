@@ -27,7 +27,12 @@ module.exports = (req, res) => {
   // Create a rich embed message for Discord
   const embed = {
     title: `New Event: ${eventType}`,
-    color: eventType === "Page View" ? 3447003 : 15158332, // Blue for page view, red for deck assembly
+    color:
+      eventType === "Page View"
+        ? 3447003
+        : eventType === "Deck Assembled"
+        ? 15158332
+        : 5763719, // Blue, Red, Green for Quiz Finished
     fields: [
       { name: "User-Agent", value: userAgent, inline: false },
       { name: "IP Address", value: vercelForwardedFor, inline: true },
