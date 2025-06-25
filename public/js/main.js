@@ -188,8 +188,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function addDeckToSelection(deck, type) {
-    if (selectedDecks.some((d) => d.file === deck.file)) {
-      alert("This deck is already in your study plan.");
+    if (selectedDecks.some((d) => d.file === deck.file && d.type === type)) {
+      // Simple alert for user feedback
+      const notification = document.createElement("div");
+      notification.className = "deck-add-notification";
+      notification.textContent = "This deck is already in your study plan.";
+      document.body.appendChild(notification);
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
       return;
     }
     selectedDecks.push({ ...deck, type });
@@ -211,21 +218,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const deckFiles = selectedDecks
       .map((deck) => `${deck.type}/${deck.file}`)
       .join(",");
+    // *** FIX START ***
+    // Get the human-readable titles of the decks to pass to the study page
+    const deckNames = selectedDecks.map((deck) => deck.title).join(",");
+    // *** FIX END ***
+
     const shuffle = document.getElementById("shuffle-toggle").checked;
     const timer = document.getElementById("timer-toggle").checked;
     const showExplanation = document.getElementById(
       "show-explanation-toggle"
     ).checked;
+
+    // *** FIX START ***
+    // Add the encoded deckNames parameter to the URL
     const url = `study.html?decks=${encodeURIComponent(
       deckFiles
+    )}&deckNames=${encodeURIComponent(
+      deckNames
     )}&shuffle=${shuffle}&timer=${timer}&showExplanation=${showExplanation}`;
+    // *** FIX END ***
+
     window.location.href = url;
   });
 
   // --- DRAG & DROP LOGIC ---
   function handleDragStart(e) {
     e.dataTransfer.setData(
-      "text/plain",
+      "application/json", // Use a more specific MIME type
       JSON.stringify({
         file: e.target.dataset.file,
         title: e.target.textContent,
@@ -233,52 +252,71 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
   }
+
   selectedDecksContainer.addEventListener("dragover", (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Necessary to allow drop
     e.currentTarget.classList.add("drag-over");
   });
-  selectedDecksContainer.addEventListener("dragleave", (e) =>
-    e.currentTarget.classList.remove("drag-over")
-  );
+
+  selectedDecksContainer.addEventListener("dragleave", (e) => {
+    e.currentTarget.classList.remove("drag-over");
+  });
+
   selectedDecksContainer.addEventListener("drop", (e) => {
     e.preventDefault();
     e.currentTarget.classList.remove("drag-over");
-    const dataStr = e.dataTransfer.getData("text/plain");
-    try {
-      const droppedDeck = JSON.parse(dataStr);
-      if (
-        droppedDeck.file &&
-        !selectedDecks.some((d) => d.file === droppedDeck.file)
-      ) {
-        addDeckToSelection(droppedDeck, droppedDeck.type);
-      }
-    } catch (err) {
-      const fromIndex = parseInt(dataStr, 10);
-      const y = e.clientY;
-      const items = [
-        ...selectedDecksContainer.querySelectorAll(
-          ".selected-deck-item:not(.dragging)"
-        ),
-      ];
-      const afterElement = items.find(
-        (item) =>
-          y <
-          item.getBoundingClientRect().top +
-            item.getBoundingClientRect().height / 2
+
+    const droppedData = e.dataTransfer.getData("application/json");
+    if (droppedData) {
+      // Handle drop from available decks
+      const droppedDeck = JSON.parse(droppedData);
+      addDeckToSelection(droppedDeck, droppedDeck.type);
+    } else {
+      // Handle reordering within the selected list
+      const fromIndex = e.dataTransfer.getData("text/plain");
+      const draggedElement = document.querySelector(
+        `[data-index='${fromIndex}']`
+      );
+      const afterElement = getDragAfterElement(
+        selectedDecksContainer,
+        e.clientY
       );
       const toIndex = afterElement
-        ? items.indexOf(afterElement)
+        ? Number(afterElement.dataset.index)
         : selectedDecks.length;
+
       const [movedItem] = selectedDecks.splice(fromIndex, 1);
-      selectedDecks.splice(toIndex, 0, movedItem);
+      selectedDecks.splice(
+        toIndex > fromIndex ? toIndex - 1 : toIndex,
+        0,
+        movedItem
+      );
       renderSelectedDecks();
     }
   });
+
+  function getDragAfterElement(container, y) {
+    const draggableElements = [
+      ...container.querySelectorAll(".selected-deck-item:not(.dragging)"),
+    ];
+    return draggableElements.reduce(
+      (closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+          return { offset: offset, element: child };
+        } else {
+          return closest;
+        }
+      },
+      { offset: Number.NEGATIVE_INFINITY }
+    ).element;
+  }
 
   // --- INITIALIZATION ---
   const savedTheme = localStorage.getItem("studyAppTheme") || "light";
   applyTheme(savedTheme);
   loadData();
   // Log the initial page view
-  logEvent("Page View");
+  logEvent("Page View", { page: "Home" });
 });
