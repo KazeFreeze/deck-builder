@@ -88,11 +88,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const decksParam = urlParams.get("decks");
-    const deckNamesParam = urlParams.get("deckNames");
 
-    deckTitles = deckNamesParam
-      ? decodeURIComponent(deckNamesParam).split(",")
-      : [];
+    // *** FIX START ***
+    // Use the "deckTitles" parameter and parse it as JSON for a more robust solution.
+    const deckTitlesParam = urlParams.get("deckTitles");
+    try {
+      deckTitles = deckTitlesParam
+        ? JSON.parse(decodeURIComponent(deckTitlesParam))
+        : [];
+      if (!Array.isArray(deckTitles)) {
+        // Fallback to ensure deckTitles is always an array.
+        deckTitles = [];
+      }
+    } catch (e) {
+      console.error("Could not parse deck titles from URL parameter.", e);
+      deckTitles = [];
+    }
+    // *** FIX END ***
 
     shuffleEnabled = urlParams.get("shuffle") === "true";
     timerEnabled = urlParams.get("timer") === "true";

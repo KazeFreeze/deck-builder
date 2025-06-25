@@ -218,9 +218,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const deckFiles = selectedDecks
       .map((deck) => `${deck.type}/${deck.file}`)
       .join(",");
+
     // *** FIX START ***
-    // Get the human-readable titles of the decks to pass to the study page
-    const deckNames = selectedDecks.map((deck) => deck.title).join(",");
+    // Using JSON to pass the deck titles is more robust than a comma-separated string,
+    // as it correctly handles titles that might contain commas or other special characters.
+    const deckTitles = selectedDecks.map((deck) => deck.title);
+    const deckTitlesJSON = JSON.stringify(deckTitles);
     // *** FIX END ***
 
     const shuffle = document.getElementById("shuffle-toggle").checked;
@@ -230,11 +233,11 @@ document.addEventListener("DOMContentLoaded", () => {
     ).checked;
 
     // *** FIX START ***
-    // Add the encoded deckNames parameter to the URL
+    // The parameter is renamed to "deckTitles" to reflect the change to JSON.
     const url = `study.html?decks=${encodeURIComponent(
       deckFiles
-    )}&deckNames=${encodeURIComponent(
-      deckNames
+    )}&deckTitles=${encodeURIComponent(
+      deckTitlesJSON
     )}&shuffle=${shuffle}&timer=${timer}&showExplanation=${showExplanation}`;
     // *** FIX END ***
 
