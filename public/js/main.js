@@ -14,6 +14,26 @@ document.addEventListener("DOMContentLoaded", () => {
   let availableSets = [];
   let selectedDecks = [];
 
+  // --- ANALYTICS FUNCTION ---
+  /**
+   * Sends an event to the logging endpoint.
+   * @param {string} eventType - The type of event (e.g., 'Page View').
+   * @param {object} [eventData] - Optional data associated with the event.
+   */
+  async function logEvent(eventType, eventData) {
+    try {
+      await fetch("/api/log", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ eventType, eventData }),
+      });
+    } catch (error) {
+      console.error("Failed to log event:", error);
+    }
+  }
+
   // --- THEME SWITCHER LOGIC ---
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
@@ -181,6 +201,13 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Please select at least one deck to start studying.");
       return;
     }
+
+    // --- Log the "Deck Assembled" event ---
+    logEvent("Deck Assembled", {
+      deckCount: selectedDecks.length,
+      decks: selectedDecks.map((d) => d.title),
+    });
+
     const deckFiles = selectedDecks
       .map((deck) => `${deck.type}/${deck.file}`)
       .join(",");
@@ -252,4 +279,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("studyAppTheme") || "light";
   applyTheme(savedTheme);
   loadData();
+  // Log the initial page view
+  logEvent("Page View");
 });
