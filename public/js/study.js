@@ -31,6 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const containerEl = document.querySelector(".container");
   const themeToggle = document.getElementById("theme-toggle");
 
+  // --- HELPER FUNCTION ---
+  /**
+   * Replaces markdown-style bolding (**) with HTML <strong> tags.
+   * @param {string} text The text to format.
+   * @returns {string} The formatted text.
+   */
+  function formatBold(text) {
+    if (typeof text !== "string") {
+      return text;
+    }
+    return text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+  }
+
   // --- THEME SWITCHER LOGIC ---
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
@@ -166,10 +179,14 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderMultipleChoice(item) {
     let choicesHtml = "";
     for (const [key, value] of Object.entries(item.choices)) {
-      choicesHtml += `<div class="choice" data-answer="${key}"><strong>${key}:</strong> ${value}</div>`;
+      choicesHtml += `<div class="choice" data-answer="${key}"><strong>${key}:</strong> ${formatBold(
+        value
+      )}</div>`;
     }
     studyItemContainerEl.innerHTML = `
-            <div id="question">${item.question}</div><div id="choices">${choicesHtml}</div><div id="explanation" class="explanation"></div>`;
+            <div id="question">${formatBold(
+              item.question
+            )}</div><div id="choices">${choicesHtml}</div><div id="explanation" class="explanation"></div>`;
 
     const userAnswer = userAnswers[currentItemIndex];
     if (userAnswer) {
@@ -189,8 +206,12 @@ document.addEventListener("DOMContentLoaded", () => {
     studyItemContainerEl.innerHTML = `
             <div class="flashcard" tabindex="0">
                 <div class="flashcard-inner">
-                    <div class="flashcard-front"><p>${item.question}</p></div>
-                    <div class="flashcard-back"><p>${item.answer}</p></div>
+                    <div class="flashcard-front"><p>${formatBold(
+                      item.question
+                    )}</p></div>
+                    <div class="flashcard-back"><p>${formatBold(
+                      item.answer
+                    )}</p></div>
                 </div>
             </div>`;
 
@@ -293,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const explanationEl = studyItemContainerEl.querySelector("#explanation");
     if (explanationEl) {
       explanationEl.innerHTML = `<strong>Correct Answer: ${correctAnswer}</strong><br>${
-        explanationText || "No explanation provided."
+        formatBold(explanationText) || "No explanation provided."
       }`;
       explanationEl.classList.add("show");
     }

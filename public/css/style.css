@@ -277,8 +277,16 @@ button:hover,
 
 /* --- STUDY PAGE: GENERAL & LAYOUT FIX --- */
 .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
+
+.controls .theme-switcher {
+  position: static;
+}
+
 .status-bar {
   display: flex;
   justify-content: space-around;
@@ -484,5 +492,10 @@ button:hover,
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+  }
+  .app-header .theme-switcher {
+    position: static;
+    margin: 15px auto 0;
+    justify-content: center;
   }
 }
