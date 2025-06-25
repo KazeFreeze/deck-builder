@@ -5,6 +5,10 @@ function formatEventDataForDiscord(eventType, eventData) {
   if (!eventData) return "";
 
   let details = [];
+  // Helper to truncate long text and prevent Discord API errors
+  const truncate = (str, len) =>
+    str.length > len ? str.substring(0, len - 3) + "..." : str;
+
   switch (eventType) {
     case "Page View":
       if (eventData.page) {
@@ -17,7 +21,7 @@ function formatEventDataForDiscord(eventType, eventData) {
       }
       if (eventData.decks && eventData.decks.length > 0) {
         const deckList = eventData.decks.map((d) => `• ${d}`).join("\n");
-        details.push(`**Deck Names**:\n${deckList}`);
+        details.push(`**Deck Names**:\n${truncate(deckList, 950)}`);
       }
       break;
     case "Quiz Finished":
@@ -32,7 +36,7 @@ function formatEventDataForDiscord(eventType, eventData) {
       }
       if (eventData.decks && eventData.decks.length > 0) {
         const deckList = eventData.decks.map((d) => `• ${d}`).join("\n");
-        details.push(`**Decks Studied**:\n${deckList}`);
+        details.push(`**Decks Studied**:\n${truncate(deckList, 950)}`);
       }
       break;
     default:
@@ -59,7 +63,10 @@ module.exports = (req, res) => {
   }
 
   const { eventType, eventData } = req.body;
-  const userAgent = req.headers["user-agent"] || "N/A";
+  // *** FIX START ***
+  // Truncate the User-Agent to prevent it from exceeding Discord's field value limit.
+  const userAgent = (req.headers["user-agent"] || "N/A").substring(0, 1020);
+  // *** FIX END ***
   const vercelForwardedFor = req.headers["x-vercel-forwarded-for"] || "N/A";
 
   const embed = {
@@ -82,8 +89,6 @@ module.exports = (req, res) => {
     },
   };
 
-  // *** FIX START ***
-  // Use the new helper function to format the details field
   const formattedDetails = formatEventDataForDiscord(eventType, eventData);
   if (formattedDetails) {
     embed.fields.push({
@@ -92,7 +97,6 @@ module.exports = (req, res) => {
       inline: false,
     });
   }
-  // *** FIX END ***
 
   const discordPayload = JSON.stringify({ embeds: [embed] });
 
@@ -111,12 +115,17 @@ module.exports = (req, res) => {
     if (discordRes.statusCode >= 200 && discordRes.statusCode < 300) {
       res.status(200).json({ success: true, message: "Log sent." });
     } else {
-      console.error(
-        `Discord API responded with status: ${discordRes.statusCode}`
-      );
-      res.status(502).json({
-        success: false,
-        error: "Failed to send log to the upstream service.",
+      let responseBody = "";
+      discordRes.on("data", (chunk) => (responseBody += chunk));
+      discordRes.on("end", () => {
+        console.error(
+          `Discord API responded with status: ${discordRes.statusCode}`
+        );
+        console.error(`Discord response body: ${responseBody}`);
+        res.status(502).json({
+          success: false,
+          error: "Failed to send log to the upstream service.",
+        });
       });
     }
   });
