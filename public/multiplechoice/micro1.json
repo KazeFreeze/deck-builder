@@ -13,7 +13,7 @@
         "E": "Embedded Systems and Computer Architecture"
       },
       "correctAnswer": "C",
-      "explanation": "Computer Engineering majors would be taking **Signal Processing and Hardware Description Language at the same time as Microprocessors** [1]."
+      "explanation": "Computer Engineering majors would be taking **Signal Processing and Hardware Description Language at the same time as Microprocessors**."
     },
     {
       "module": "Module 1: Introduction to Microprocessors and Microcontrollers",
@@ -27,7 +27,7 @@
         "E": "Only Computer Architecture (ENGG 123)"
       },
       "correctAnswer": "B",
-      "explanation": "After this class (ENGG 122), your next courses will be **Computer Architecture (ENGG 123), Embedded Systems (ENGG 124), and Operating Systems (ENGG 126)** [2]."
+      "explanation": "After this class (ENGG 122), your next courses will be **Computer Architecture (ENGG 123), Embedded Systems (ENGG 124), and Operating Systems (ENGG 126)**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -41,7 +41,7 @@
         "E": "A device that contains only the Arithmetic Logic Unit and Register Array of a CPU."
       },
       "correctAnswer": "C",
-      "explanation": "Microprocessors are **one of the most commonly used devices in digital electronics**. They include the **fundamental parts of a digital computer, integrated into a single component**. They are found in many devices such as satellites, cars, industrial plants or **wherever a large number of arithmetical logical calculations are needed** [3]."
+      "explanation": "Microprocessors are **one of the most commonly used devices in digital electronics**. They include the **fundamental parts of a digital computer, integrated into a single component**. They are found in many devices such as satellites, cars, industrial plants or **wherever a large number of arithmetical logical calculations are needed**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -55,7 +55,7 @@
         "E": "Digital-to-Analog Converter (DAC)"
       },
       "correctAnswer": "E",
-      "explanation": "The microprocessor contains all the parts of a CPU, specifically: **Arithmetic Logic Unit, Register Array, Control, Memory, and I/O** [4]. A Digital-to-Analog Converter (DAC) is listed as a component of a microcontroller [5], not specifically a microprocessor."
+      "explanation": "The microprocessor contains all the parts of a CPU, specifically: **Arithmetic Logic Unit, Register Array, Control, Memory, and I/O**. A Digital-to-Analog Converter (DAC) is listed as a component of a microcontroller, not specifically a microprocessor."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -69,7 +69,7 @@
         "E": "A microcontroller lacks a CPU, relying solely on external components for processing."
       },
       "correctAnswer": "B",
-      "explanation": "A **microcontroller is a type of single-chip microcomputer which is a complete system that includes the microprocessor plus other devices: memory, data input/output circuits, etc. A microcontroller is designed for control applications** [4]."
+      "explanation": "A **microcontroller is a type of single-chip microcomputer which is a complete system that includes the microprocessor plus other devices: memory, data input/output circuits, etc. A microcontroller is designed for control applications**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -83,7 +83,7 @@
         "E": "Only a large number of external discrete components"
       },
       "correctAnswer": "B",
-      "explanation": "A microcontroller includes the following: **CPU, RAM, ROM, Clock, I/O, ADC, and DAC** [5]."
+      "explanation": "A microcontroller includes the following: **CPU, RAM, ROM, Clock, I/O, ADC, and DAC**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -97,7 +97,7 @@
         "E": "Intel 4004"
       },
       "correctAnswer": "C",
-      "explanation": "Among the examples of microcontrollers, **ESP32 is noted as useful for wireless connectivity** [5]. Arduino is described as most commercially available and user-friendly, while STM32 has the most powerful processing capability [5]."
+      "explanation": "Among the examples of microcontrollers, **ESP32 is noted as useful for wireless connectivity**. Arduino is described as most commercially available and user-friendly, while STM32 has the most powerful processing capability."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -111,7 +111,7 @@
         "E": "Input and Output"
       },
       "correctAnswer": "B",
-      "explanation": "At each level [of hierarchical abstractions in a computer system], there are two attributes the computer engineer must be aware of: **Structure (The way in which the components are interrelated) and Function (The operation of each individual component as part of the structure)** [5, 6]."
+      "explanation": "At each level [of hierarchical abstractions in a computer system], there are two attributes the computer engineer must be aware of: **Structure (The way in which the components are interrelated) and Function (The operation of each individual component as part of the structure)**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -125,7 +125,7 @@
         "E": "Electrical signal generation"
       },
       "correctAnswer": "E",
-      "explanation": "There are essentially **4 basic functions that a computer can perform: Data processing, Data storage, Data movement, and Control** [6]."
+      "explanation": "There are essentially **4 basic functions that a computer can perform: Data processing, Data storage, Data movement, and Control**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -139,7 +139,7 @@
         "E": "Clock"
       },
       "correctAnswer": "C",
-      "explanation": "A simple single-processor computer has the following parts: CPU, Main memory, I/O, and **System interconnection** [6]."
+      "explanation": "A simple single-processor computer has the following parts: CPU, Main memory, I/O, and **System interconnection**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -153,7 +153,7 @@
         "E": "Transistors and integrated circuits"
       },
       "correctAnswer": "C",
-      "explanation": "The CPU which is called the processor has the following parts: **Control unit, Arithmetic and logic unit, Registers, and CPU interconnection** [7]."
+      "explanation": "The CPU which is called the processor has the following parts: **Control unit, Arithmetic and logic unit, Registers, and CPU interconnection**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -167,7 +167,7 @@
         "E": "It primarily affects the aesthetic design of the chip."
       },
       "correctAnswer": "B",
-      "explanation": "Moore’s Law states that because logic and memory elements are placed closer on chips, the **electrical path length is shortened, increasing operating speed** [7]."
+      "explanation": "Moore’s Law states that because logic and memory elements are placed closer on chips, the **electrical path length is shortened, increasing operating speed**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -181,7 +181,7 @@
         "E": "A Processor is a component of a Core, not the other way around."
       },
       "correctAnswer": "A",
-      "explanation": "In a multicore computer, a **CPU: executes instructions for the computer**, a **Core: a single processing unit**, and a **Processor: may contain multiple cores** [8]."
+      "explanation": "In a multicore computer, a **CPU: executes instructions for the computer**, a **Core: a single processing unit**, and a **Processor: may contain multiple cores**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -195,7 +195,7 @@
         "E": "It was designed to run multiple operating systems simultaneously."
       },
       "correctAnswer": "C",
-      "explanation": "The IAS Computer is described as 'The **first idea of a stored program computer**, it is attributed to John von Neumann and is the **first example of a computer that follows the “von Neumann architecture”**' [8]."
+      "explanation": "The IAS Computer is described as 'The **first idea of a stored program computer**, it is attributed to John von Neumann and is the **first example of a computer that follows the “von Neumann architecture”**'."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -209,7 +209,7 @@
         "E": "It uses a word size of 8 bits exclusively."
       },
       "correctAnswer": "B",
-      "explanation": "The memory of the IAS consists of **4,096 storage locations called words. These are lengths of 40 binary digits (bits) each. Von Neumann computers have both data and instructions are stored there** [9]."
+      "explanation": "The memory of the IAS consists of **4,096 storage locations called words. These are lengths of 40 binary digits (bits) each. Von Neumann computers have both data and instructions are stored there**."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -223,7 +223,7 @@
         "E": "Microprocessor Generation"
       },
       "correctAnswer": "C",
-      "explanation": "**Computer architecture** - refers to the **attributes of a system visible to a programmer**, or those that have a direct impact on the logical execution of a program. An example is Von Neumann architecture vs Harvard architecture [9]."
+      "explanation": "**Computer architecture** - refers to the **attributes of a system visible to a programmer**, or those that have a direct impact on the logical execution of a program. An example is Von Neumann architecture vs Harvard architecture."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -237,7 +237,7 @@
         "E": "Only the number of transistors on a chip."
       },
       "correctAnswer": "B",
-      "explanation": "**Instruction set architecture (ISA) - defines instruction formats, instruction opcodes, registers, instruction and data memory**. An example is CISC vs RISC [10]."
+      "explanation": "**Instruction set architecture (ISA) - defines instruction formats, instruction opcodes, registers, instruction and data memory**. An example is CISC vs RISC."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -251,7 +251,7 @@
         "E": "Software Design"
       },
       "correctAnswer": "D",
-      "explanation": "**Architectural design** involves 'Deciding if your architecture will include a MULTIPLY instruction' and considering 'the intended use of your microprocessor and if the MULTIPLY is necessary' [10, 11]."
+      "explanation": "**Architectural design** involves 'Deciding if your architecture will include a MULTIPLY instruction' and considering 'the intended use of your microprocessor and if the MULTIPLY is necessary'."
     },
     {
       "module": "Module 1: Overview of Microprocessors and Microcontrollers",
@@ -265,7 +265,7 @@
         "E": "Control Unit Design"
       },
       "correctAnswer": "C",
-      "explanation": "**Organizational design** involves 'Deciding how to implement that MULTIPLY instruction, whether needing to have a special multiply unit or create a mechanism that repeatedly uses the ADD instruction.' This also includes considering 'the anticipated frequency of use of the multiply instruction, the relative speed of the two approaches, and the cost and physical size of the special MULTIPLY unit' [11]."
+      "explanation": "**Organizational design** involves 'Deciding how to implement that MULTIPLY instruction, whether needing to have a special multiply unit or create a mechanism that repeatedly uses the ADD instruction.' This also includes considering 'the anticipated frequency of use of the multiply instruction, the relative speed of the two approaches, and the cost and physical size of the special MULTIPLY unit'."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -279,7 +279,7 @@
         "E": "Gary Boone"
       },
       "correctAnswer": "B",
-      "explanation": "The invention of the **monolithic integrated circuit is credited to Jack Kilby in 1958**. He invented monolithic fabrication, building passive components and transistors from the same slab of semiconductor [12]."
+      "explanation": "The invention of the **monolithic integrated circuit is credited to Jack Kilby in 1958**. He invented monolithic fabrication, building passive components and transistors from the same slab of semiconductor."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -293,7 +293,7 @@
         "E": "64-bit"
       },
       "correctAnswer": "D",
-      "explanation": "The first microprocessors of the 1st Generation (1971 - 1972) had a **4-bit word size**. An example is the Intel 4004 [13]."
+      "explanation": "The first microprocessors of the 1st Generation (1971 - 1972) had a **4-bit word size**. An example is the Intel 4004."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -307,7 +307,7 @@
         "E": "Intel 80386"
       },
       "correctAnswer": "D",
-      "explanation": "The third generation (1979 - 1980) was also the generation to introduce the **foundation of the x86 architecture from the Intel 8086, at 16-bit word size** [14]."
+      "explanation": "The third generation (1979 - 1980) was also the generation to introduce the **foundation of the x86 architecture from the Intel 8086, at 16-bit word size**."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -321,7 +321,7 @@
         "E": "Steve Furber"
       },
       "correctAnswer": "D",
-      "explanation": "In 1971, **Federico Faggin developed the Intel 4004 which was the first commercially available microprocessor** [15]."
+      "explanation": "In 1971, **Federico Faggin developed the Intel 4004 which was the first commercially available microprocessor**."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -335,7 +335,7 @@
         "E": "A smartphone"
       },
       "correctAnswer": "C",
-      "explanation": "The **Intel 4004 was one of four chips meant to be used for the Busicom, a calculator** produced by the Nippon Calculating Machine Corp. [16]."
+      "explanation": "The **Intel 4004 was one of four chips meant to be used for the Busicom, a calculator** produced by the Nippon Calculating Machine Corp."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -349,7 +349,7 @@
         "E": "Acorn"
       },
       "correctAnswer": "C",
-      "explanation": "**Texas Instruments engineers Gary Boone and Michael Cochran created the TMS 1000**. It combined read-only memory, read/write memory, processor and clock on one chip and was targeted at embedded systems [16]."
+      "explanation": "**Texas Instruments engineers Gary Boone and Michael Cochran created the TMS 1000**. It combined read-only memory, read/write memory, processor and clock on one chip and was targeted at embedded systems."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -363,7 +363,7 @@
         "E": "It solely enabled industrial control systems without affecting consumer electronics."
       },
       "correctAnswer": "C",
-      "explanation": "The **6502 was the cheapest microprocessor on the market**. Along with the Zilog Z80, it **sparked a series of projects that resulted in the home computer revolution of the early 1980s** [17]."
+      "explanation": "The **6502 was the cheapest microprocessor on the market**. Along with the Zilog Z80, it **sparked a series of projects that resulted in the home computer revolution of the early 1980s**."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -377,7 +377,7 @@
         "E": "Multicore architecture"
       },
       "correctAnswer": "B",
-      "explanation": "Steve Furber and Sophie Wilson were co-designers of the ARM architecture... This is an example of a **RISC (reduced instruction set computer) which would be a lower power but cheaper system** [17]."
+      "explanation": "Steve Furber and Sophie Wilson were co-designers of the ARM architecture... This is an example of a **RISC (reduced instruction set computer) which would be a lower power but cheaper system**."
     },
     {
       "module": "Module 1: History of Microprocessors",
@@ -391,7 +391,7 @@
         "E": "Gianluca Martino"
       },
       "correctAnswer": "D",
-      "explanation": "Arduino was created in Italy in 2005 as an **extension of a Master’s thesis of Hernando Barragan** [18]."
+      "explanation": "Arduino was created in Italy in 2005 as an **extension of a Master’s thesis of Hernando Barragan**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -405,7 +405,7 @@
         "E": "Via text-based commands"
       },
       "correctAnswer": "C",
-      "explanation": "**Binary - base-2 counting system. This is how machines understand information** [19]."
+      "explanation": "**Binary - base-2 counting system. This is how machines understand information**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -419,7 +419,7 @@
         "E": "A representation of a continuous variable."
       },
       "correctAnswer": "B",
-      "explanation": "**Nibble - a group of four bits, or half a byte, also one hexadecimal number** [19]."
+      "explanation": "**Nibble - a group of four bits, or half a byte, also one hexadecimal number**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -433,7 +433,7 @@
         "E": "Excess-K Representation"
       },
       "correctAnswer": "D",
-      "explanation": "**Two’s complement numbers**... **overcome the shortcomings of sign/magnitude numbers: zero has a single representation, and ordinary addition works** [20]."
+      "explanation": "**Two’s complement numbers**... **overcome the shortcomings of sign/magnitude numbers: zero has a single representation, and ordinary addition works**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -447,7 +447,7 @@
         "E": "Components used exclusively in analog circuits."
       },
       "correctAnswer": "C",
-      "explanation": "**Logic gates are simple digital circuits that take one or more binary inputs and produce a binary output** [21]."
+      "explanation": "**Logic gates are simple digital circuits that take one or more binary inputs and produce a binary output**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -461,7 +461,7 @@
         "E": "A type of logic gate."
       },
       "correctAnswer": "B",
-      "explanation": "In combinational logic design, 'A **node is a wire, whose voltage conveys a discrete-valued variable**' [22]."
+      "explanation": "In combinational logic design, 'A **node is a wire, whose voltage conveys a discrete-valued variable**'."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -475,7 +475,7 @@
         "E": "Active or Inactive"
       },
       "correctAnswer": "D",
-      "explanation": "**Boolean equations deal with variables that are either TRUE or FALSE**, so they are perfect for describing digital logic [23]."
+      "explanation": "**Boolean equations deal with variables that are either TRUE or FALSE**, so they are perfect for describing digital logic."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -489,7 +489,7 @@
         "E": "It is exclusively used for data movement."
       },
       "correctAnswer": "C",
-      "explanation": "**Sequential Logic - The outputs of sequential logic depend on both current and prior input values. Hence, sequential logic has memory** [24]."
+      "explanation": "**Sequential Logic - The outputs of sequential logic depend on both current and prior input values. Hence, sequential logic has memory**."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -503,7 +503,7 @@
         "E": "Enabled flip-flop"
       },
       "correctAnswer": "D",
-      "explanation": "A **D latch is level-sensitive**... The **D latch is transparent when CLK = 1, allowing the input D to flow through to the output Q** [25]. In contrast, a D flip-flop is edge-triggered [25]."
+      "explanation": "A **D latch is level-sensitive**... The **D latch is transparent when CLK = 1, allowing the input D to flow through to the output Q**. In contrast, a D flip-flop is edge-triggered."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -517,7 +517,7 @@
         "E": "A component responsible for defining instruction formats."
       },
       "correctAnswer": "C",
-      "explanation": "**Register - a bank of N flip-flops that share a common CLK input, so that all bits of the register are updated at the same time** [26]. Also, 'A register is a bank of several D flip-flops that share a common CLK signal' [25]."
+      "explanation": "**Register - a bank of N flip-flops that share a common CLK input, so that all bits of the register are updated at the same time**. Also, 'A register is a bank of several D flip-flops that share a common CLK signal'."
     },
     {
       "module": "Module 1: Review of Logic Design",
@@ -531,7 +531,7 @@
         "E": "Instruction Set Architecture"
       },
       "correctAnswer": "C",
-      "explanation": "Synchronous sequential circuits can be drawn in the forms shown in Figure 3.22. These forms are called **finite state machines (FSMs). They get their name because a circuit with k registers can be in one of a finite number (2k) of unique states** [27]."
+      "explanation": "Synchronous sequential circuits can be drawn in the forms shown in Figure 3.22. These forms are called **finite state machines (FSMs). They get their name because a circuit with k registers can be in one of a finite number (2k) of unique states**."
     }
   ]
 }

@@ -12,7 +12,7 @@
         "D": "Execute (EX), Instruction Fetch (IF), Instruction Decode (ID)"
       },
       "correctAnswer": "C",
-      "explanation": "The Control Unit gives orders to carry out the requested instruction in three successive stages or steps, which are the Instruction Fetch (IF) stage, the Instruction Decode (ID) stage and the Execute (EX) stage, referred to as the Fetch-Decode-Execute cycle (FDE) [1]."
+      "explanation": "The Control Unit gives orders to carry out the requested instruction in three successive stages or steps, which are the Instruction Fetch (IF) stage, the Instruction Decode (ID) stage and the Execute (EX) stage, referred to as the Fetch-Decode-Execute cycle (FDE)."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -25,7 +25,7 @@
         "D": "From main memory to an inaccessible register by the user, which is the instruction register (IR)"
       },
       "correctAnswer": "D",
-      "explanation": "In the Instruction Fetch Phase, the instruction code pointed by the program counter is transferred from main memory to an inaccessible register by the user, which is the instruction register IR [1]."
+      "explanation": "In the Instruction Fetch Phase, the instruction code pointed by the program counter is transferred from main memory to an inaccessible register by the user, which is the instruction register IR."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -38,7 +38,7 @@
         "D": "It is reset to zero after decoding."
       },
       "correctAnswer": "C",
-      "explanation": "During the Decoding Phase, the program counter is incremented by a value k such that it contains the address of the next instruction to be executed. This value k will depend on the location in memory occupied by the instruction being executed [2]."
+      "explanation": "During the Decoding Phase, the program counter is incremented by a value k such that it contains the address of the next instruction to be executed. This value k will depend on the location in memory occupied by the instruction being executed."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -51,7 +51,7 @@
         "D": "The value of the program counter."
       },
       "correctAnswer": "C",
-      "explanation": "In the Execution Phase, the execution unit may provide information about the properties of the result, particularly its validity (i.e. whether the result is correct), via the intermediary of the status register’s indicators or status flags [2]."
+      "explanation": "In the Execution Phase, the execution unit may provide information about the properties of the result, particularly its validity (i.e. whether the result is correct), via the intermediary of the status register’s indicators or status flags."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -64,7 +64,7 @@
         "D": "ID - Instruction Decode, IF - Instruction Fetch, OF - Operand Fetch, EX - Execute, WB - Write Back"
       },
       "correctAnswer": "B",
-      "explanation": "When fetching one or more operands in memory that are required for execution and storage of the result are carried out in separate cycles, the cycle becomes a five-stage cycle: IF - Instruction Fetch, ID - Instruction Decode, OF - Operand Fetch, EX - Execute, WB - Write Back [3]."
+      "explanation": "When fetching one or more operands in memory that are required for execution and storage of the result are carried out in separate cycles, the cycle becomes a five-stage cycle: IF - Instruction Fetch, ID - Instruction Decode, OF - Operand Fetch, EX - Execute, WB - Write Back."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -77,7 +77,7 @@
         "D": "Clock generation, signal synchronization, address strobe, data transfer, and instruction validation."
       },
       "correctAnswer": "A",
-      "explanation": "A processor can be studied from a functional point of view, breaking down the MPU into five functions: procurement of instructions, their decoding, procurement (if necessary) of associated operands, effective computation, and storage of the result. These steps can provide a reference for the concept of a pipeline [3]."
+      "explanation": "A processor can be studied from a functional point of view, breaking down the MPU into five functions: procurement of instructions, their decoding, procurement (if necessary) of associated operands, effective computation, and storage of the result. These steps can provide a reference for the concept of a pipeline."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -103,7 +103,7 @@
         "D": "Input/Output (I/O) instructions."
       },
       "correctAnswer": "C",
-      "explanation": "Memory to memory transfer cannot take place because it would violate what we can call the golden rule of transfer in the von Neumann model for architectures with one or two buses. Exceptions to this rule occur for stack manipulation instructions, such as PUSH, and character manipulation instructions such as MOVSB [5]."
+      "explanation": "Memory to memory transfer cannot take place because it would violate what we can call the golden rule of transfer in the von Neumann model for architectures with one or two buses. Exceptions to this rule occur for stack manipulation instructions, such as PUSH, and character manipulation instructions such as MOVSB."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -116,7 +116,7 @@
         "D": "To manage data transfers between registers."
       },
       "correctAnswer": "C",
-      "explanation": "A Clock is a signal generator responsible for generating the clock signals or time references of the logic system. It is called clock source because of its function. A clock signal is a periodic logic signal which rates or synchronizes the operation of a circuit or a system [6]."
+      "explanation": "A Clock is a signal generator responsible for generating the clock signals or time references of the logic system. It is called clock source because of its function. A clock signal is a periodic logic signal which rates or synchronizes the operation of a circuit or a system."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -129,7 +129,7 @@
         "D": "A machine cycle is made up of several instruction cycles, each consisting of one or more clock periods."
       },
       "correctAnswer": "B",
-      "explanation": "Clock cycle is the time reference for operating the MPU. This clock cycle is a clock period during which the internal operation is carried out, hence the name of cycle time. Machine cycle is a discrete time interval [7]."
+      "explanation": "Clock cycle is the time reference for operating the MPU. This clock cycle is a clock period during which the internal operation is carried out, hence the name of cycle time. Machine cycle is a discrete time interval."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",
@@ -142,7 +142,7 @@
         "D": "The duration of an entire instruction cycle."
       },
       "correctAnswer": "B",
-      "explanation": "A T-state corresponds to a period of the internal clock which cadences the operation of the MPU. It is a subdivision of an execution cycle. The number of T-states can be variable, depending on the component [8]."
+      "explanation": "A T-state corresponds to a period of the internal clock which cadences the operation of the MPU. It is a subdivision of an execution cycle. The number of T-states can be variable, depending on the component."
     },
     {
       "module": "Module 3: Processor Architecture and Timing",

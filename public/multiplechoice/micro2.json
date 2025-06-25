@@ -12,7 +12,7 @@
         "D": "It is a type of Carry Propagate Adder."
       },
       "correctAnswer": "B",
-      "explanation": "A Half Adder has two inputs, A and B, and two outputs, S and Cout [1]. It cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition [1]."
+      "explanation": "A Half Adder has two inputs, A and B, and two outputs, S and Cout. It cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -25,7 +25,7 @@
         "D": "A Full Adder produces fewer outputs than a Half Adder."
       },
       "correctAnswer": "B",
-      "explanation": "A Half Adder cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition, whereas a Full Adder can accept the carry-in Cin from a previous adder [1]."
+      "explanation": "A Half Adder cannot accept the carry-out from a previous adder, limiting it from being able to perform multiple bit addition, whereas a Full Adder can accept the carry-in Cin from a previous adder."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -38,7 +38,7 @@
         "D": "Because it is designed to prevent carry propagation."
       },
       "correctAnswer": "B",
-      "explanation": "An N-bit adder is commonly called a carry propagate adder because the carry out of one bit propagates into the next bit [1]."
+      "explanation": "An N-bit adder is commonly called a carry propagate adder because the carry out of one bit propagates into the next bit."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -51,7 +51,7 @@
         "D": "It computes generate and propagate logic for pairs of columns first."
       },
       "correctAnswer": "C",
-      "explanation": "The Ripple-Carry Adder is the simplest way to build an N-bit carry propagate adder by chaining together N full adders, where the Cout of one stage acts as the Cin of the next stage [2]."
+      "explanation": "The Ripple-Carry Adder is the simplest way to build an N-bit carry propagate adder by chaining together N full adders, where the Cout of one stage acts as the Cin of the next stage."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -64,7 +64,7 @@
         "D": "It depends solely on the clock frequency."
       },
       "correctAnswer": "C",
-      "explanation": "The time it takes for the RCA to add is N times tFA where N is the number of full adders and tfa is the time it takes for a full adder to add [2]."
+      "explanation": "The time it takes for the RCA to add is N times tFA where N is the number of full adders and tfa is the time it takes for a full adder to add."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -77,7 +77,7 @@
         "D": "It is specifically designed for subtraction operations."
       },
       "correctAnswer": "C",
-      "explanation": "A Carry-Lookahead Adder divides the adder into blocks and provides circuitry to quickly determine the carry out of a block as soon as the carry in is known [2]."
+      "explanation": "A Carry-Lookahead Adder divides the adder into blocks and provides circuitry to quickly determine the carry out of a block as soon as the carry in is known."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -90,7 +90,7 @@
         "D": "By using a smaller number of full adders."
       },
       "correctAnswer": "B",
-      "explanation": "Prefix adders extend the generate and propagate logic of the carry-lookahead adder to perform addition even faster. They first compute G and P for pairs of columns, then for blocks of 4, then for blocks of 8, then 16, and so forth until the generate signal for every column is known [3]."
+      "explanation": "Prefix adders extend the generate and propagate logic of the carry-lookahead adder to perform addition even faster. They first compute G and P for pairs of columns, then for blocks of 4, then for blocks of 8, then 16, and so forth until the generate signal for every column is known."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -103,7 +103,7 @@
         "D": "By shifting the second number left by one position before addition."
       },
       "correctAnswer": "C",
-      "explanation": "Subtraction is the same as addition except using the two’s-complement of the second number. Flipping the sign of a two’s complement number is done by inverting the bits and adding 1, and then adding [3]."
+      "explanation": "Subtraction is the same as addition except using the two’s-complement of the second number. Flipping the sign of a two’s complement number is done by inverting the bits and adding 1, and then adding."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -116,7 +116,7 @@
         "D": "The carry-out of an arithmetic operation."
       },
       "correctAnswer": "B",
-      "explanation": "A magnitude comparator produces one or more outputs indicating the relative values of A and B [4]. An equality comparator specifically produces a single output indicating whether A is equal to B [4]."
+      "explanation": "A magnitude comparator produces one or more outputs indicating the relative values of A and B. An equality comparator specifically produces a single output indicating whether A is equal to B."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -129,7 +129,7 @@
         "D": "With 1's."
       },
       "correctAnswer": "C",
-      "explanation": "A logical shifter shifts the number to the left (LSL) or right (LSR) and fills empty spots with 0’s [5]."
+      "explanation": "A logical shifter shifts the number to the left (LSL) or right (LSR) and fills empty spots with 0’s."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -142,7 +142,7 @@
         "D": "It only supports left shifts."
       },
       "correctAnswer": "C",
-      "explanation": "An arithmetic shifter is the same as a logical shifter, but on right shifts fills the most significant bits with a copy of the old most significant bit (msb) [5]."
+      "explanation": "An arithmetic shifter is the same as a logical shifter, but on right shifts fills the most significant bits with a copy of the old most significant bit (msb)."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -155,7 +155,7 @@
         "D": "Barrel shifter"
       },
       "correctAnswer": "C",
-      "explanation": "A Rotator rotates number in a circle such that empty spots are filled with bits shifted off the other end [5]."
+      "explanation": "A Rotator rotates number in a circle such that empty spots are filled with bits shifted off the other end."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -168,7 +168,7 @@
         "D": "To enable or disable the ALU entirely."
       },
       "correctAnswer": "C",
-      "explanation": "The ALU receives a 2-bit control signal ALUControl that specifies which function to perform [6]."
+      "explanation": "The ALU receives a 2-bit control signal ALUControl that specifies which function to perform."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -181,7 +181,7 @@
         "D": "Only registers and a program counter."
       },
       "correctAnswer": "B",
-      "explanation": "The ALU contains an N-bit adder and N two-input AND and OR gates. It also contains inverters and a multiplexer to invert input B when ALUControl0 is asserted. A 4:1 multiplexer chooses the desired function based on ALUControl [6]."
+      "explanation": "The ALU contains an N-bit adder and N two-input AND and OR gates. It also contains inverters and a multiplexer to invert input B when ALUControl0 is asserted. A 4:1 multiplexer chooses the desired function based on ALUControl."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -194,7 +194,7 @@
         "D": "Overflow of an arithmetic operation."
       },
       "correctAnswer": "D",
-      "explanation": "The Carry flag indicates overflow of an arithmetic operation [7]."
+      "explanation": "The Carry flag indicates overflow of an arithmetic operation."
     },
     {
       "module": "Module 2: Arithmetic Logic Unit",
@@ -207,7 +207,7 @@
         "D": "An invalid operation was attempted."
       },
       "correctAnswer": "C",
-      "explanation": "The Zero flag indicates a zero result [7]."
+      "explanation": "The Zero flag indicates a zero result."
     },
     {
       "module": "Module 2: Memory",
@@ -220,7 +220,7 @@
         "D": "The type of memory (RAM or ROM)."
       },
       "correctAnswer": "C",
-      "explanation": "The memory is organized as a two-dimensional array of memory cells. The Address specifies the row [8]."
+      "explanation": "The memory is organized as a two-dimensional array of memory cells. The Address specifies the row."
     },
     {
       "module": "Module 2: Memory",
@@ -233,7 +233,7 @@
         "D": "2^M N-bit words."
       },
       "correctAnswer": "C",
-      "explanation": "An array with N-bit addresses and M-bit data has 2^N rows and M columns. Thus, the array contains 2^N M-bit words [9]."
+      "explanation": "An array with N-bit addresses and M-bit data has 2^N rows and M columns. Thus, the array contains 2^N M-bit words."
     },
     {
       "module": "Module 2: Memory",
@@ -246,7 +246,7 @@
         "D": "The address bus carries control and timing signals."
       },
       "correctAnswer": "B",
-      "explanation": "During a memory read, a wordline is asserted, and the corresponding row of bit cells drives the bitlines HIGH or LOW [9]."
+      "explanation": "During a memory read, a wordline is asserted, and the corresponding row of bit cells drives the bitlines HIGH or LOW."
     },
     {
       "module": "Module 2: Memory",

@@ -1,31 +1,31 @@
 [
   {
     "q": "Describe the main action that occurs during the **Instruction Fetch Phase** of the Fetch-Decode-Execute cycle.",
-    "a": "During the Instruction Fetch Phase, the **instruction code pointed to by the program counter is transferred from main memory to the instruction register (IR)**, which is an inaccessible register to the user [1]."
+    "a": "During the Instruction Fetch Phase, the **instruction code pointed to by the program counter is transferred from main memory to the instruction register (IR)**, which is an inaccessible register to the user."
   },
   {
     "q": "What key determinations and actions are taken during the **Decoding Phase** of the Fetch-Decode-Execute cycle?",
-    "a": "In the Decoding Phase, the processor determines the **type of operation requested and the operands to be used** [2]. If required, the processor will **fetch the operand(s)** to execute the instruction [2]. Additionally, during this stage, the **program counter is incremented by a value 'k'** to hold the address of the next instruction, where 'k' depends on the memory location occupied by the current instruction [2]."
+    "a": "In the Decoding Phase, the processor determines the **type of operation requested and the operands to be used**. If required, the processor will **fetch the operand(s)** to execute the instruction. Additionally, during this stage, the **program counter is incremented by a value 'k'** to hold the address of the next instruction, where 'k' depends on the memory location occupied by the current instruction."
   },
   {
     "q": "From a functional point of view, what are the **five functions or steps** into which a Microprocessor Unit (MPU) can be broken down?",
-    "a": "A processor can be functionally broken down into five steps, which can also provide a reference for the concept of a pipeline [3]:\n*   **Procurement of instructions** [3]\n*   **Decoding of instructions** [3]\n*   **Procurement (if necessary) of associated operands** [3]\n*   **Effective computation** [3]\n*   **Storage of the result** [3]"
+    "a": "A processor can be functionally broken down into five steps, which can also provide a reference for the concept of a pipeline :\n*   **Procurement of instructions** \n*   **Decoding of instructions** \n*   **Procurement (if necessary) of associated operands** \n*   **Effective computation** \n*   **Storage of the result** "
   },
   {
     "q": "In the von Neumann model for architectures with one or two buses, why can't **memory-to-memory transfers** typically take place, and what are the **exceptions** to this rule?",
-    "a": "Memory-to-memory transfer cannot typically take place because it would **violate what can be called the 'golden rule of transfer'** in the von Neumann model for architectures with one or two buses [4]. However, there are exceptions where memory-to-memory transfers *can* occur, specifically for **stack manipulation instructions (such as PUSH)** and **character manipulation instructions (such as MOVSB)** [4]."
+    "a": "Memory-to-memory transfer cannot typically take place because it would **violate what can be called the 'golden rule of transfer'** in the von Neumann model for architectures with one or two buses. However, there are exceptions where memory-to-memory transfers *can* occur, specifically for **stack manipulation instructions (such as PUSH)** and **character manipulation instructions (such as MOVSB)**."
   },
   {
     "q": "Differentiate between a **clock**, a **clock signal**, a **clock cycle**, a **machine cycle**, and a **T-state** in the context of MPU operation.",
-    "a": "*   A **clock** is a **signal generator responsible for producing clock signals or time references** for the logic system [5].\n*   A **clock signal** is a **periodic logic signal which rates or synchronizes the operation** of a circuit or a system [5].\n*   A **clock cycle** is the **time reference for operating the MPU**, representing a clock period during which internal operation is carried out [6].\n*   A **machine cycle** is a **discrete time interval** [6]. The execution of an instruction typically consists of several machine cycles [7].\n*   A **T-state** corresponds to a **period of the internal clock** which paces the operation of the MPU and is a subdivision of an execution cycle [7]. The number of T-states can be variable depending on the component [7]."
+    "a": "*   A **clock** is a **signal generator responsible for producing clock signals or time references** for the logic system.\n*   A **clock signal** is a **periodic logic signal which rates or synchronizes the operation** of a circuit or a system.\n*   A **clock cycle** is the **time reference for operating the MPU**, representing a clock period during which internal operation is carried out.\n*   A **machine cycle** is a **discrete time interval**. The execution of an instruction typically consists of several machine cycles.\n*   A **T-state** corresponds to a **period of the internal clock** which paces the operation of the MPU and is a subdivision of an execution cycle. The number of T-states can be variable depending on the component."
   },
   {
     "q": "What are the **basic functions** performed by a **Phase-Locked Loop (PLL)**?",
-    "a": "A Phase-Locked Loop (PLL) performs several basic functions, which are:\n*   **Eliminates propagation times** linked to the dispersion of the characteristics between buffers [8].\n*   **Adjusts the phase** [8].\n*   **Corrects the duty cycle** [8].\n*   **Eliminates clock jitter** [8].\n*   **Eliminates synthesis frequency** by performing a whole or fractional division or multiplication of a reference signal [8]."
+    "a": "A Phase-Locked Loop (PLL) performs several basic functions, which are:\n*   **Eliminates propagation times** linked to the dispersion of the characteristics between buffers.\n*   **Adjusts the phase**.\n*   **Corrects the duty cycle**.\n*   **Eliminates clock jitter**.\n*   **Eliminates synthesis frequency** by performing a whole or fractional division or multiplication of a reference signal."
   },
   {
     "q": "Define **overclocking** and describe its **physical consequences**.",
-    "a": "**Overclocking** is a technique that involves **increasing the operating frequency of a logic system** to increase its operating speed and, therefore, its performance [8]. The physical consequences are **increased electrical consumption** and, above all, an **increase in temperature**, which risks destroying the components if suitable cooling is not implemented [9]."
+    "a": "**Overclocking** is a technique that involves **increasing the operating frequency of a logic system** to increase its operating speed and, therefore, its performance. The physical consequences are **increased electrical consumption** and, above all, an **increase in temperature**, which risks destroying the components if suitable cooling is not implemented."
   },
   {
     "q": "In the 6811 READ cycle, what critical actions occur at **Point 5 (Falling edge of E-clock)**?",
