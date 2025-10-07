@@ -1,94 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Deck Builder</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- FontAwesome for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
-    <div class="main-container">
-      <header class="app-header">
-        <h1>Study Deck Builder</h1>
-        <p>Select decks, arrange them, and start your study session!</p>
-        <div class="theme-switcher">
-          <i class="fas fa-sun"></i>
-          <label class="switch">
-            <input type="checkbox" id="theme-toggle" />
-            <span class="slider round"></span>
-          </label>
-          <i class="fas fa-moon"></i>
+    <div class="container mx-auto p-4">
+      <header class="navbar bg-base-100 rounded-box shadow-lg mb-4">
+        <div class="flex-1">
+          <h1 class="text-2xl font-bold">Study Deck Builder</h1>
+        </div>
+        <div class="flex-none">
+          <span class="label-text mr-2">Casual</span>
+          <input type="checkbox" id="mode-toggle" class="toggle toggle-primary" />
+          <span class="label-text ml-2">Pro</span>
+        </div>
+        <div class="flex-none ml-4">
+            <i class="fas fa-sun"></i>
+            <input type="checkbox" id="theme-toggle" class="toggle toggle-secondary mx-2" />
+            <i class="fas fa-moon"></i>
         </div>
       </header>
 
-      <!-- Pre-configured Sets Section -->
-      <div class="sets-section">
-        <h2><i class="fas fa-box-open"></i> Pre-configured Sets</h2>
-        <p>Select a pre-made study plan to get started quickly.</p>
-        <div id="sets-container" class="sets-radio-container">
-          <!-- Pre-configured sets radio buttons will be loaded here -->
-          <div class="placeholder">Loading sets...</div>
-        </div>
-      </div>
-
-      <div class="deck-builder-container">
-        <!-- Column for Available Decks -->
-        <div class="deck-column">
-          <h2><i class="fas fa-layer-group"></i> Available Decks</h2>
-          <div class="deck-list-container">
-            <h3>Multiple Choice Decks</h3>
-            <div id="multiplechoice-decks" class="available-decks">
-              <div class="placeholder">Loading decks...</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2">
+            <!-- Pre-configured Sets Section -->
+            <div class="card bg-base-200 shadow-xl mb-6">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-box-open"></i> Pre-configured Sets</h2>
+                    <p>Select a pre-made study plan to get started quickly.</p>
+                    <div id="sets-container" class="form-control">
+                        <div class="placeholder"><span class="loading loading-dots loading-md"></span> Loading sets...</div>
+                    </div>
+                </div>
             </div>
-            <h3>Flashcard Decks</h3>
-            <div id="flashcard-decks" class="available-decks">
-              <div class="placeholder">Loading decks...</div>
+
+            <!-- Available Decks Section -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-layer-group"></i> Available Decks</h2>
+                    <div id="available-decks-container" class="space-y-2">
+                        <div class="placeholder"><span class="loading loading-dots loading-md"></span> Loading decks...</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
-        <!-- Column for Selected Decks -->
-        <div class="deck-column">
-          <h2><i class="fas fa-stream"></i> Selected Study Plan</h2>
-          <div id="selected-decks" class="selected-decks-list">
-            <div class="placeholder">
-              Drag decks here to add them to your study plan.
+        <div class="md:col-span-1">
+            <!-- Selected Decks Column -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-stream"></i> Selected Study Plan</h2>
+                    <div id="selected-decks" class="min-h-48">
+                        <div class="placeholder">Select decks to build your study plan.</div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Configuration Section -->
-      <div class="config-section">
-        <h2><i class="fas fa-cogs"></i> Configuration</h2>
-        <div class="config-options">
-          <div class="config-item">
-            <input type="checkbox" id="shuffle-toggle" checked />
-            <label for="shuffle-toggle">Shuffle All Items</label>
-          </div>
-          <div class="config-item">
-            <input type="checkbox" id="timer-toggle" checked />
-            <label for="timer-toggle">Enable Timer</label>
-          </div>
-          <div class="config-item">
-            <input type="checkbox" id="show-explanation-toggle" />
-            <label for="show-explanation-toggle"
-              >Show Explanation Immediately</label
-            >
-          </div>
-        </div>
-      </div>
+            <!-- Configuration Section -->
+            <div class="card bg-base-100 shadow-xl mt-6">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-cogs"></i> Configuration</h2>
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Shuffle All Items</span>
+                            <input type="checkbox" id="shuffle-toggle" class="toggle" checked />
+                        </label>
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Enable Timer</span>
+                            <input type="checkbox" id="timer-toggle" class="toggle" checked />
+                        </label>
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Show Explanation Immediately</span>
+                            <input type="checkbox" id="show-explanation-toggle" class="toggle" />
+                        </label>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Action Button -->
-      <div class="start-button-container">
-        <button id="start-studying-btn" class="btn-primary">
-          <i class="fas fa-play-circle"></i> Start Studying
-        </button>
+            <!-- Action Button -->
+            <div class="mt-6">
+                <button id="start-studying-btn" class="btn btn-primary btn-block">
+                    <i class="fas fa-play-circle"></i> Start Studying
+                </button>
+            </div>
+        </div>
       </div>
     </div>
 

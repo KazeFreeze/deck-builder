@@ -1,32 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- DOM ELEMENTS ---
-  const multipleChoiceDecksContainer = document.getElementById(
-    "multiplechoice-decks"
-  );
-  const flashcardDecksContainer = document.getElementById("flashcard-decks");
+  const availableDecksContainer = document.getElementById("available-decks-container");
   const selectedDecksContainer = document.getElementById("selected-decks");
   const setsContainer = document.getElementById("sets-container");
   const startStudyingBtn = document.getElementById("start-studying-btn");
   const themeToggle = document.getElementById("theme-toggle");
+  const modeToggle = document.getElementById("mode-toggle");
 
   // --- STATE ---
-  let availableDecks = { multiplechoice: [], flashcards: [] };
+  let availableTopics = [];
   let availableSets = [];
   let selectedDecks = [];
+  let currentMode = "casual"; // "casual" or "pro"
 
   // --- ANALYTICS FUNCTION ---
-  /**
-   * Sends an event to the logging endpoint.
-   * @param {string} eventType - The type of event (e.g., 'Page View').
-   * @param {object} [eventData] - Optional data associated with the event.
-   */
   async function logEvent(eventType, eventData) {
     try {
       await fetch("/api/log", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ eventType, eventData }),
       });
     } catch (error) {
@@ -34,86 +26,136 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // --- THEME SWITCHER LOGIC ---
+  // --- THEME & MODE SWITCHER LOGIC ---
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("studyAppTheme", theme);
     themeToggle.checked = theme === "dark";
   }
 
+  function applyMode(mode) {
+    currentMode = mode;
+    localStorage.setItem("studyAppMode", mode);
+    modeToggle.checked = mode === "pro";
+    renderAvailableDecks();
+  }
+
   themeToggle.addEventListener("change", () => {
     applyTheme(themeToggle.checked ? "dark" : "light");
+  });
+
+  modeToggle.addEventListener("change", () => {
+    applyMode(modeToggle.checked ? "pro" : "casual");
   });
 
   // --- DATA LOADING ---
   async function loadData() {
     try {
       const response = await fetch("/api/decks");
-      if (!response.ok)
-        throw new Error(`API error! status: ${response.status}`);
+      if (!response.ok) throw new Error(`API error! status: ${response.status}`);
       const data = await response.json();
 
-      availableDecks.multiplechoice = data.multiplechoice || [];
-      availableDecks.flashcards = data.flashcards || [];
+      availableTopics = data.topics || [];
       availableSets = data.sets || [];
 
       renderAvailableDecks();
       renderSets();
     } catch (error) {
       console.error("Could not load data from API:", error);
-      multipleChoiceDecksContainer.innerHTML =
-        '<div class="error">Could not load decks from the server.</div>';
-      setsContainer.innerHTML =
-        '<div class="error">Could not load pre-configured sets.</div>';
+      availableDecksContainer.innerHTML = '<div class="error">Could not load decks from the server.</div>';
+      setsContainer.innerHTML = '<div class="error">Could not load pre-configured sets.</div>';
     }
   }
 
   // --- RENDERING FUNCTIONS ---
   function renderAvailableDecks() {
-    renderDeckList(
-      availableDecks.multiplechoice,
-      multipleChoiceDecksContainer,
-      "multiplechoice"
-    );
-    renderDeckList(
-      availableDecks.flashcards,
-      flashcardDecksContainer,
-      "flashcards"
-    );
+    availableDecksContainer.innerHTML = "";
+    if (currentMode === "casual") {
+      renderCasualMode();
+    } else {
+      renderProMode();
+    }
   }
 
-  function renderDeckList(decks, container, type) {
-    container.innerHTML = "";
-    if (decks.length === 0) {
-      container.innerHTML = '<div class="placeholder">No decks found.</div>';
-      return;
+  function renderCasualMode() {
+    availableTopics.forEach((topic) => {
+      if (topic.flashcards.length === 0 && topic.multiplechoice.length === 0) return;
+
+      const topicEl = document.createElement("div");
+      topicEl.className = "collapse collapse-arrow bg-base-200 mb-2";
+      topicEl.innerHTML = `
+        <input type="radio" name="topic-accordion" />
+        <div class="collapse-title text-xl font-medium">${topic.name}</div>
+        <div class="collapse-content">
+          <div class="topic-deck-list">
+            <!-- Decks will be rendered here -->
+          </div>
+        </div>
+      `;
+
+      const deckListContainer = topicEl.querySelector(".topic-deck-list");
+      renderDeckList(topic.flashcards, deckListContainer, "flashcards", topic.directory);
+      renderDeckList(topic.multiplechoice, deckListContainer, "multiplechoice", topic.directory);
+      availableDecksContainer.appendChild(topicEl);
+    });
+  }
+
+  function renderProMode() {
+    const allFlashcards = availableTopics.flatMap(topic =>
+        topic.flashcards.map(deck => ({...deck, topicDir: topic.directory}))
+    );
+    const allMultipleChoice = availableTopics.flatMap(topic =>
+        topic.multiplechoice.map(deck => ({...deck, topicDir: topic.directory}))
+    );
+
+    if (allMultipleChoice.length > 0) {
+        const header = document.createElement('h3');
+        header.textContent = 'Multiple Choice Decks';
+        availableDecksContainer.appendChild(header);
+        renderDeckList(allMultipleChoice, availableDecksContainer, "multiplechoice");
     }
-    decks.forEach((deck) =>
-      container.appendChild(createDeckElement(deck, type))
+    if (allFlashcards.length > 0) {
+        const header = document.createElement('h3');
+        header.textContent = 'Flashcard Decks';
+        availableDecksContainer.appendChild(header);
+        renderDeckList(allFlashcards, availableDecksContainer, "flashcards");
+    }
+  }
+
+  function renderDeckList(decks, container, type, topicDir = null) {
+    const unselectedDecks = decks.filter(
+      (deck) => !selectedDecks.some((selected) => selected.file === deck.file && selected.type === type && selected.topicDir === (topicDir || deck.topicDir))
+    );
+
+    if (unselectedDecks.length === 0 && container.innerHTML === "") {
+      container.innerHTML = '<div class="placeholder text-sm">No decks of this type.</div>';
+    }
+
+    unselectedDecks.forEach((deck) =>
+      container.appendChild(createDeckElement(deck, type, topicDir || deck.topicDir))
     );
   }
 
   function renderSets() {
     setsContainer.innerHTML = "";
     if (availableSets.length === 0) {
-      setsContainer.innerHTML =
-        '<div class="placeholder">No pre-configured sets found.</div>';
+      setsContainer.innerHTML = '<div class="placeholder">No pre-configured sets found.</div>';
       return;
     }
     availableSets.forEach((set, index) => {
       const radioId = `set-${index}`;
       const setEl = document.createElement("div");
-      setEl.className = "radio-set-item";
+      setEl.className = "radio-set-item"; // You might want to style this with DaisyUI classes
       setEl.innerHTML = `
-                <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}">
-                <label for="${radioId}">
-                    <strong>${set.title}</strong>
-                    <span>${set.description}</span>
-                </label>
-            `;
-      setEl
-        .querySelector("input")
-        .addEventListener("change", handleSetSelection);
+        <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
+        <label for="${radioId}" class="label cursor-pointer">
+          <span class="label-text">
+            <strong>${set.title}</strong>
+            <span>${set.description}</span>
+          </span>
+        </label>
+      `;
+      setEl.querySelector("input").addEventListener("change", handleSetSelection);
       setsContainer.appendChild(setEl);
     });
   }
@@ -121,8 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderSelectedDecks() {
     selectedDecksContainer.innerHTML = "";
     if (selectedDecks.length === 0) {
-      selectedDecksContainer.innerHTML =
-        '<div class="placeholder">Drag decks or select a set.</div>';
+      selectedDecksContainer.innerHTML = '<div class="placeholder">Select decks to add them to your study plan.</div>';
       return;
     }
     selectedDecks.forEach((deck, index) =>
@@ -131,42 +172,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- ELEMENT CREATION ---
-  function createDeckElement(deck, type) {
+  function createDeckElement(deck, type, topicDir) {
     const el = document.createElement("div");
-    el.className = "deck-item";
+    el.className = "deck-item btn btn-ghost justify-start"; // DaisyUI button style
     el.textContent = deck.title;
-    el.draggable = true;
     el.dataset.file = deck.file;
     el.dataset.type = type;
-    el.addEventListener("dragstart", handleDragStart);
-    el.addEventListener("click", () => addDeckToSelection(deck, type));
+    el.dataset.topicDir = topicDir;
+    el.addEventListener("click", () => addDeckToSelection(deck, type, topicDir));
     return el;
   }
 
   function createSelectedDeckElement(deck, index) {
     const item = document.createElement("div");
-    item.className = "selected-deck-item";
-    item.draggable = true;
-    item.dataset.index = index;
-    const typeIcon =
-      deck.type === "flashcards"
-        ? '<i class="fas fa-clone"></i>'
-        : '<i class="fas fa-list-ul"></i>';
+    item.className = "selected-deck-item flex items-center justify-between bg-base-100 p-2 rounded mb-1";
+    const typeIcon = deck.type === "flashcards" ? "fa-clone" : "fa-list-ul";
     item.innerHTML = `
-            <span class="drag-handle"><i class="fas fa-grip-vertical"></i></span>
-            ${typeIcon} ${deck.title}
-            <button class="remove-deck-btn" data-index="${index}"><i class="fas fa-times-circle"></i></button>
-        `;
-    item.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("text/plain", index);
-      e.currentTarget.classList.add("dragging");
-    });
-    item.addEventListener("dragend", (e) =>
-      e.currentTarget.classList.remove("dragging")
-    );
+      <div class="flex items-center gap-2">
+        <i class="fas ${typeIcon}"></i>
+        <span>${deck.title}</span>
+        <span class="badge badge-ghost badge-sm">${deck.topicName}</span>
+      </div>
+      <button class="remove-deck-btn btn btn-xs btn-circle btn-ghost" data-index="${index}">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    `;
     item.querySelector(".remove-deck-btn").addEventListener("click", () => {
       selectedDecks.splice(index, 1);
       renderSelectedDecks();
+      renderAvailableDecks(); // Re-render available to show the deck again
     });
     return item;
   }
@@ -177,30 +211,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedSet = availableSets[setIndex];
     if (!selectedSet) return;
 
-    selectedDecks = selectedSet.decks
-      .map((setDeck) => {
-        const deckList = availableDecks[setDeck.type] || [];
-        const foundDeck = deckList.find((d) => d.file === setDeck.file);
-        return foundDeck ? { ...foundDeck, type: setDeck.type } : null;
-      })
-      .filter(Boolean);
+    selectedDecks = selectedSet.decks.map(setDeck => {
+        for (const topic of availableTopics) {
+            const deckList = topic[setDeck.type] || [];
+            const foundDeck = deckList.find(d => d.file === setDeck.file);
+            if (foundDeck) {
+                return { ...foundDeck, type: setDeck.type, topicDir: topic.directory, topicName: topic.name };
+            }
+        }
+        return null;
+    }).filter(Boolean);
+
     renderSelectedDecks();
+    renderAvailableDecks();
   }
 
-  function addDeckToSelection(deck, type) {
-    if (selectedDecks.some((d) => d.file === deck.file && d.type === type)) {
-      // Simple alert for user feedback
-      const notification = document.createElement("div");
-      notification.className = "deck-add-notification";
-      notification.textContent = "This deck is already in your study plan.";
-      document.body.appendChild(notification);
-      setTimeout(() => {
-        notification.remove();
-      }, 3000);
-      return;
-    }
-    selectedDecks.push({ ...deck, type });
+  function addDeckToSelection(deck, type, topicDir) {
+    const topic = availableTopics.find(t => t.directory === topicDir);
+    selectedDecks.push({ ...deck, type, topicDir, topicName: topic.name });
     renderSelectedDecks();
+    renderAvailableDecks(); // Re-render available to hide the selected deck
   }
 
   startStudyingBtn.addEventListener("click", () => {
@@ -209,117 +239,36 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // --- Log the "Deck Assembled" event ---
     logEvent("Deck Assembled", {
       deckCount: selectedDecks.length,
       decks: selectedDecks.map((d) => d.title),
     });
 
     const deckFiles = selectedDecks
-      .map((deck) => `${deck.type}/${deck.file}`)
+      .map((deck) => `${deck.topicDir}/${deck.type}/${deck.file}`)
       .join(",");
 
-    // *** FIX START ***
-    // Using JSON to pass the deck titles is more robust than a comma-separated string,
-    // as it correctly handles titles that might contain commas or other special characters.
     const deckTitles = selectedDecks.map((deck) => deck.title);
     const deckTitlesJSON = JSON.stringify(deckTitles);
-    // *** FIX END ***
 
     const shuffle = document.getElementById("shuffle-toggle").checked;
     const timer = document.getElementById("timer-toggle").checked;
-    const showExplanation = document.getElementById(
-      "show-explanation-toggle"
-    ).checked;
+    const showExplanation = document.getElementById("show-explanation-toggle").checked;
 
-    // *** FIX START ***
-    // The parameter is renamed to "deckTitles" to reflect the change to JSON.
     const url = `study.html?decks=${encodeURIComponent(
       deckFiles
     )}&deckTitles=${encodeURIComponent(
       deckTitlesJSON
     )}&shuffle=${shuffle}&timer=${timer}&showExplanation=${showExplanation}`;
-    // *** FIX END ***
 
     window.location.href = url;
   });
 
-  // --- DRAG & DROP LOGIC ---
-  function handleDragStart(e) {
-    e.dataTransfer.setData(
-      "application/json", // Use a more specific MIME type
-      JSON.stringify({
-        file: e.target.dataset.file,
-        title: e.target.textContent,
-        type: e.target.dataset.type,
-      })
-    );
-  }
-
-  selectedDecksContainer.addEventListener("dragover", (e) => {
-    e.preventDefault(); // Necessary to allow drop
-    e.currentTarget.classList.add("drag-over");
-  });
-
-  selectedDecksContainer.addEventListener("dragleave", (e) => {
-    e.currentTarget.classList.remove("drag-over");
-  });
-
-  selectedDecksContainer.addEventListener("drop", (e) => {
-    e.preventDefault();
-    e.currentTarget.classList.remove("drag-over");
-
-    const droppedData = e.dataTransfer.getData("application/json");
-    if (droppedData) {
-      // Handle drop from available decks
-      const droppedDeck = JSON.parse(droppedData);
-      addDeckToSelection(droppedDeck, droppedDeck.type);
-    } else {
-      // Handle reordering within the selected list
-      const fromIndex = e.dataTransfer.getData("text/plain");
-      const draggedElement = document.querySelector(
-        `[data-index='${fromIndex}']`
-      );
-      const afterElement = getDragAfterElement(
-        selectedDecksContainer,
-        e.clientY
-      );
-      const toIndex = afterElement
-        ? Number(afterElement.dataset.index)
-        : selectedDecks.length;
-
-      const [movedItem] = selectedDecks.splice(fromIndex, 1);
-      selectedDecks.splice(
-        toIndex > fromIndex ? toIndex - 1 : toIndex,
-        0,
-        movedItem
-      );
-      renderSelectedDecks();
-    }
-  });
-
-  function getDragAfterElement(container, y) {
-    const draggableElements = [
-      ...container.querySelectorAll(".selected-deck-item:not(.dragging)"),
-    ];
-    return draggableElements.reduce(
-      (closest, child) => {
-        const box = child.getBoundingClientRect();
-        const offset = y - box.top - box.height / 2;
-        if (offset < 0 && offset > closest.offset) {
-          return { offset: offset, element: child };
-        } else {
-          return closest;
-        }
-      },
-      { offset: Number.NEGATIVE_INFINITY }
-    ).element;
-  }
-
   // --- INITIALIZATION ---
   const savedTheme = localStorage.getItem("studyAppTheme") || "light";
+  const savedMode = localStorage.getItem("studyAppMode") || "casual";
   applyTheme(savedTheme);
+  applyMode(savedMode); // This will call renderAvailableDecks
   loadData();
-  // Log the initial page view
   logEvent("Page View", { page: "Home" });
 });
