@@ -155,19 +155,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     availableSets.forEach((set, index) => {
       const radioId = `set-${index}`;
-      const setEl = document.createElement("div");
-      setEl.className = "form-control"; // Use DaisyUI form-control for better structure
-      setEl.innerHTML = `
-        <label for="${radioId}" class="label cursor-pointer flex items-center gap-4 py-2">
-          <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
-          <span class="label-text flex flex-col">
-            <strong>${set.title}</strong>
-            <span class="text-sm opacity-75">${set.description}</span>
-          </span>
-        </label>
+      const labelEl = document.createElement("label");
+      labelEl.className = "label cursor-pointer flex items-center gap-4 py-2";
+      labelEl.setAttribute("for", radioId);
+      labelEl.innerHTML = `
+        <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
+        <span class="label-text flex flex-col">
+          <strong>${set.title}</strong>
+          <span class="text-sm opacity-75">${set.description}</span>
+        </span>
       `;
-      setEl.querySelector("input").addEventListener("change", handleSetSelection);
-      setsContainer.appendChild(setEl);
+      labelEl.querySelector("input").addEventListener("change", handleSetSelection);
+      setsContainer.appendChild(labelEl);
     });
   }
 
