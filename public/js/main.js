@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
       setsSection.style.display = mode === "casual" ? "block" : "none";
     }
 
+    const availableDecksSection = document.getElementById("available-decks-section-container");
+    if (availableDecksSection) {
+      availableDecksSection.style.display = mode === "casual" ? "none" : "block";
+    }
+
     renderAvailableDecks();
   }
 
@@ -91,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       topicEl.className = "collapse collapse-arrow bg-base-200 mb-2";
       topicEl.innerHTML = `
         <input type="radio" name="topic-accordion" />
-        <div class="collapse-title text-xl font-medium">${topic.name}</div>
+        <div class="collapse-title text-xl font-medium flex items-center justify-between"><span>${topic.name}</span></div>
         <div class="collapse-content">
           <div class="topic-deck-list">
             <!-- Decks will be rendered here -->
@@ -180,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- ELEMENT CREATION ---
   function createDeckElement(deck, type, topicDir) {
     const el = document.createElement("div");
-    el.className = "deck-item btn btn-ghost btn-outline justify-start"; // DaisyUI button style
+    el.className = "deck-item btn btn-ghost btn-outline justify-start m-1"; // DaisyUI button style
     el.textContent = deck.title;
     el.dataset.file = deck.file;
     el.dataset.type = type;
