@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createSelectedDeckElement(deck, index) {
     const item = document.createElement("div");
-    item.className = "deck-item btn btn-ghost btn-outline justify-start m-1"; // Match available deck style
+    item.className = "deck-item btn btn-ghost btn-outline justify-start w-full mb-2"; // Use full width and bottom margin
     item.textContent = deck.title; // Just the title
     item.addEventListener("click", () => { // Click the whole item to remove
         removeDeckFromSelection(index, item);

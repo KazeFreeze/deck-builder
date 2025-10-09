@@ -25,10 +25,10 @@
   --secondary-color: #81a1c1;
   --secondary-hover: #5e81ac;
 
-  --bg-top-layer: #4C566A;    /* nord3 */
-  --bg-middle-layer: #434C5E; /* nord2 */
-  --bg-base-layer: #3B4252;   /* nord1 */
-  --body-bg-color: #2E3440;   /* nord0 */
+  --body-bg-color: #4C566A;   /* nord3 - Lightest background */
+  --bg-top-layer: #434C5E;    /* nord2 */
+  --bg-middle-layer: #3B4252; /* nord1 */
+  --bg-base-layer: #2E3440;   /* nord0 - Darkest widget background */
   --text-color: #eceff4;
   --border-color: #4c566a;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
