@@ -1,5 +1,12 @@
 [
   {
+    "title": "SocSc 14 Quiz 2",
+    "description": "Covers all topics for quiz 2 derived from ppt, transcript, and readings."
+    "decks": [
+      { "type": "multiplechoice", "file": "Module 2 - Institutions.json"}
+    ]
+  },
+  {
     "title": "Full Chemistry Review",
     "description": "Covers all available chemistry decks, including air pollution and general chemistry concepts.",
     "decks": [
@@ -15,7 +22,6 @@
        { "type": "multiplechoice", "file": "Q1-questions.json" },
        { "type": "multiplechoice", "file": "Q2-questions.json" },
        { "type": "multiplechoice", "file": "Q3-questions.json" },
-       { "type": "flashcards", "file": "gen_chem.json" }
     ]
   },
   {

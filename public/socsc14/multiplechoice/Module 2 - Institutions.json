@@ -1,0 +1,395 @@
+{
+  "title": "Socsci 14: Module 2 - Institutions",
+  "questions": [
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "According to Francis Fukuyama, what is the key distinction between a patrimonial state and a modern state?",
+      "choices": {
+        "A": "The level of military power",
+        "B": "The type of economic system",
+        "C": "Whether governance is personal or impersonal",
+        "D": "The presence of a written constitution"
+      },
+      "correctAnswer": "C",
+      "explanation": "A patrimonial state is personal, favoring family, while a modern state is impersonal, using a bureaucracy based on merit. (Transcript Chapter 2: Review of Modern Political Institutions; book_summary The Pillars of Modern Statehood)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "Which of the following did Francis Fukuyama identify as the first modern state and for what reason?",
+      "choices": {
+        "A": "Ancient Rome, for its legal system",
+        "B": "Ancient Greece, for its democratic principles",
+        "C": "Ancient China, for its civil service examination system",
+        "D": "The British Empire, for its parliamentary system"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fukuyama cited ancient China as the first modern state because it implemented a civil service exam to create a qualified, impersonal bureaucracy. (Transcript Chapter 2: Review of Modern Political Institutions)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "Which modern political institution is described as a counterbalance to the power of the state, including bodies like a legislature or congress?",
+      "choices": {
+        "A": "The State",
+        "B": "The Rule of Law",
+        "C": "A System of Accountability",
+        "D": "Federalism"
+      },
+      "correctAnswer": "C",
+      "explanation": "A system of accountability serves as a check on the state's power, with procedural mechanisms like voting and bodies like a congress. (Transcript Chapter 2: Review of Modern Political Institutions; Slide 5)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "How is a unitary state, like the Philippines, primarily characterized?",
+      "choices": {
+        "A": "Power is devolved to smaller, local states",
+        "B": "Power is centralized at the national level",
+        "C": "There are multiple layers of equally powerful government",
+        "D": "Local governments have ultimate authority over national laws"
+      },
+      "correctAnswer": "B",
+      "explanation": "A unitary state is one where power is centralized at the national level, though some powers can be granted to local units. (Transcript Chapter 2: Review of Modern Political Institutions)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "The professor's review emphasized that institutions are best understood as what?",
+      "choices": {
+        "A": "The players of the game",
+        "B": "The rules of the game",
+        "C": "Inherently permanent and unchangeable",
+        "D": "Always written down as formal laws"
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript and PPT repeatedly define institutions as the \"rules of the game\" that shape human behavior. (Transcript Chapter 2: Review of Modern Political Institutions; Slide 5)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "What is the primary difference between formal and informal institutions?",
+      "choices": {
+        "A": "Formal institutions are economic, while informal institutions are political.",
+        "B": "Formal institutions are written down, while informal institutions are unwritten customs and norms.",
+        "C": "Formal institutions are created by organizations, while informal institutions are created by states.",
+        "D": "Formal institutions are modern, while informal institutions are traditional."
+      },
+      "correctAnswer": "B",
+      "explanation": "Formal institutions are codified in writing (e.g., laws, constitutions), whereas informal institutions are unwritten but understood (e.g., cultural norms, traditions). (Transcript Chapter 2: Review of Modern Political Institutions; Slide 11)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "According to the review, how do institutions evolve?",
+      "choices": {
+        "A": "They are created by powerful leaders and do not change.",
+        "B": "They evolve from human sociability as people formalize behaviors into rules and customs.",
+        "C": "They are designed by technical experts and implemented top-down.",
+        "D": "They only change in response to economic crises."
+      },
+      "correctAnswer": "B",
+      "explanation": "Institutions evolve from our nature as norm-creating and norm-following beings, where we formalize our behaviors into rules. (Transcript Chapter 2: Review of Modern Political Institutions)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Modern Political Institutions",
+      "question": "What are the two types of accountability identified by Fukuyama?",
+      "choices": {
+        "A": "Political and Economic Accountability",
+        "B": "Moral and Procedural Accountability",
+        "C": "Legal and Social Accountability",
+        "D": "Formal and Informal Accountability"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fukuyama identified Moral Accountability (an internal sense of responsibility) and Procedural Accountability (formal mechanisms like voting). (Transcript Chapter 2: Review of Modern Political Institutions)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "What is the central distinction introduced in the \"Don't mourn, organize\" reading?",
+      "choices": {
+        "A": "Institutions are the players, organizations are the rules.",
+        "B": "Institutions are formal, organizations are informal.",
+        "C": "Institutions are the rules, organizations are the players.",
+        "D": "Institutions are political, organizations are economic."
+      },
+      "correctAnswer": "C",
+      "explanation": "The reading's core concept is that institutions are the \"rules of the game,\" while organizations are the \"players of the game.\" (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 13)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "What is the main argument regarding the sustainability of institutions?",
+      "choices": {
+        "A": "Institutions are self-generating and self-sustaining.",
+        "B": "Institutions are purely technical designs that work automatically.",
+        "C": "Institutions are not self-sustaining and require organizations to be implemented and enforced.",
+        "D": "Institutions are sustained only by the power of the state."
+      },
+      "correctAnswer": "C",
+      "explanation": "The central hypothesis is that institutions are not self-generating or self-sustaining; they are social constructions that need organizations to function. (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 7)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "Which of the following is an example of a formal organization mentioned in the lecture?",
+      "choices": {
+        "A": "The mafia",
+        "B": "A protest movement created organically",
+        "C": "The political party Akbayan",
+        "D": "The custom of \"pakikisama\""
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript explicitly names corporations, political parties like Akbayan, and government agencies as examples of formal organizations. (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 14)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "According to the lecture, entities like the mafia, triads, and rebel groups are classified as what?",
+      "choices": {
+        "A": "Formal institutions",
+        "B": "Informal institutions",
+        "C": "Formal organizations",
+        "D": "Informal organizations"
+      },
+      "correctAnswer": "D",
+      "explanation": "These groups are examples of informal organizations because they operate outside the formal public sphere, though they have their own internal rules. (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 15)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "Why are institutions referred to as \"empty boxes\" without human agency?",
+      "choices": {
+        "A": "Because they lack clear definitions.",
+        "B": "Because a law is powerless if organizations and people do not follow or apply it.",
+        "C": "Because they are inherently weak and easily changed.",
+        "D": "Because they only exist in theory, not in practice."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains that institutions are \"empty boxes\" because they require the human agency within organizations to be implemented and made effective. (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 18)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "In the anti-corruption protest example, which of the following was identified as an institution?",
+      "choices": {
+        "A": "The political party Akbayan",
+        "B": "The student groups protesting",
+        "C": "Freedom of Speech and Assembly",
+        "D": "The Philippine National Police (PNP)"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Freedom of Speech and Assembly, protected under the Constitution, is a formal institution that the protesting organizations leverage. (Transcript Chapter 5: Applying the Concepts; Slide 22)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "In the same protest example, which of the following was identified as an organization?",
+      "choices": {
+        "A": "The Rule of Law",
+        "B": "Accountability",
+        "C": "Social Media",
+        "D": "Tindig Pilipinas"
+      },
+      "correctAnswer": "D",
+      "explanation": "Tindig Pilipinas is an established civil society group, making it a formal organization involved in the protests. (Transcript Chapter 5: Applying the Concepts; Slide 22)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "Institutions and Organizations",
+      "question": "The interaction between what two elements is described as the \"essence of politics and development\"?",
+      "choices": {
+        "A": "The state and the economy",
+        "B": "Formal and informal rules",
+        "C": "Institutions (the rules) and organizations (the players)",
+        "D": "Domestic and international actors"
+      },
+      "correctAnswer": "C",
+      "explanation": "The lecture states that the interaction between institutions and organizations is the essence of politics and development. (Transcript Chapter 3: Institutions and Organizations: The Rules vs. The Players; Slide 16)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "How is a \"norm\" defined in the context of the Norm Life Cycle?",
+      "choices": {
+        "A": "A collection of many laws and rules",
+        "B": "A standard of appropriate behavior for actors with a given identity",
+        "C": "The same as a formal institution",
+        "D": "A rule enforced only by international law"
+      },
+      "correctAnswer": "B",
+      "explanation": "A norm is defined as a standard of appropriate behavior with a shared moral assessment of what ought to be. (Transcript Chapter 4: The Norm Life Cycle; Slide 24)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is the primary role of \"norm entrepreneurs\" in the first stage of the life cycle?",
+      "choices": {
+        "A": "To enforce existing norms through legal action.",
+        "B": "To call attention to issues and advocate for new standards of behavior.",
+        "C": "To study and document internalized norms.",
+        "D": "To ensure states conform to established international norms."
+      },
+      "correctAnswer": "B",
+      "explanation": "Norm entrepreneurs actively build new norms by calling attention to issues and persuading others to adopt new standards, often using organizational platforms. (Transcript Chapter 4: The Norm Life Cycle; Slide 28)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "Who was used in the lecture as a prime example of a norm entrepreneur?",
+      "choices": {
+        "A": "Francis Fukuyama",
+        "B": "Henry Dunant",
+        "C": "Karl Marx",
+        "D": "Adam Smith"
+      },
+      "correctAnswer": "B",
+      "explanation": "Henry Dunant's advocacy after the Battle of Solferino, leading to the Red Cross and the Geneva Convention, was the key example of a norm entrepreneur. (Transcript Chapter 4: The Norm Life Cycle; Slide 30)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What are the three stages of the Norm Life Cycle in the correct order?",
+      "choices": {
+        "A": "Cascade, Emergence, Internalization",
+        "B": "Emergence, Internalization, Cascade",
+        "C": "Emergence, Cascade, Internalization",
+        "D": "Internalization, Cascade, Emergence"
+      },
+      "correctAnswer": "C",
+      "explanation": "The norm life cycle progresses from Norm Emergence, to a Norm Cascade after a tipping point, and finally to Internalization. (Transcript Chapter 4: The Norm Life Cycle; Slide 27)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is the \"tipping point\" in the Norm Life Cycle?",
+      "choices": {
+        "A": "The point where a norm is first proposed.",
+        "B": "The threshold where a norm gains enough support (about one-third of states) to become widespread.",
+        "C": "The stage where a norm is fully internalized and taken for granted.",
+        "D": "The point where a norm begins to fail."
+      },
+      "correctAnswer": "B",
+      "explanation": "The tipping point is the threshold, often when about one-third of relevant states adopt a norm, that leads to the rapid imitation of the norm cascade. (Transcript Chapter 4: The Norm Life Cycle; Slide 34)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is the primary driver of the \"norm cascade\" stage?",
+      "choices": {
+        "A": "A universal moral belief in the norm",
+        "B": "The threat of military intervention",
+        "C": "Economic incentives from powerful states",
+        "D": "Socialization and peer pressure for legitimacy and reputation"
+      },
+      "correctAnswer": "D",
+      "explanation": "The norm cascade is driven primarily by socialization and peer pressure, as states conform to gain legitimacy, reputation, and esteem, not necessarily out of moral conviction. (Transcript Chapter 4: The Norm Life Cycle; Slide 35)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "Which of the following is NOT a motivation for states to conform during the norm cascade?",
+      "choices": {
+        "A": "Legitimation",
+        "B": "Financial profit",
+        "C": "Conformity",
+        "D": "Esteem"
+      },
+      "correctAnswer": "B",
+      "explanation": "The lecture identifies legitimation, conformity (peer pressure), and esteem as the key motivations for states to adhere to a norm during the cascade phase. (Transcript Chapter 4: The Norm Life Cycle; Slide 36)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What characterizes the \"internalization\" stage of the life cycle?",
+      "choices": {
+        "A": "The norm is highly contested and debated.",
+        "B": "The norm is adopted by a critical mass of states.",
+        "C": "The norm is so widely accepted it becomes taken for granted and is followed automatically.",
+        "D": "The norm requires active persuasion by norm entrepreneurs to be sustained."
+      },
+      "correctAnswer": "C",
+      "explanation": "Internalization is the final stage where a norm is taken for granted, conformance is automatic, and it is no longer a subject of major debate. (Transcript Chapter 4: The Norm Life Cycle; Slide 37)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is \"jus cogens\" and how does it relate to the Norm Life Cycle?",
+      "choices": {
+        "A": "It is a type of formal organization.",
+        "B": "It is an early stage of norm emergence.",
+        "C": "It is an example of internalized norms in international law, such as the prohibition of slavery.",
+        "D": "It is the process of challenging an existing norm."
+      },
+      "correctAnswer": "C",
+      "explanation": "Jus cogens, or peremptory norms, are fundamental principles like the prohibitions against slavery and torture, serving as an example of fully internalized norms. (Transcript Chapter 4: The Norm Life Cycle; Slide 38)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is the relationship between norms and institutions?",
+      "choices": {
+        "A": "They are completely unrelated concepts.",
+        "B": "A norm isolates a single standard of behavior, while an institution can be a collection of many norms and rules.",
+        "C": "Institutions are informal, while norms are formal.",
+        "D": "A norm is always more powerful than an institution."
+      },
+      "correctAnswer": "B",
+      "explanation": "The lecture clarifies that a norm is more specific, isolating a single standard, whereas an institution is a broader collection of rules and practices. (Transcript Chapter 4: The Norm Life Cycle; Slide 24)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "According to the lecture, what do norm entrepreneurs require to effectively promote their advocacy?",
+      "choices": {
+        "A": "The support of all great powers",
+        "B": "A personal fortune",
+        "C": "An organizational platform",
+        "D": "A legal mandate from the UN"
+      },
+      "correctAnswer": "C",
+      "explanation": "Norm entrepreneurs use organizational platforms, like NGOs and advocacy groups, as vehicles to challenge existing norms and build new ones. (Transcript Chapter 4: The Norm Life Cycle; Slide 33)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "How do new norms typically emerge?",
+      "choices": {
+        "A": "They appear out of thin air in a vacuum.",
+        "B": "They are decreed by a single, powerful state.",
+        "C": "They emerge in a contested space where they must compete with existing norms and interests.",
+        "D": "They are the result of random, uncoordinated actions."
+      },
+      "correctAnswer": "C",
+      "explanation": "New norms do not emerge from nothing; they enter a \"highly contested normative space\" where they challenge prevailing standards. (book_summary The Norm \"Life Cycle\"; Slide 32)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What is the role of state identity in the norm cascade?",
+      "choices": {
+        "A": "It has no role; states act only based on material interest.",
+        "B": "States conform to norms to enhance their identity as members of the international community.",
+        "C": "State identity makes them resistant to all new norms.",
+        "D": "Only states with weak identities are susceptible to norm cascades."
+      },
+      "correctAnswer": "B",
+      "explanation": "State identity is a key factor, as states comply with norms to demonstrate they belong and to gain legitimacy, reputation, and esteem. (book_summary The Norm \"Life Cycle\"; Slide 35)"
+    },
+    {
+      "module": "Module 2: Institutions",
+      "section": "The Norm Life Cycle",
+      "question": "What intrinsic characteristics of a norm make it more likely to become influential?",
+      "choices": {
+        "A": "Ambiguity and complexity",
+        "B": "Claims that benefit only one specific culture",
+        "C": "Clarity, specificity, and universalistic claims",
+        "D": "Being recently created with no historical precedent"
+      },
+      "correctAnswer": "C",
+      "explanation": "Norms that are clear, specific, and make universalistic claims (e.g., good for all people) are more likely to be successful and become institutionalized. (book_summary Conditions for Norm Success; Slide 40)"
+    }
+  ]
+}
