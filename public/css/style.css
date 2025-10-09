@@ -15,24 +15,24 @@
   --text-color: #2e3440;
   --border-color: #d8dee9;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --card-inset-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+  --card-inset-shadow: inset 0 2px 6px rgba(0,0,0,0.15);
 }
 
 [data-theme="dark"] {
-  /* Nord Polar Night */
+  /* Nord Polar Night - Adjusted for more contrast */
   --primary-color: #88c0d0;
   --primary-hover: #8fbcbb;
   --secondary-color: #81a1c1;
   --secondary-hover: #5e81ac;
 
-  --bg-top-layer: #434c5e;
-  --bg-middle-layer: #3b4252;
-  --bg-base-layer: #2e3440;
-  --body-bg-color: #242933; /* Darker than all for a slight contrast */
+  --bg-top-layer: #4C566A;    /* nord3 */
+  --bg-middle-layer: #434C5E; /* nord2 */
+  --bg-base-layer: #3B4252;   /* nord1 */
+  --body-bg-color: #2E3440;   /* nord0 */
   --text-color: #eceff4;
   --border-color: #4c566a;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --card-inset-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  --card-inset-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
 }
 
 /* --- Remove DaisyUI Card Styling Overrides --- */
@@ -50,8 +50,9 @@
 }
 #config-card {
     background-color: var(--bg-base-layer); /* Adjusted to be the flattest layer */
-    border: 1px solid var(--border-color);
+    border: 1px solid #000; /* Black border as requested */
     border-radius: 12px;
+    box-shadow: none; /* Explicitly remove shadow */
 }
 #sets-section-container, #available-decks-section-container {
     background-color: var(--bg-base-layer);
@@ -219,15 +220,18 @@ button:hover,
 .set-item-panel {
     border-color: var(--border-color);
     background-color: transparent;
+    transition: all 0.2s ease-in-out;
 }
 .set-item-panel:hover {
     border-color: var(--primary-hover);
     background-color: var(--bg-middle-layer);
+    transform: translateY(-2px);
 }
 input.hidden:checked + .set-item-panel {
     border-color: var(--primary-color);
     background-color: var(--bg-top-layer);
-    box-shadow: 0 0 15px rgba(136, 192, 208, 0.5); /* Using a specific color for a consistent glow */
+    box-shadow: var(--card-shadow);
+    transform: translateY(-5px);
 }
 .deck-column h2 {
   display: flex;

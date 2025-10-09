@@ -238,19 +238,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createSelectedDeckElement(deck, index) {
     const item = document.createElement("div");
-    item.className = "selected-deck-item flex items-center justify-between bg-base-100 p-2 rounded mb-1";
-    const typeIcon = deck.type === "flashcards" ? "fa-clone" : "fa-list-ul";
-    item.innerHTML = `
-      <div class="flex items-center gap-2">
-        <i class="fas ${typeIcon}"></i>
-        <span class="flex-grow">${deck.title}</span>
-        <span class="badge badge-ghost badge-sm h-auto whitespace-normal text-right">${deck.topicName}</span>
-      </div>
-      <button class="remove-deck-btn btn btn-xs btn-circle btn-ghost" data-index="${index}">
-        <i class="fas fa-times-circle"></i>
-      </button>
-    `;
-    item.querySelector(".remove-deck-btn").addEventListener("click", () => {
+    item.className = "deck-item btn btn-ghost btn-outline justify-start m-1"; // Match available deck style
+    item.textContent = deck.title; // Just the title
+    item.addEventListener("click", () => { // Click the whole item to remove
         removeDeckFromSelection(index, item);
     });
     return item;
@@ -303,8 +293,8 @@ document.addEventListener("DOMContentLoaded", () => {
     anime({
       targets: sourceElement,
       opacity: 0,
-      translateX: 20,
-      duration: 200,
+      translateY: 10,
+      duration: 150,
       easing: 'easeInQuad',
       complete: () => {
         selectedDecks.splice(index, 1);
@@ -319,8 +309,8 @@ document.addEventListener("DOMContentLoaded", () => {
     anime({
       targets: sourceElement,
       opacity: 0,
-      scale: 0.9,
-      duration: 200,
+      translateY: -10,
+      duration: 150,
       easing: 'easeInQuad',
       complete: () => {
         // 2. Update state after animation
@@ -337,8 +327,8 @@ document.addEventListener("DOMContentLoaded", () => {
             anime({
                 targets: newSelectedElement,
                 opacity: [0, 1],
-                translateX: [-20, 0],
-                duration: 250,
+                translateY: [-10, 0],
+                duration: 200,
                 easing: 'easeOutQuad'
             });
         }
