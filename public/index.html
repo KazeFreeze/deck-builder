@@ -31,6 +31,27 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="md:col-span-2">
+            <!-- Configuration Section -->
+            <div class="card bg-base-100 shadow-xl mb-6">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-cogs"></i> Configuration</h2>
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Shuffle All Items</span>
+                            <input type="checkbox" id="shuffle-toggle" class="toggle" checked />
+                        </label>
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Enable Timer</span>
+                            <input type="checkbox" id="timer-toggle" class="toggle" checked />
+                        </label>
+                        <label class="label cursor-pointer">
+                            <span class="label-text">Show Explanation Immediately</span>
+                            <input type="checkbox" id="show-explanation-toggle" class="toggle" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
             <!-- Pre-configured Sets Section -->
             <div id="sets-section-container" class="card bg-base-200 shadow-xl mb-6">
                 <div class="card-body">
@@ -60,27 +81,6 @@
                     <h2 class="card-title"><i class="fas fa-stream"></i> Selected Study Plan</h2>
                     <div id="selected-decks" class="min-h-48">
                         <div class="placeholder">Select decks to build your study plan.</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Configuration Section -->
-            <div class="card bg-base-100 shadow-xl mt-6">
-                <div class="card-body">
-                    <h2 class="card-title"><i class="fas fa-cogs"></i> Configuration</h2>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <span class="label-text">Shuffle All Items</span>
-                            <input type="checkbox" id="shuffle-toggle" class="toggle" checked />
-                        </label>
-                        <label class="label cursor-pointer">
-                            <span class="label-text">Enable Timer</span>
-                            <input type="checkbox" id="timer-toggle" class="toggle" checked />
-                        </label>
-                        <label class="label cursor-pointer">
-                            <span class="label-text">Show Explanation Immediately</span>
-                            <input type="checkbox" id="show-explanation-toggle" class="toggle" />
-                        </label>
                     </div>
                 </div>
             </div>

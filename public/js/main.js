@@ -160,11 +160,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // Create the row div as requested
       const rowDiv = document.createElement("div");
 
-      // Create the selector (the radio button)
+      // Create the selector (now a checkbox)
       const selector = document.createElement("input");
-      selector.type = "radio";
+      selector.type = "checkbox";
       selector.id = radioId;
-      selector.name = "preconfigured-set";
+      selector.className = "checkbox checkbox-primary";
       selector.value = index;
       selector.addEventListener("change", handleSetSelection);
 
@@ -221,8 +221,8 @@ document.addEventListener("DOMContentLoaded", () => {
     item.innerHTML = `
       <div class="flex items-center gap-2">
         <i class="fas ${typeIcon}"></i>
-        <span>${deck.title}</span>
-        <span class="badge badge-ghost badge-sm">${deck.topicName}</span>
+        <span class="flex-grow">${deck.title}</span>
+        <span class="badge badge-ghost badge-sm h-auto whitespace-normal text-right">${deck.topicName}</span>
       </div>
       <button class="remove-deck-btn btn btn-xs btn-circle btn-ghost" data-index="${index}">
         <i class="fas fa-times-circle"></i>
@@ -238,20 +238,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- EVENT HANDLERS & LOGIC ---
   function handleSetSelection(e) {
-    const setIndex = parseInt(e.target.value, 10);
-    const selectedSet = availableSets[setIndex];
-    if (!selectedSet) return;
+    // This function now rebuilds the entire list of selected decks from scratch
+    // based on ALL currently checked boxes. This correctly handles shared decks.
+    let newSelectedDecks = [];
+    const checkedSetCheckboxes = document.querySelectorAll("#sets-container input[type='checkbox']:checked");
 
-    selectedDecks = selectedSet.decks.map(setDeck => {
+    checkedSetCheckboxes.forEach(checkbox => {
+      const setIndex = parseInt(checkbox.value, 10);
+      const selectedSet = availableSets[setIndex];
+      if (!selectedSet) return;
+
+      const decksInSet = selectedSet.decks.map(setDeck => {
         for (const topic of availableTopics) {
-            const deckList = topic[setDeck.type] || [];
-            const foundDeck = deckList.find(d => d.file === setDeck.file);
-            if (foundDeck) {
-                return { ...foundDeck, type: setDeck.type, topicDir: topic.directory, topicName: topic.name };
-            }
+          const deckList = topic[setDeck.type] || [];
+          const foundDeck = deckList.find(d => d.file === setDeck.file);
+          if (foundDeck) {
+            return { ...foundDeck, type: setDeck.type, topicDir: topic.directory, topicName: topic.name };
+          }
         }
         return null;
-    }).filter(Boolean);
+      }).filter(Boolean);
+
+      decksInSet.forEach(deckToAdd => {
+        const alreadySelected = newSelectedDecks.some(
+          d => d.file === deckToAdd.file && d.type === deckToAdd.type && d.topicDir === deckToAdd.topicDir
+        );
+        if (!alreadySelected) {
+          newSelectedDecks.push(deckToAdd);
+        }
+      });
+    });
+
+    selectedDecks = newSelectedDecks;
 
     renderSelectedDecks();
     renderAvailableDecks();

@@ -14,7 +14,8 @@
     "decks": [
        { "type": "multiplechoice", "file": "Q1-questions.json" },
        { "type": "multiplechoice", "file": "Q2-questions.json" },
-       { "type": "multiplechoice", "file": "Q3-questions.json" }
+       { "type": "multiplechoice", "file": "Q3-questions.json" },
+       { "type": "flashcards", "file": "gen_chem.json" }
     ]
   },
   {
