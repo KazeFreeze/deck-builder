@@ -46,7 +46,7 @@
 
 /* Scoped override for quiz session page */
 [data-theme="dark"] .quiz-session-page {
-    --body-bg-color: var(--bg-middle-layer); /* Lighter bg for the page */
+    --body-bg-color: var(--bg-top-layer); /* Use the lightest shade for max contrast */
 }
 
 
@@ -253,7 +253,9 @@ input.hidden:checked + .set-item-panel {
   box-shadow: var(--card-shadow);
 }
 .deck-item:hover {
-  background-color: var(--bg-alt-color);
+  border-color: var(--primary-hover);
+  background-color: transparent; /* Override DaisyUI's hover background */
+  color: var(--text-color); /* Override DaisyUI's hover text color */
 }
 .selected-deck-item {
   display: flex;
@@ -551,4 +553,12 @@ input.hidden:checked + .set-item-panel {
   margin-top: 2rem;
   border-top: 1px solid var(--border-color);
   padding-top: 1.5rem;
+}
+
+/* Fix for text overflow in selected deck items */
+#selected-decks .deck-item {
+  white-space: normal;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }

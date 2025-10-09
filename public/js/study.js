@@ -506,12 +506,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .add({
         targets: oldDigits,
-        translateY: '-100%',
+        translateY: '100%',
         opacity: 0,
     }, 0)
     .add({
         targets: newDigits,
-        translateY: ['100%', '0%'],
+        translateY: ['-100%', '0%'],
         opacity: 1
     }, 0);
   }
