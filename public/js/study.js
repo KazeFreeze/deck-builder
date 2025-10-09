@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     quizTitleEl.textContent = "Loading decks...";
     try {
       const fetchPromises = paths.map((path) => {
-        const type = path.split("/")[0];
+        const type = path.split("/")[1]; // Bug fix: The type is the second part of the path
         return fetch(path).then((res) => {
           if (!res.ok)
             throw new Error(`Failed to load ${path}: ${res.statusText}`);
