@@ -153,20 +153,41 @@ document.addEventListener("DOMContentLoaded", () => {
       setsContainer.innerHTML = '<div class="placeholder">No pre-configured sets found.</div>';
       return;
     }
+
     availableSets.forEach((set, index) => {
       const radioId = `set-${index}`;
-      const labelEl = document.createElement("label");
-      labelEl.className = "label cursor-pointer flex items-center gap-4 py-2";
-      labelEl.setAttribute("for", radioId);
-      labelEl.innerHTML = `
-        <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
-        <span class="label-text flex flex-col">
-          <strong>${set.title}</strong>
-          <span class="text-sm opacity-75">${set.description}</span>
-        </span>
-      `;
-      labelEl.querySelector("input").addEventListener("change", handleSetSelection);
-      setsContainer.appendChild(labelEl);
+
+      // Create the row div as requested
+      const rowDiv = document.createElement("div");
+
+      // Create the selector (the radio button)
+      const selector = document.createElement("input");
+      selector.type = "radio";
+      selector.id = radioId;
+      selector.name = "preconfigured-set";
+      selector.value = index;
+      selector.addEventListener("change", handleSetSelection);
+
+      // Create the title element (using a label for accessibility)
+      const titleLabel = document.createElement("label");
+      titleLabel.setAttribute("for", radioId);
+      titleLabel.style.marginLeft = "8px"; // Add a small space between button and text
+
+      const titleStrong = document.createElement("strong");
+      titleStrong.textContent = set.title;
+
+      const descriptionSpan = document.createElement("span");
+      descriptionSpan.textContent = ` — ${set.description}`;
+
+      titleLabel.appendChild(titleStrong);
+      titleLabel.appendChild(descriptionSpan);
+
+      // Append the selector and title to the row
+      rowDiv.appendChild(selector);
+      rowDiv.appendChild(titleLabel);
+
+      // Append the row to the main container
+      setsContainer.appendChild(rowDiv);
     });
   }
 
