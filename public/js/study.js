@@ -454,19 +454,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- UTILITY FUNCTIONS ---
   function animateValue(element, start, end) {
-    const duration = 250;
-    const frame = { val: 0 };
-    anime({
-      targets: frame,
-      val: 1,
-      duration,
-      easing: 'easeOutQuad',
-      update: function() {
-        element.style.opacity = frame.val;
-        element.style.transform = `translateY(${(1 - frame.val) * 10}px)`;
-      }
-    });
-    element.textContent = end;
+    if (!start || start === end) {
+        element.textContent = end;
+        return;
+    }
+
+    const elementWidth = element.getBoundingClientRect().width;
+    element.style.width = `${elementWidth}px`;
+    element.style.textAlign = 'right';
+
+    let html = '';
+    const startChars = String(start).split('');
+    const endChars = String(end).split('');
+    const maxLength = Math.max(startChars.length, endChars.length);
+
+    while (startChars.length < maxLength) startChars.unshift('\u00A0');
+    while (endChars.length < maxLength) endChars.unshift('\u00A0');
+
+    let hasChanged = false;
+    for (let i = 0; i < maxLength; i++) {
+        if (startChars[i] === endChars[i]) {
+            html += `<span class="digit-char">${endChars[i]}</span>`;
+        } else {
+            hasChanged = true;
+            html += `<span class="digit-char" style="display: inline-block; position: relative;">
+                        <span class="old-digit" style="position: absolute; top: 0; left: 0;">${startChars[i]}</span>
+                        <span class="new-digit" style="position: relative; top: 0; left: 0; opacity: 0;">${endChars[i]}</span>
+                     </span>`;
+        }
+    }
+
+    if (!hasChanged) {
+        element.textContent = end;
+        element.style.width = 'auto';
+        return;
+    }
+
+    element.innerHTML = html;
+
+    const oldDigits = element.querySelectorAll('.old-digit');
+    const newDigits = element.querySelectorAll('.new-digit');
+
+    anime.timeline({
+        duration: 350,
+        easing: 'easeOutQuad',
+        complete: () => {
+            element.textContent = end;
+            element.style.width = 'auto';
+            element.style.textAlign = 'left';
+        }
+    })
+    .add({
+        targets: oldDigits,
+        translateY: '-100%',
+        opacity: 0,
+    }, 0)
+    .add({
+        targets: newDigits,
+        translateY: ['100%', '0%'],
+        opacity: 1
+    }, 0);
   }
 
   function shuffleArray(array) {
