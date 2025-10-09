@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let availableTopics = [];
   let availableSets = [];
   let selectedDecks = [];
-  let currentMode = "casual"; // "casual" or "pro"
+  let currentMode = null; // "casual" or "pro"
 
   // --- ANALYTICS FUNCTION ---
   async function logEvent(eventType, eventData) {

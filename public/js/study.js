@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const fetchPromises = paths.map((path) => {
         const type = path.split("/")[1]; // Bug fix: The type is the second part of the path
-        return fetch(path).then((res) => {
+        return fetch(`/${path}`).then((res) => {
           if (!res.ok)
             throw new Error(`Failed to load ${path}: ${res.statusText}`);
           return res.json().then((data) => ({ data, type }));

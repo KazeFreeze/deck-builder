@@ -40,30 +40,6 @@
     --body-bg-color: #4C566A; /* nord3 - Lightest background for this page only */
 }
 
-/* --- Remove DaisyUI Card Styling Overrides --- */
-.card {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* --- Layered Styling --- */
-#selected-decks-card {
-    background-color: var(--bg-top-layer);
-    box-shadow: var(--card-shadow);
-    border-radius: 12px;
-}
-#config-card {
-    background-color: var(--bg-base-layer); /* Adjusted to be the flattest layer */
-    border: 1px solid #000; /* Black border as requested */
-    border-radius: 12px;
-    box-shadow: none; /* Explicitly remove shadow */
-}
-#sets-section-container, #available-decks-section-container {
-    background-color: var(--bg-base-layer);
-    box-shadow: var(--card-inset-shadow);
-    border-radius: 12px;
-}
 
 
 /* --- GLOBAL & TYPOGRAPHY --- */
@@ -76,6 +52,7 @@ body {
   margin: 0;
   padding: 20px;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 h1,
