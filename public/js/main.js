@@ -37,6 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
     currentMode = mode;
     localStorage.setItem("studyAppMode", mode);
     modeToggle.checked = mode === "pro";
+
+    const setsSection = document.getElementById("sets-section-container");
+    if (setsSection) {
+      setsSection.style.display = mode === "casual" ? "block" : "none";
+    }
+
     renderAvailableDecks();
   }
 
@@ -174,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- ELEMENT CREATION ---
   function createDeckElement(deck, type, topicDir) {
     const el = document.createElement("div");
-    el.className = "deck-item btn btn-ghost justify-start"; // DaisyUI button style
+    el.className = "deck-item btn btn-ghost btn-outline justify-start"; // DaisyUI button style
     el.textContent = deck.title;
     el.dataset.file = deck.file;
     el.dataset.type = type;
