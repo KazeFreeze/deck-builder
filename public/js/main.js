@@ -156,13 +156,13 @@ document.addEventListener("DOMContentLoaded", () => {
     availableSets.forEach((set, index) => {
       const radioId = `set-${index}`;
       const setEl = document.createElement("div");
-      setEl.className = "radio-set-item"; // You might want to style this with DaisyUI classes
+      setEl.className = "form-control"; // Use DaisyUI form-control for better structure
       setEl.innerHTML = `
-        <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
-        <label for="${radioId}" class="label cursor-pointer">
-          <span class="label-text">
+        <label for="${radioId}" class="label cursor-pointer flex items-center gap-4 py-2">
+          <input type="radio" id="${radioId}" name="preconfigured-set" value="${index}" class="radio radio-primary">
+          <span class="label-text flex flex-col">
             <strong>${set.title}</strong>
-            <span>${set.description}</span>
+            <span class="text-sm opacity-75">${set.description}</span>
           </span>
         </label>
       `;
