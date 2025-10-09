@@ -554,3 +554,16 @@ input.hidden:checked + .set-item-panel {
     justify-content: center;
   }
 }
+
+.set-item-panel.selected {
+  background-color: var(--bg-top-layer);
+  box-shadow: var(--card-shadow);
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+#question-indicators-container {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}

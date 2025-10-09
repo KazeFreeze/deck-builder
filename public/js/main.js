@@ -240,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const item = document.createElement("div");
     item.className = "deck-item btn btn-ghost btn-outline justify-start w-full mb-2"; // Use full width and bottom margin
     item.textContent = deck.title; // Just the title
+    item.dataset.index = index; // Add index for sorting
     item.addEventListener("click", () => { // Click the whole item to remove
         removeDeckFromSelection(index, item);
     });
@@ -257,6 +258,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Collect all decks from all currently checked sets.
     const decksFromSelectedSets = [];
     const checkedSetCheckboxes = document.querySelectorAll("#sets-container input[type='checkbox']:checked");
+
+    // Toggle the 'selected' class on the labels for styling
+    const allSetCheckboxes = document.querySelectorAll("#sets-container input[type='checkbox']");
+    allSetCheckboxes.forEach(checkbox => {
+      const label = document.querySelector(`label[for="${checkbox.id}"]`);
+      if (label) {
+        label.classList.toggle('selected', checkbox.checked);
+      }
+    });
 
     checkedSetCheckboxes.forEach(checkbox => {
         const setIndex = parseInt(checkbox.value, 10);
@@ -368,10 +378,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- INITIALIZATION ---
+  function initSortable() {
+    new Sortable(selectedDecksContainer, {
+      animation: 150,
+      ghostClass: 'blue-background-class',
+      onEnd: function (evt) {
+        const itemEl = evt.item;
+        const oldIndex = parseInt(itemEl.dataset.index, 10);
+        const newIndex = evt.newDraggableIndex;
+
+        // Move the item in the array
+        const [movedItem] = selectedDecks.splice(oldIndex, 1);
+        selectedDecks.splice(newIndex, 0, movedItem);
+
+        // Re-render to update indices and event listeners
+        renderSelectedDecks();
+      },
+    });
+  }
+
   const savedTheme = localStorage.getItem("studyAppTheme") || "light";
   const savedMode = localStorage.getItem("studyAppMode") || "casual";
   applyTheme(savedTheme);
   applyMode(savedMode); // This will call renderAvailableDecks
   loadData();
+  initSortable();
   logEvent("Page View", { page: "Home" });
 });

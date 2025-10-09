@@ -193,23 +193,56 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- RENDERING LOGIC ---
-  function displayCurrentItem() {
+  function displayCurrentItem(direction = 'initial') {
     if (currentItemIndex >= allItems.length) {
       if (!quizCompleted) showResults();
       return;
     }
     const item = allItems[currentItemIndex];
-    studyItemContainerEl.innerHTML = "";
-    studyItemContainerEl.className = `study-item-container ${item.type}`;
 
-    if (item.type === "multiplechoice") {
-      renderMultipleChoice(item);
-    } else if (item.type === "flashcard") {
-      renderFlashcard(item);
+    const renderContent = () => {
+      studyItemContainerEl.innerHTML = "";
+      studyItemContainerEl.className = `study-item-container ${item.type}`;
+      if (item.type === "multiplechoice") {
+        renderMultipleChoice(item);
+      } else if (item.type === "flashcard") {
+        renderFlashcard(item);
+      }
+      updateStatus();
+      updateNavigation();
+    };
+
+    if (direction === 'initial') {
+      renderContent();
+      anime({
+        targets: studyItemContainerEl,
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutQuad'
+      });
+      return;
     }
 
-    updateStatus();
-    updateNavigation();
+    const outX = direction === 'next' ? -30 : 30;
+    const inX = direction === 'next' ? 30 : -30;
+
+    anime({
+      targets: studyItemContainerEl,
+      opacity: 0,
+      translateX: outX,
+      duration: 150,
+      easing: 'easeInQuad',
+      complete: () => {
+        renderContent();
+        anime({
+          targets: studyItemContainerEl,
+          opacity: [0, 1],
+          translateX: [inX, 0],
+          duration: 200,
+          easing: 'easeOutQuad'
+        });
+      }
+    });
   }
 
   function renderMultipleChoice(item) {
@@ -278,8 +311,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }</span> <i class="fas ${iconClass} type-icon"></i>`;
       indicator.dataset.index = index;
       indicator.addEventListener("click", () => {
+        if (index === currentItemIndex) return;
         currentItemIndex = index;
-        displayCurrentItem();
+        displayCurrentItem('jump');
       });
       container.appendChild(indicator);
     });
@@ -312,7 +346,16 @@ document.addEventListener("DOMContentLoaded", () => {
       (acc, ans) => acc + (ans.correct ? 1 : 0),
       0
     );
-    scoreEl.textContent = `${score} / ${answeredMcq.length}`;
+
+    // Animate score update
+    const oldScoreText = scoreEl.textContent;
+    const newScoreText = `${score} / ${answeredMcq.length}`;
+    if (oldScoreText !== newScoreText) {
+      animateValue(scoreEl, oldScoreText, newScoreText);
+    } else {
+      scoreEl.textContent = newScoreText;
+    }
+
     updateItemIndicators();
   }
 
@@ -358,12 +401,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function nextItem() {
     if (currentItemIndex < allItems.length) currentItemIndex++;
-    displayCurrentItem();
+    displayCurrentItem('next');
   }
 
   function previousItem() {
     if (currentItemIndex > 0) currentItemIndex--;
-    displayCurrentItem();
+    displayCurrentItem('back');
   }
 
   function showResults() {
@@ -410,6 +453,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- UTILITY FUNCTIONS ---
+  function animateValue(element, start, end) {
+    const duration = 250;
+    const frame = { val: 0 };
+    anime({
+      targets: frame,
+      val: 1,
+      duration,
+      easing: 'easeOutQuad',
+      update: function() {
+        element.style.opacity = frame.val;
+        element.style.transform = `translateY(${(1 - frame.val) * 10}px)`;
+      }
+    });
+    element.textContent = end;
+  }
+
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -421,8 +480,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function startTimer() {
     startTime = Date.now();
     timerInterval = setInterval(() => {
+      const oldTime = timerEl.textContent;
       elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-      timerEl.textContent = formatTime(elapsedSeconds);
+      const newTime = formatTime(elapsedSeconds);
+      if (oldTime !== newTime) {
+        animateValue(timerEl, oldTime, newTime);
+      }
     }, 1000);
   }
 
