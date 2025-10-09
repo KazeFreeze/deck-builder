@@ -34,21 +34,45 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function applyMode(mode) {
-    currentMode = mode;
-    localStorage.setItem("studyAppMode", mode);
-    modeToggle.checked = mode === "pro";
+    // Prevent re-animation if already in the target mode
+    if (currentMode === mode && document.getElementById("sets-section-container").style.display !== 'none' && mode === 'casual') return;
+    if (currentMode === mode && document.getElementById("available-decks-section-container").style.display !== 'none' && mode === 'pro') return;
+
 
     const setsSection = document.getElementById("sets-section-container");
-    if (setsSection) {
-      setsSection.style.display = mode === "casual" ? "block" : "none";
-    }
-
     const availableDecksSection = document.getElementById("available-decks-section-container");
-    if (availableDecksSection) {
-      availableDecksSection.style.display = mode === "casual" ? "none" : "block";
-    }
 
-    renderAvailableDecks();
+    const leavingSection = mode === "pro" ? setsSection : availableDecksSection;
+    const enteringSection = mode === "pro" ? availableDecksSection : setsSection;
+
+    // 1. Animate the leaving section out
+    anime({
+        targets: leavingSection,
+        opacity: 0,
+        translateY: -20,
+        duration: 250,
+        easing: 'easeInQuad',
+        complete: () => {
+            leavingSection.style.display = 'none';
+
+            // 2. Update state and render content for the entering section (while it's still invisible)
+            currentMode = mode;
+            localStorage.setItem("studyAppMode", mode);
+            modeToggle.checked = mode === "pro";
+            renderAvailableDecks();
+
+            // 3. Animate the entering section in
+            enteringSection.style.display = 'block';
+            enteringSection.style.opacity = 0; // Start invisible
+            anime({
+                targets: enteringSection,
+                opacity: 1,
+                translateY: [20, 0],
+                duration: 300,
+                easing: 'easeOutQuad'
+            });
+        }
+    });
   }
 
   themeToggle.addEventListener("change", () => {
@@ -153,41 +177,39 @@ document.addEventListener("DOMContentLoaded", () => {
       setsContainer.innerHTML = '<div class="placeholder">No pre-configured sets found.</div>';
       return;
     }
+    setsContainer.className = 'space-y-2';
 
     availableSets.forEach((set, index) => {
-      const radioId = `set-${index}`;
+      const checkId = `set-${index}`;
 
-      // Create the row div as requested
-      const rowDiv = document.createElement("div");
+      // Create the hidden checkbox
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.id = checkId;
+      checkbox.value = index;
+      checkbox.className = "hidden"; // Visually hide it
+      checkbox.addEventListener("change", handleSetSelection);
 
-      // Create the selector (now a checkbox)
-      const selector = document.createElement("input");
-      selector.type = "checkbox";
-      selector.id = radioId;
-      selector.className = "checkbox checkbox-primary";
-      selector.value = index;
-      selector.addEventListener("change", handleSetSelection);
+      // Create the label which acts as the clickable panel
+      const panelLabel = document.createElement("label");
+      panelLabel.setAttribute("for", checkId);
+      panelLabel.className = "set-item-panel block p-4 rounded-lg cursor-pointer transition-all duration-200 border-2";
 
-      // Create the title element (using a label for accessibility)
-      const titleLabel = document.createElement("label");
-      titleLabel.setAttribute("for", radioId);
-      titleLabel.style.marginLeft = "8px"; // Add a small space between button and text
-
+      // Create title and description
       const titleStrong = document.createElement("strong");
       titleStrong.textContent = set.title;
+      titleStrong.className = "text-lg";
 
-      const descriptionSpan = document.createElement("span");
-      descriptionSpan.textContent = ` — ${set.description}`;
+      const descriptionP = document.createElement("p");
+      descriptionP.textContent = set.description;
+      descriptionP.className = "text-sm opacity-75 mt-1";
 
-      titleLabel.appendChild(titleStrong);
-      titleLabel.appendChild(descriptionSpan);
+      panelLabel.appendChild(titleStrong);
+      panelLabel.appendChild(descriptionP);
 
-      // Append the selector and title to the row
-      rowDiv.appendChild(selector);
-      rowDiv.appendChild(titleLabel);
-
-      // Append the row to the main container
-      setsContainer.appendChild(rowDiv);
+      // Append both to the container
+      setsContainer.appendChild(checkbox);
+      setsContainer.appendChild(panelLabel);
     });
   }
 
@@ -210,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.dataset.file = deck.file;
     el.dataset.type = type;
     el.dataset.topicDir = topicDir;
-    el.addEventListener("click", () => addDeckToSelection(deck, type, topicDir));
+    el.addEventListener("click", (e) => addDeckToSelection(deck, type, topicDir, e.currentTarget));
     return el;
   }
 
@@ -229,57 +251,99 @@ document.addEventListener("DOMContentLoaded", () => {
       </button>
     `;
     item.querySelector(".remove-deck-btn").addEventListener("click", () => {
-      selectedDecks.splice(index, 1);
-      renderSelectedDecks();
-      renderAvailableDecks(); // Re-render available to show the deck again
+        removeDeckFromSelection(index, item);
     });
     return item;
   }
 
   // --- EVENT HANDLERS & LOGIC ---
   function handleSetSelection(e) {
-    // This function now rebuilds the entire list of selected decks from scratch
-    // based on ALL currently checked boxes. This correctly handles shared decks.
-    let newSelectedDecks = [];
+    // 1. Create a flattened, comprehensive list of all available decks for easy lookup.
+    const allDecks = availableTopics.flatMap(topic => [
+        ...(topic.flashcards || []).map(deck => ({ ...deck, type: 'flashcards', topicDir: topic.directory, topicName: topic.name })),
+        ...(topic.multiplechoice || []).map(deck => ({ ...deck, type: 'multiplechoice', topicDir: topic.directory, topicName: topic.name }))
+    ]);
+
+    // 2. Collect all decks from all currently checked sets.
+    const decksFromSelectedSets = [];
     const checkedSetCheckboxes = document.querySelectorAll("#sets-container input[type='checkbox']:checked");
 
     checkedSetCheckboxes.forEach(checkbox => {
-      const setIndex = parseInt(checkbox.value, 10);
-      const selectedSet = availableSets[setIndex];
-      if (!selectedSet) return;
+        const setIndex = parseInt(checkbox.value, 10);
+        const selectedSet = availableSets[setIndex];
+        if (!selectedSet || !selectedSet.decks) return;
 
-      const decksInSet = selectedSet.decks.map(setDeck => {
-        for (const topic of availableTopics) {
-          const deckList = topic[setDeck.type] || [];
-          const foundDeck = deckList.find(d => d.file === setDeck.file);
-          if (foundDeck) {
-            return { ...foundDeck, type: setDeck.type, topicDir: topic.directory, topicName: topic.name };
-          }
-        }
-        return null;
-      }).filter(Boolean);
-
-      decksInSet.forEach(deckToAdd => {
-        const alreadySelected = newSelectedDecks.some(
-          d => d.file === deckToAdd.file && d.type === deckToAdd.type && d.topicDir === deckToAdd.topicDir
-        );
-        if (!alreadySelected) {
-          newSelectedDecks.push(deckToAdd);
-        }
-      });
+        selectedSet.decks.forEach(setDeck => {
+            const foundDeck = allDecks.find(d => d.file === setDeck.file && d.type === setDeck.type);
+            if (foundDeck) {
+                decksFromSelectedSets.push(foundDeck);
+            }
+        });
     });
 
-    selectedDecks = newSelectedDecks;
+    // 3. Filter the collected decks to ensure uniqueness, creating the final list.
+    const uniqueSelectedDecks = [];
+    const seenDeckIdentifiers = new Set();
+    decksFromSelectedSets.forEach(deck => {
+        const identifier = `${deck.topicDir}/${deck.type}/${deck.file}`;
+        if (!seenDeckIdentifiers.has(identifier)) {
+            seenDeckIdentifiers.add(identifier);
+            uniqueSelectedDecks.push(deck);
+        }
+    });
 
+    selectedDecks = uniqueSelectedDecks;
+
+    // 4. Re-render the UI to reflect the new state.
     renderSelectedDecks();
     renderAvailableDecks();
   }
 
-  function addDeckToSelection(deck, type, topicDir) {
-    const topic = availableTopics.find(t => t.directory === topicDir);
-    selectedDecks.push({ ...deck, type, topicDir, topicName: topic.name });
-    renderSelectedDecks();
-    renderAvailableDecks(); // Re-render available to hide the selected deck
+  function removeDeckFromSelection(index, sourceElement) {
+    anime({
+      targets: sourceElement,
+      opacity: 0,
+      translateX: 20,
+      duration: 200,
+      easing: 'easeInQuad',
+      complete: () => {
+        selectedDecks.splice(index, 1);
+        renderSelectedDecks();
+        renderAvailableDecks();
+      }
+    });
+  }
+
+  function addDeckToSelection(deck, type, topicDir, sourceElement) {
+    // 1. Animate the source element out
+    anime({
+      targets: sourceElement,
+      opacity: 0,
+      scale: 0.9,
+      duration: 200,
+      easing: 'easeInQuad',
+      complete: () => {
+        // 2. Update state after animation
+        const topic = availableTopics.find(t => t.directory === topicDir);
+        selectedDecks.push({ ...deck, type, topicDir, topicName: topic.name });
+
+        // 3. Re-render the lists
+        renderSelectedDecks();
+        renderAvailableDecks();
+
+        // 4. Animate the new element in
+        const newSelectedElement = selectedDecksContainer.lastElementChild;
+        if (newSelectedElement) {
+            anime({
+                targets: newSelectedElement,
+                opacity: [0, 1],
+                translateX: [-20, 0],
+                duration: 250,
+                easing: 'easeOutQuad'
+            });
+        }
+      }
+    });
   }
 
   startStudyingBtn.addEventListener("click", () => {

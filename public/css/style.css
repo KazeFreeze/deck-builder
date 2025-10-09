@@ -1,33 +1,64 @@
 /* --- THEME & COLOR VARIABLES --- */
 :root {
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
-  --secondary-color: #6c757d;
-  --secondary-hover: #5a6268;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
+  /* Nord Snow Storm */
+  --primary-color: #88c0d0;
+  --primary-hover: #81a1c1;
+  --secondary-color: #5e81ac;
+  --secondary-hover: #4c566a;
+  --success-color: #a3be8c;
+  --danger-color: #bf616a;
 
-  --bg-color: #ffffff;
-  --bg-alt-color: #f8f9fa;
-  --body-bg-color: #e9ecef;
-  --text-color: #343a40;
-  --border-color: #dee2e6;
-  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  --bg-top-layer: #eceff4;
+  --bg-middle-layer: #e5e9f0;
+  --bg-base-layer: #d8dee9;
+  --body-bg-color: #f8f9fa; /* Lighter than all for a slight contrast */
+  --text-color: #2e3440;
+  --border-color: #d8dee9;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --card-inset-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
 }
 
 [data-theme="dark"] {
-  --primary-color: #4dabf7;
-  --primary-hover: #74c0fc;
-  --secondary-color: #868e96;
-  --secondary-hover: #adb5bd;
+  /* Nord Polar Night */
+  --primary-color: #88c0d0;
+  --primary-hover: #8fbcbb;
+  --secondary-color: #81a1c1;
+  --secondary-hover: #5e81ac;
 
-  --bg-color: #212529;
-  --bg-alt-color: #343a40;
-  --body-bg-color: #121212;
-  --text-color: #f8f9fa;
-  --border-color: #495057;
-  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --bg-top-layer: #434c5e;
+  --bg-middle-layer: #3b4252;
+  --bg-base-layer: #2e3440;
+  --body-bg-color: #242933; /* Darker than all for a slight contrast */
+  --text-color: #eceff4;
+  --border-color: #4c566a;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --card-inset-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
+
+/* --- Remove DaisyUI Card Styling Overrides --- */
+.card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* --- Layered Styling --- */
+#selected-decks-card {
+    background-color: var(--bg-top-layer);
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+}
+#config-card {
+    background-color: var(--bg-base-layer); /* Adjusted to be the flattest layer */
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+#sets-section-container, #available-decks-section-container {
+    background-color: var(--bg-base-layer);
+    box-shadow: var(--card-inset-shadow);
+    border-radius: 12px;
+}
+
 
 /* --- GLOBAL & TYPOGRAPHY --- */
 body {
@@ -182,6 +213,21 @@ button:hover,
   border-color: var(--primary-color);
   background-color: var(--bg-alt-color);
   box-shadow: 0 0 10px var(--primary-color-translucent, rgba(0, 123, 255, 0.2));
+}
+
+/* New styling for pre-configured set panels */
+.set-item-panel {
+    border-color: var(--border-color);
+    background-color: transparent;
+}
+.set-item-panel:hover {
+    border-color: var(--primary-hover);
+    background-color: var(--bg-middle-layer);
+}
+input.hidden:checked + .set-item-panel {
+    border-color: var(--primary-color);
+    background-color: var(--bg-top-layer);
+    box-shadow: 0 0 15px rgba(136, 192, 208, 0.5); /* Using a specific color for a consistent glow */
 }
 .deck-column h2 {
   display: flex;
