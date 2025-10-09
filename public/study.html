@@ -10,8 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
-  <body>
+  <body class="quiz-session-page">
     <div class="controls">
       <button id="backToMenu" class="icon-btn" title="Back to Menu">
         <i class="fas fa-home"></i>
@@ -42,9 +43,6 @@
         </div>
       </div>
 
-      <!-- Question/Card Indicators -->
-      <div id="question-indicators-container"></div>
-
       <!-- Main Content Area Wrapper to fix height glitches -->
       <div id="study-area-wrapper">
         <div id="study-item-container">
@@ -61,6 +59,9 @@
           Next <i class="fas fa-arrow-right"></i>
         </button>
       </div>
+
+      <!-- Question/Card Indicators -->
+      <div id="question-indicators-container"></div>
     </div>
 
     <script src="js/study.js"></script>

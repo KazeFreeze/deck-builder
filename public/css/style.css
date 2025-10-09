@@ -33,6 +33,10 @@
   --border-color: #4c566a;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   --card-inset-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
+
+  /* Defining missing variables for consistency */
+  --bg-color: var(--bg-base-layer);
+  --bg-alt-color: var(--bg-middle-layer);
 }
 
 /* Scoped override for deck builder page */
@@ -40,30 +44,11 @@
     --body-bg-color: #4C566A; /* nord3 - Lightest background for this page only */
 }
 
-/* --- Remove DaisyUI Card Styling Overrides --- */
-.card {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
+/* Scoped override for quiz session page */
+[data-theme="dark"] .quiz-session-page {
+    --body-bg-color: var(--bg-top-layer); /* Use the lightest shade for max contrast */
 }
 
-/* --- Layered Styling --- */
-#selected-decks-card {
-    background-color: var(--bg-top-layer);
-    box-shadow: var(--card-shadow);
-    border-radius: 12px;
-}
-#config-card {
-    background-color: var(--bg-base-layer); /* Adjusted to be the flattest layer */
-    border: 1px solid #000; /* Black border as requested */
-    border-radius: 12px;
-    box-shadow: none; /* Explicitly remove shadow */
-}
-#sets-section-container, #available-decks-section-container {
-    background-color: var(--bg-base-layer);
-    box-shadow: var(--card-inset-shadow);
-    border-radius: 12px;
-}
 
 
 /* --- GLOBAL & TYPOGRAPHY --- */
@@ -76,6 +61,7 @@ body {
   margin: 0;
   padding: 20px;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 h1,
@@ -229,7 +215,6 @@ button:hover,
 }
 .set-item-panel:hover {
     border-color: var(--primary-hover);
-    background-color: var(--bg-middle-layer);
     transform: translateY(-2px);
 }
 input.hidden:checked + .set-item-panel {
@@ -268,7 +253,9 @@ input.hidden:checked + .set-item-panel {
   box-shadow: var(--card-shadow);
 }
 .deck-item:hover {
-  background-color: var(--bg-alt-color);
+  border-color: var(--primary-hover);
+  background-color: transparent; /* Override DaisyUI's hover background */
+  color: var(--text-color); /* Override DaisyUI's hover text color */
 }
 .selected-deck-item {
   display: flex;
@@ -553,4 +540,25 @@ input.hidden:checked + .set-item-panel {
     margin: 15px auto 0;
     justify-content: center;
   }
+}
+
+.set-item-panel.selected {
+  background-color: var(--bg-top-layer);
+  box-shadow: var(--card-shadow);
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+#question-indicators-container {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+/* Fix for text overflow in selected deck items */
+#selected-decks .deck-item {
+  white-space: normal;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }

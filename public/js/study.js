@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const fetchPromises = paths.map((path) => {
         const type = path.split("/")[1]; // Bug fix: The type is the second part of the path
-        return fetch(path).then((res) => {
+        return fetch(`/${path}`).then((res) => {
           if (!res.ok)
             throw new Error(`Failed to load ${path}: ${res.statusText}`);
           return res.json().then((data) => ({ data, type }));
@@ -193,23 +193,56 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- RENDERING LOGIC ---
-  function displayCurrentItem() {
+  function displayCurrentItem(direction = 'initial') {
     if (currentItemIndex >= allItems.length) {
       if (!quizCompleted) showResults();
       return;
     }
     const item = allItems[currentItemIndex];
-    studyItemContainerEl.innerHTML = "";
-    studyItemContainerEl.className = `study-item-container ${item.type}`;
 
-    if (item.type === "multiplechoice") {
-      renderMultipleChoice(item);
-    } else if (item.type === "flashcard") {
-      renderFlashcard(item);
+    const renderContent = () => {
+      studyItemContainerEl.innerHTML = "";
+      studyItemContainerEl.className = `study-item-container ${item.type}`;
+      if (item.type === "multiplechoice") {
+        renderMultipleChoice(item);
+      } else if (item.type === "flashcard") {
+        renderFlashcard(item);
+      }
+      updateStatus();
+      updateNavigation();
+    };
+
+    if (direction === 'initial') {
+      renderContent();
+      anime({
+        targets: studyItemContainerEl,
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutQuad'
+      });
+      return;
     }
 
-    updateStatus();
-    updateNavigation();
+    const outX = direction === 'next' ? -30 : 30;
+    const inX = direction === 'next' ? 30 : -30;
+
+    anime({
+      targets: studyItemContainerEl,
+      opacity: 0,
+      translateX: outX,
+      duration: 150,
+      easing: 'easeInQuad',
+      complete: () => {
+        renderContent();
+        anime({
+          targets: studyItemContainerEl,
+          opacity: [0, 1],
+          translateX: [inX, 0],
+          duration: 200,
+          easing: 'easeOutQuad'
+        });
+      }
+    });
   }
 
   function renderMultipleChoice(item) {
@@ -278,8 +311,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }</span> <i class="fas ${iconClass} type-icon"></i>`;
       indicator.dataset.index = index;
       indicator.addEventListener("click", () => {
+        if (index === currentItemIndex) return;
         currentItemIndex = index;
-        displayCurrentItem();
+        displayCurrentItem('jump');
       });
       container.appendChild(indicator);
     });
@@ -312,7 +346,10 @@ document.addEventListener("DOMContentLoaded", () => {
       (acc, ans) => acc + (ans.correct ? 1 : 0),
       0
     );
-    scoreEl.textContent = `${score} / ${answeredMcq.length}`;
+
+    const newScoreText = `${score} / ${answeredMcq.length}`;
+    scoreEl.textContent = newScoreText;
+
     updateItemIndicators();
   }
 
@@ -358,12 +395,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function nextItem() {
     if (currentItemIndex < allItems.length) currentItemIndex++;
-    displayCurrentItem();
+    displayCurrentItem('next');
   }
 
   function previousItem() {
     if (currentItemIndex > 0) currentItemIndex--;
-    displayCurrentItem();
+    displayCurrentItem('back');
   }
 
   function showResults() {
@@ -422,7 +459,8 @@ document.addEventListener("DOMContentLoaded", () => {
     startTime = Date.now();
     timerInterval = setInterval(() => {
       elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-      timerEl.textContent = formatTime(elapsedSeconds);
+      const newTime = formatTime(elapsedSeconds);
+      timerEl.textContent = newTime;
     }, 1000);
   }
 
