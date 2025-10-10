@@ -281,13 +281,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="flashcard-front">
                         <p>${formatBold(item.question)}</p>
                         <div class="flashcard-hotkey-indicator">
-                            <i class="fas fa-keyboard"></i> Space to Flip
+                            &#9251;
                         </div>
                     </div>
                     <div class="flashcard-back">
                         <p>${formatBold(item.answer)}</p>
                         <div class="flashcard-hotkey-indicator">
-                            <i class="fas fa-keyboard"></i> Space to Flip
+                            &#9251;
                         </div>
                     </div>
                 </div>
@@ -357,7 +357,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateNavigation() {
-    backBtn.style.display = currentItemIndex > 0 ? "block" : "none";
+    // Target the parent wrapper to hide both button and indicator
+    backBtn.parentElement.style.display = currentItemIndex > 0 ? "inline-flex" : "none";
     nextBtn.textContent =
       currentItemIndex >= allItems.length - 1 ? "Finish" : "Next";
   }

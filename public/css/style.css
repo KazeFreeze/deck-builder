@@ -434,11 +434,11 @@ input.hidden:checked + .set-item-panel {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 2px 6px;
-  border: 1px solid var(--border-color);
   border-radius: 4px;
   background-color: var(--bg-middle-layer);
   color: var(--secondary-color);
   opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
 }
 .choice:hover {
   border-color: var(--primary-color);
@@ -593,6 +593,7 @@ input.hidden:checked + .set-item-panel {
   padding: 0;
   background: none;
   box-shadow: none;
+  color: var(--text-color); /* This will make the icons visible */
 }
 
 .quiz-session-page .controls #backToMenu {
@@ -658,29 +659,29 @@ input.hidden:checked + .set-item-panel {
   position: relative;
   display: inline-flex;
   align-items: center;
+  gap: 6px;
 }
 
 .hotkey-indicator-badge {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: var(--secondary-color);
-  color: white;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--bg-top-layer);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index: 1;
+  position: static; /* No longer absolute */
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--bg-middle-layer);
+  color: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
+  /* Resetting old styles */
+  width: auto;
+  height: auto;
+  border: none;
+  display: inline-block;
 }
 
 [data-theme="dark"] .hotkey-indicator-badge {
-    border-color: var(--bg-base-layer);
+    background-color: var(--bg-base-layer);
+    color: var(--text-color);
 }
 
 /* --- FLASHCARD HOTKEY INDICATOR --- */
@@ -689,19 +690,19 @@ input.hidden:checked + .set-item-panel {
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  opacity: 0.7;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem; /* Larger for the symbol */
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: var(--bg-middle-layer);
+  color: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
   -webkit-backface-visibility: hidden; /* Fix for text rendering on back */
   backface-visibility: hidden;
 }
 
 [data-theme="dark"] .flashcard-hotkey-indicator {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--bg-base-layer);
+    color: var(--text-color);
 }
