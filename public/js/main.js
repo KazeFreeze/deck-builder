@@ -377,6 +377,22 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = url;
   });
 
+  // --- HOTKEY SYSTEM ---
+  function handleKeyPress(e) {
+    // Don't interfere with dialogs or inputs
+    const dialogVisible = document.getElementById("custom-dialog-overlay")?.classList.contains("show");
+    if (dialogVisible || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    switch (e.key) {
+      case "d":
+        applyTheme("dark");
+        break;
+      case "l":
+        applyTheme("light");
+        break;
+    }
+  }
+
   // --- INITIALIZATION ---
   function initSortable() {
     new Sortable(selectedDecksContainer, {
@@ -398,10 +414,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const savedTheme = localStorage.getItem("studyAppTheme") || "light";
-  const savedMode = localStorage.getItem("studyAppMode") || "casual";
+  const savedMode = "casual";
   applyTheme(savedTheme);
   applyMode(savedMode); // This will call renderAvailableDecks
   loadData();
   initSortable();
+  document.addEventListener("keydown", handleKeyPress);
   logEvent("Page View", { page: "Home" });
 });
