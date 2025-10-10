@@ -357,8 +357,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateNavigation() {
-    // Target the parent wrapper to hide both button and indicator
-    backBtn.parentElement.style.display = currentItemIndex > 0 ? "inline-flex" : "none";
+    backBtn.style.display = currentItemIndex > 0 ? "inline-flex" : "none";
     nextBtn.textContent =
       currentItemIndex >= allItems.length - 1 ? "Finish" : "Next";
   }
