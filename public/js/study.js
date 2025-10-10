@@ -358,8 +358,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateNavigation() {
     backBtn.style.display = currentItemIndex > 0 ? "inline-flex" : "none";
-    nextBtn.textContent =
-      currentItemIndex >= allItems.length - 1 ? "Finish" : "Next";
+    const nextBtnText = nextBtn.querySelector('.btn-text');
+    if (nextBtnText) {
+      nextBtnText.textContent = currentItemIndex >= allItems.length - 1 ? "Finish" : "Next";
+    }
   }
 
   // --- EVENT HANDLERS & LOGIC ---

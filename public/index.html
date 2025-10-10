@@ -26,10 +26,16 @@
           <input type="checkbox" id="mode-toggle" class="toggle" />
           <span class="label-text ml-2">Pro</span>
         </div>
-        <div class="flex-none ml-4">
+        <div class="flex-none ml-4 flex items-center gap-2">
+          <div class="hotkey-wrapper">
             <i class="fas fa-sun"></i>
-            <input type="checkbox" id="theme-toggle" class="toggle toggle-secondary mx-2" />
+            <span class="hotkey-indicator-badge">L</span>
+          </div>
+          <input type="checkbox" id="theme-toggle" class="toggle toggle-secondary" />
+          <div class="hotkey-wrapper">
             <i class="fas fa-moon"></i>
+            <span class="hotkey-indicator-badge">D</span>
+          </div>
         </div>
       </header>
 
@@ -42,7 +48,7 @@
                     <div class="form-control">
                         <label class="label cursor-pointer">
                             <span class="label-text">Shuffle All Items</span>
-                            <input type="checkbox" id="shuffle-toggle" class="toggle" checked />
+                            <input type="checkbox" id="shuffle-toggle" class="toggle" />
                         </label>
                         <label class="label cursor-pointer">
                             <span class="label-text">Enable Timer</span>
