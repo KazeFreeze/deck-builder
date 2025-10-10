@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const fetchPromises = paths.map((path) => {
         const type = path.split("/")[1]; // Bug fix: The type is the second part of the path
-        return fetch(`/${path}`).then((res) => {
+        return fetch(`${path}`).then((res) => {
           if (!res.ok)
             throw new Error(`Failed to load ${path}: ${res.statusText}`);
           return res.json().then((data) => ({ data, type }));
@@ -247,10 +247,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderMultipleChoice(item) {
     let choicesHtml = "";
+    let choiceIndex = 1;
     for (const [key, value] of Object.entries(item.choices)) {
-      choicesHtml += `<div class="choice" data-answer="${key}"><strong>${key}:</strong> ${formatBold(
-        value
-      )}</div>`;
+      choicesHtml += `<div class="choice" data-answer="${key}">
+                        <span class="choice-text"><strong>${key}:</strong> ${formatBold(value)}</span>
+                        <span class="hotkey-indicator">${choiceIndex}</span>
+                      </div>`;
+      choiceIndex++;
     }
     studyItemContainerEl.innerHTML = `
             <div id="question">${formatBold(
@@ -473,6 +476,57 @@ document.addEventListener("DOMContentLoaded", () => {
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
   }
+
+  // --- HOTKEY SYSTEM ---
+  function handleKeyPress(e) {
+    // Don't interfere with dialogs or inputs
+    const dialogVisible = document.getElementById("custom-dialog-overlay")?.classList.contains("show");
+    if (dialogVisible) return;
+
+    // Handle number keys for multiple choice answers
+    const choiceIndex = parseInt(e.key, 10) - 1;
+    if (choiceIndex >= 0 && choiceIndex < 9) {
+      const choices = studyItemContainerEl.querySelectorAll(".choice");
+      if (choices.length > choiceIndex) {
+        choices[choiceIndex].click();
+        e.preventDefault();
+        return;
+      }
+    }
+
+    switch (e.key) {
+      case "ArrowLeft":
+        previousItem();
+        break;
+      case "ArrowRight":
+        nextItem();
+        break;
+      case "Escape":
+        window.location.href = "index.html";
+        break;
+      case "d":
+        applyTheme("dark");
+        break;
+      case "l":
+        applyTheme("light");
+        break;
+      case "/":
+        e.preventDefault();
+        const hotkeyMapHtml = `
+          <ul style="text-align: left; list-style-position: inside;">
+            <li><strong>1-4:</strong> Select Answer</li>
+            <li><strong>&larr; / &rarr;:</strong> Previous/Next Item</li>
+            <li><strong>d / l:</strong> Dark/Light Mode</li>
+            <li><strong>Esc:</strong> Return to Menu</li>
+            <li><strong>/:</strong> Show this guide</li>
+          </ul>
+        `;
+        showDialog("Hotkey Guide", hotkeyMapHtml);
+        break;
+    }
+  }
+
+  document.addEventListener("keydown", handleKeyPress);
 
   // --- KICK-OFF ---
   initializeStudySession();
