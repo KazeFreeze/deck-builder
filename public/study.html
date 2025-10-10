@@ -10,20 +10,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/dialog.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body class="quiz-session-page">
     <div class="controls">
-      <button id="backToMenu" class="icon-btn" title="Back to Menu">
-        <i class="fas fa-home"></i>
-      </button>
+      <div class="hotkey-wrapper">
+        <button id="backToMenu" class="icon-btn" title="Back to Menu (Esc)">
+          <i class="fas fa-home"></i>
+        </button>
+        <span class="hotkey-indicator-badge">Esc</span>
+      </div>
       <div class="theme-switcher">
-        <i class="fas fa-sun"></i>
+        <div class="hotkey-wrapper">
+          <i class="fas fa-sun"></i>
+          <span class="hotkey-indicator-badge">L</span>
+        </div>
         <label class="switch">
           <input type="checkbox" id="theme-toggle" />
           <span class="slider round"></span>
         </label>
-        <i class="fas fa-moon"></i>
+        <div class="hotkey-wrapper">
+          <i class="fas fa-moon"></i>
+          <span class="hotkey-indicator-badge">D</span>
+        </div>
       </div>
     </div>
 
@@ -52,18 +62,25 @@
 
       <!-- Navigation Buttons -->
       <div class="nav-buttons">
-        <button id="back" class="btn-secondary">
-          <i class="fas fa-arrow-left"></i> Back
-        </button>
-        <button id="next" class="btn-primary">
-          Next <i class="fas fa-arrow-right"></i>
-        </button>
+        <div class="hotkey-wrapper">
+          <button id="back" class="btn-secondary" title="Previous Item (Left Arrow)">
+            <i class="fas fa-arrow-left"></i> Back
+          </button>
+          <span class="hotkey-indicator-badge">&larr;</span>
+        </div>
+        <div class="hotkey-wrapper">
+          <button id="next" class="btn-primary" title="Next Item (Right Arrow)">
+            Next <i class="fas fa-arrow-right"></i>
+          </button>
+          <span class="hotkey-indicator-badge">&rarr;</span>
+        </div>
       </div>
 
       <!-- Question/Card Indicators -->
       <div id="question-indicators-container"></div>
     </div>
 
+    <script src="js/dialog.js"></script>
     <script src="js/study.js"></script>
   </body>
 </html>

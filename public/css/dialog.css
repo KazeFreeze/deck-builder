@@ -1,0 +1,64 @@
+/* --- Custom Dialog --- */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.dialog-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dialog-box {
+  background-color: var(--bg-top-layer);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+.dialog-overlay.show .dialog-box {
+  transform: scale(1);
+}
+
+.dialog-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.dialog-message {
+  margin-bottom: 25px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.dialog-close-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dialog-close-btn:hover {
+  background-color: var(--primary-hover);
+}

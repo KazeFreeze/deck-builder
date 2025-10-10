@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   startStudyingBtn.addEventListener("click", () => {
     if (selectedDecks.length === 0) {
-      alert("Please select at least one deck to start studying.");
+      showDialog("No Decks Selected", "Please select at least one deck to start studying.");
       return;
     }
 

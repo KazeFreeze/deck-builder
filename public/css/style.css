@@ -418,12 +418,27 @@ input.hidden:checked + .set-item-panel {
   gap: 12px;
 }
 .choice {
-  display: block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px;
   border: 2px solid var(--border-color);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.hotkey-indicator {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--bg-middle-layer);
+  color: var(--secondary-color);
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
 }
 .choice:hover {
   border-color: var(--primary-color);
@@ -561,4 +576,133 @@ input.hidden:checked + .set-item-panel {
   height: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+/* --- STUDY PAGE: Debossed Controls --- */
+.quiz-session-page .controls #backToMenu {
+  background: var(--bg-base-layer);
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15),
+              inset -3px -3px 7px rgba(255,255,255,0.8);
+  transition: all 0.1s ease-in-out;
+  padding: 12px;
+}
+
+.quiz-session-page .controls .theme-switcher {
+  /* No debossing here, just a flex container */
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text-color); /* This will make the icons visible */
+}
+
+.quiz-session-page .controls #backToMenu {
+  color: var(--text-color);
+  /* Reset button specific styles */
+  border: none;
+  width: auto;
+  height: auto;
+  font-size: 1.1rem;
+}
+
+.quiz-session-page .controls #backToMenu:hover {
+  background: var(--bg-middle-layer);
+  transform: none;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.15),
+              inset -2px -2px 5px rgba(255,255,255,0.8);
+}
+
+.quiz-session-page .controls #backToMenu:active {
+  transform: scale(0.96);
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.2),
+              inset -5px -5px 10px rgba(255,255,255,0.7);
+}
+
+/* Debossed style for the theme toggle slider itself */
+.quiz-session-page .controls .switch .slider {
+  background-color: var(--bg-base-layer);
+  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15),
+              inset -3px -3px 7px rgba(255,255,255,0.8);
+}
+
+/* Keep the color change functionality */
+.quiz-session-page .controls .switch input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+
+/* Dark Theme Adjustments */
+[data-theme="dark"] .quiz-session-page .controls #backToMenu {
+  background: var(--bg-base-layer);
+  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5),
+              inset -3px -3px 7px rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .quiz-session-page .controls #backToMenu:hover {
+  background: var(--bg-middle-layer);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5),
+              inset -2px -2px 5px rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .quiz-session-page .controls #backToMenu:active {
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.6),
+              inset -5px -5px 10px rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .quiz-session-page .controls .switch .slider {
+    box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5),
+                inset -3px -3px 7px rgba(255,255,255,0.08);
+}
+
+/* --- STUDY PAGE: Hotkey Indicator Badges --- */
+.hotkey-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hotkey-indicator-badge {
+  position: static; /* No longer absolute */
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--bg-middle-layer);
+  color: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
+  /* Resetting old styles */
+  width: auto;
+  height: auto;
+  border: none;
+  display: inline-block;
+}
+
+[data-theme="dark"] .hotkey-indicator-badge {
+    background-color: var(--bg-base-layer);
+    color: var(--text-color);
+}
+
+/* --- FLASHCARD HOTKEY INDICATOR --- */
+.flashcard-hotkey-indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem; /* Larger for the symbol */
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: var(--bg-middle-layer);
+  color: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
+  -webkit-backface-visibility: hidden; /* Fix for text rendering on back */
+  backface-visibility: hidden;
+}
+
+[data-theme="dark"] .flashcard-hotkey-indicator {
+    background-color: var(--bg-base-layer);
+    color: var(--text-color);
 }
