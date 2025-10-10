@@ -1,0 +1,617 @@
+{
+  "title": "Political Science and Constitutional Law Review",
+  "questions": [
+    {
+      "module": "Review on Institutions",
+      "question": "According to Frank Fukuyama's framework discussed in the lecture, what is the primary role of the state as a modern political institution?",
+      "choices": {
+        "A": "To ensure a system of accountability for all citizens.",
+        "B": "To establish and enforce the rule of law.",
+        "C": "To effectively concentrate power and enforce it over a territory.",
+        "D": "To promote a meritocratic bureaucracy."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript defines the state as the institution that effectively concentrates power and has the ability to enforce that power over a specific territory."
+    },
+    {
+      "module": "Review on Institutions",
+      "question": "How does the lecture differentiate between a patrimonial state and a modern state?",
+      "choices": {
+        "A": "A patrimonial state is democratic, while a modern state is authoritarian.",
+        "B": "A patrimonial state uses meritocracy, while a modern state relies on personal relationships.",
+        "C": "A patrimonial state is based on favoritism and nepotism, while a modern state is based on meritocracy and objective qualifications.",
+        "D": "A patrimonial state has a strong rule of law, while a modern state has a weak one."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript explains that a patrimonial state bases access to government on personal relationships (e.g., political dynasties), whereas a modern state relies on meritocracy, often verified by mechanisms like civil service exams."
+    },
+    {
+      "module": "Review on Institutions",
+      "question": "What is the first stage of the Norm Life Cycle, and who drives it?",
+      "choices": {
+        "A": "Norm Cascade, driven by a tipping point.",
+        "B": "Internalization, driven by widespread acceptance.",
+        "C": "Norm Emergence, driven by norm entrepreneurs.",
+        "D": "Norm Decline, driven by societal change."
+      },
+      "correctAnswer": "C",
+      "explanation": "The first stage is Norm Emergence, which is driven by \"norm entrepreneurs,\" individuals or groups who advocate for a new standard of behavior, like Susan B. Anthony for women's suffrage."
+    },
+    {
+      "module": "Review on Institutions",
+      "question": "In the Norm Life Cycle, what is the \"tipping point\"?",
+      "choices": {
+        "A": "The final stage where a norm is fully internalized.",
+        "B": "The initial point where a norm entrepreneur introduces a new idea.",
+        "C": "The point where a norm begins to fade and a new one emerges.",
+        "D": "The point where a critical number of actors adopt a norm, leading to a rapid spread or \"Norm Cascade.\""
+      },
+      "correctAnswer": "D",
+      "explanation": "The transcript describes the tipping point as the moment when a critical number of actors adopt a norm, which then leads to the second stage, the Norm Cascade."
+    },
+    {
+      "module": "The State as a Concept",
+      "question": "According to Max Weber's classic definition, what defining characteristic does a state possess?",
+      "choices": {
+        "A": "An imagined political community.",
+        "B": "A monopoly on the legitimate use of force within a territory.",
+        "C": "A system of perfect accountability and rule of law.",
+        "D": "The ability to engage in relations with other states."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explicitly states that Max Weber defined the state as a corporate group possessing a monopoly on the legitimate use of force within a given territory."
+    },
+    {
+      "module": "The State as a Concept",
+      "question": "What did Benedict Anderson mean by describing a nation as an \"imagined political community\"?",
+      "choices": {
+        "A": "The nation's political system is fictional and not based in reality.",
+        "B": "Members of a nation feel a sense of communion and shared identity, even though they will never meet most of their fellow members.",
+        "C": "The nation only exists in the minds of political leaders and has no real-world impact.",
+        "D": "The community is limited by imaginary borders that are not recognized internationally."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains Anderson's concept as a deep sense of communion and shared identity (e.g., \"Filipino-ness\") that exists in the minds of its members, despite their physical separation."
+    },
+    {
+      "module": "The State as a Concept",
+      "question": "According to the presentation, what is the primary difference between a \"state\" and a \"nation\"?",
+      "choices": {
+        "A": "A state is an ethnic concept, while a nation is a political concept.",
+        "B": "A state is a political concept, while a nation is an ethnic concept.",
+        "C": "The terms are identical and can always be used interchangeably.",
+        "D": "A state requires a government, while a nation does not."
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation explicitly states that a state is a political concept, while a nation is an ethnic concept, although it notes the Philippine Constitution sometimes uses them interchangeably."
+    },
+    {
+      "module": "The State as a Concept",
+      "question": "The lecture describes the state as the \"arena\" where which three elements interact?",
+      "choices": {
+        "A": "People, Territory, and Government.",
+        "B": "Economy, Society, and Culture.",
+        "C": "Politics, Power, and Institutions.",
+        "D": "Law, Order, and Justice."
+      },
+      "correctAnswer": "C",
+      "explanation": "The state is defined in the presentation as the \"arena\" where politics, power, and institutions interact."
+    },
+    {
+      "module": "The Four Essential Elements of a State",
+      "question": "Which of the following is NOT one of the four essential elements of a state according to both the Montevideo Convention and Bernas's terminology?",
+      "choices": {
+        "A": "People / A permanent population",
+        "B": "A recognized national currency",
+        "C": "Territory",
+        "D": "Government / An effective government"
+      },
+      "correctAnswer": "B",
+      "explanation": "The four essential elements are people (population), territory, government, and sovereignty (independence). A national currency is not a required element for statehood."
+    },
+    {
+      "module": "The Four Essential Elements of a State",
+      "question": "How do Jackson and Rosberg categorize the elements of a state into empirical and juridical attributes?",
+      "choices": {
+        "A": "Empirical: territory and independence; Juridical: population and government.",
+        "B": "Empirical: population and government; Juridical: territory and independence.",
+        "C": "Empirical: sovereignty and people; Juridical: territory and laws.",
+        "D": "Empirical: attributes based on law; Juridical: attributes that can be observed."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains that Jackson and Rosberg classify observable attributes like a stable population and functioning government as empirical, while attributes based on international recognition, like defined territory and independence, are juridical."
+    },
+    {
+      "module": "The Four Essential Elements of a State",
+      "question": "Why is international recognition considered a crucial factor in achieving statehood, according to the lecture?",
+      "choices": {
+        "A": "It is the only element required for a state to exist.",
+        "B": "It is necessary for a state to have a permanent population.",
+        "C": "It legitimizes juridical attributes like defined territory and independence, making them meaningful.",
+        "D": "It allows a state to create its own effective government."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript emphasizes that juridical attributes are only truly meaningful when other countries acknowledge them, making international recognition a crucial factor for statehood. The South China Sea dispute is used as an example."
+    },
+    {
+      "module": "The Four Essential Elements of a State",
+      "question": "What is required for a government to be considered \"effective\" as an element of a state?",
+      "choices": {
+        "A": "It must be a democracy.",
+        "B": "It must have the capacity to exercise control over its territory and people.",
+        "C": "It must be recognized by all other states.",
+        "D": "It must have a written constitution."
+      },
+      "correctAnswer": "B",
+      "explanation": "An effective government is defined as a centralized government with the capacity to exercise control over a state's territory and its residents."
+    },
+    {
+      "module": "The Four Essential Elements of a State",
+      "question": "In the context of international relations, territory is considered equivalent to what?",
+      "choices": {
+        "A": "Culture",
+        "B": "Property",
+        "C": "Population",
+        "D": "Power"
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation states that in international relations, territory is equivalent to \"property,\" with boundaries marking where one government's property rights end and another's begin."
+    },
+    {
+      "module": "Case Studies on Statehood",
+      "question": "Why is Taiwan often referred to as a \"de facto state\" rather than a \"de jure state\"?",
+      "choices": {
+        "A": "It lacks an effective government and a defined territory.",
+        "B": "It has a government and territory but lacks a permanent population.",
+        "C": "It functions as a state in practice but lacks formal, widespread international legal recognition.",
+        "D": "Its people do not have a shared sense of national identity."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript explains that Taiwan is a de facto state because it functions as a state in fact (in practice), but it lacks formal de jure (legal) recognition from the global community due to China's sovereignty claim."
+    },
+    {
+      "module": "Case Studies on Statehood",
+      "question": "Which essential element of a state does Hong Kong completely lack, preventing it from being considered a state?",
+      "choices": {
+        "A": "A permanent population",
+        "B": "A defined territory",
+        "C": "An effective government",
+        "D": "Sovereignty/Independence"
+      },
+      "correctAnswer": "D",
+      "explanation": "The lecture clearly states that Hong Kong lacks the element of sovereignty, as it is internationally recognized as a Special Administrative Region of China, not an independent state."
+    },
+    {
+      "module": "Case Studies on Statehood",
+      "question": "What is the primary political motivation for other nations, including the Philippines, to formally recognize Palestine as a state?",
+      "choices": {
+        "A": "To support Israel's position in the conflict.",
+        "B": "To advance a two-state solution and affirm the Palestinian right to self-determination.",
+        "C": "To gain access to economic resources in the region.",
+        "D": "Because Palestine has already met all four empirical criteria for statehood."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains that the growing recognition of Palestine is a political act aimed at advancing a two-state solution and supporting the Palestinian people's right to self-determination, despite its current struggles to meet empirical criteria."
+    },
+    {
+      "module": "Case Studies on Statehood",
+      "question": "According to the lecture, what is a major empirical challenge to Palestine's claim to statehood?",
+      "choices": {
+        "A": "The lack of a distinct Palestinian culture.",
+        "B": "Its population is too small to be permanent.",
+        "C": "Governance is divided between two factions (Palestinian Authority and Hamas) and its territory is fragmented and occupied.",
+        "D": "It has never been recognized by any other country."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript highlights that Palestine's statehood is empirically challenged by a displaced population, contested and fragmented territory, and a divided government, which hinders its effectiveness."
+    },
+    {
+      "module": "The Philippine Constitution",
+      "question": "What is the significance of the Constitution being the \"supreme and fundamental law of the land\"?",
+      "choices": {
+        "A": "It is the only law that exists in the Philippines.",
+        "B": "It establishes a hierarchy of laws where any law contradicting it is void.",
+        "C": "It can be easily changed by a simple majority vote in Congress.",
+        "D": "Its principles are only suggestions and are not legally binding."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains that the Constitution's supremacy creates a hierarchy of laws, and any law, statute, or order that contradicts it can be declared unconstitutional and therefore invalid."
+    },
+    {
+      "module": "The Philippine Constitution",
+      "question": "Which is the current and existing Constitution of the Philippines?",
+      "choices": {
+        "A": "The 1899 Malolos Constitution",
+        "B": "The 1935 Constitution",
+        "C": "The 1973 Constitution",
+        "D": "The 1987 Constitution"
+      },
+      "correctAnswer": "D",
+      "explanation": "The lecture identifies the 1987 Constitution, established after the People Power Revolution, as the current constitution of the Philippines."
+    },
+    {
+      "module": "The Philippine Constitution",
+      "question": "What happens to laws that are found to be \"repugnant to the Constitution\"?",
+      "choices": {
+        "A": "They are automatically amended by the President.",
+        "B": "They remain valid until the next election.",
+        "C": "They are considered invalid.",
+        "D": "They are sent back to Congress for a revote."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation states that in the hierarchy of laws, the Constitution is on top, and laws repugnant to it are invalid."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "What is the \"archipelagic doctrine\" as codified in Article I of the 1987 Constitution?",
+      "choices": {
+        "A": "The Philippines claims all islands in the Pacific Ocean.",
+        "B": "The national territory includes the islands and the waters connecting them, regardless of their breadth.",
+        "C": "The Philippines has sovereignty only over its landmasses, not the surrounding waters.",
+        "D": "Foreign ships are not allowed to pass through any Philippine waters."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript and PPT explain that the archipelagic doctrine, found in Article I, means the territory includes all islands and the waters around, between, and connecting them as part of the internal waters."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "What does it mean that many provisions in Article II, \"Declaration of Principles and State Policies,\" are not self-executing?",
+      "choices": {
+        "A": "They are automatically enforced the moment the Constitution is ratified.",
+        "B": "They apply only to the President and not to other government branches.",
+        "C": "They require enabling legislation passed by Congress to be implemented.",
+        "D": "They are optional and the government can choose to ignore them."
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript clarifies that many Article II provisions are not self-executing, meaning they need a specific law passed by Congress to be put into practice."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "Why is the constitutional prohibition against political dynasties (Article II, Section 26) currently unenforced?",
+      "choices": {
+        "A": "The Supreme Court declared the provision unconstitutional.",
+        "B": "A majority of Filipinos voted to remove the provision.",
+        "C": "It is a self-executing provision that is actively ignored.",
+        "D": "Congress has not yet passed the required enabling law to define what constitutes a political dynasty."
+      },
+      "correctAnswer": "D",
+      "explanation": "The lecture uses this as a prime example of a non-self-executing provision, stating it remains unenforced because Congress has failed to pass a law defining it."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "What is the \"incorporation clause\" found in Article II, Section 2?",
+      "choices": {
+        "A": "It incorporates the military into the civilian government.",
+        "B": "It automatically makes generally accepted principles of international law part of Philippine domestic law.",
+        "C": "It allows foreign corporations to operate in the Philippines.",
+        "D": "It mandates the incorporation of religious teachings into public education."
+      },
+      "correctAnswer": "B",
+      "explanation": "The transcript explains that the incorporation clause in Section 2 makes generally accepted principles of international law, like the renunciation of aggressive war, part of our domestic law without needing a separate statute."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "Article II, Section 3 establishes that \"civilian authority is, at all times, supreme over the military.\" How is this principle embodied in the structure of the government?",
+      "choices": {
+        "A": "The Chief of Staff of the AFP is an elected official.",
+        "B": "The President, a civilian official, is the Commander-in-Chief of the Armed Forces.",
+        "C": "Military officers are not allowed to vote in national elections.",
+        "D": "All military decisions must be approved by the Supreme Court."
+      },
+      "correctAnswer": "B",
+      "explanation": "This principle is embodied by the fact that the President, a civilian, acts as the Commander-in-Chief of the military, ensuring civilian control."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "What are the two main clauses that constitute the principle of separation of Church and State in Article II, Section 6?",
+      "choices": {
+        "A": "The non-establishment clause and the free exercise clause.",
+        "B": "The taxation clause and the education clause.",
+        "C": "The military clause and the civilian clause.",
+        "D": "The sovereignty clause and the territory clause."
+      },
+      "correctAnswer": "A",
+      "explanation": "The transcript identifies the two core components as the non-establishment clause (the state cannot create a national religion) and the free exercise clause (the state cannot interfere with religious practice)."
+    },
+    {
+      "module": "Key Constitutional Articles (I & II)",
+      "question": "How does the Constitution (Article II, Section 12) address the issues of abortion and contraception?",
+      "choices": {
+        "A": "It explicitly legalizes both abortion and contraception.",
+        "B": "It explicitly criminalizes both abortion and contraception.",
+        "C": "It protects the life of the unborn from conception, which is the basis for criminalizing abortion, but does not prohibit contraception.",
+        "D": "It leaves the decision entirely to Congress without providing any guiding principle."
+      },
+      "correctAnswer": "C",
+      "explanation": "The lecture clarifies that this section's protection of \"the life of the unborn from conception\" is the basis for making abortion illegal, but it does not prohibit contraception, which prevents conception from happening."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "Which inherent power of the state allows it to regulate liberty and property for the promotion of the general welfare, such as implementing health restrictions during a pandemic?",
+      "choices": {
+        "A": "Power of Eminent Domain",
+        "B": "Power of Taxation",
+        "C": "Police Power",
+        "D": "Power of Judicial Review"
+      },
+      "correctAnswer": "C",
+      "explanation": "The transcript and PPT define Police Power as the power to regulate liberty and property to promote public health, safety, and morals for the general welfare."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "What are the three essential requirements for the state to exercise the power of Eminent Domain?",
+      "choices": {
+        "A": "Private property, public use, and just compensation.",
+        "B": "A court order, presidential approval, and a public vote.",
+        "C": "Lawful subject, lawful means, and a police escort.",
+        "D": "A declared emergency, a national tax, and a senate hearing."
+      },
+      "correctAnswer": "A",
+      "explanation": "Eminent Domain is defined as the power to take (a) private property for (b) public use upon payment of (c) just compensation."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "What is the primary purpose of the Power of Taxation?",
+      "choices": {
+        "A": "To take private property for public projects.",
+        "B": "To regulate the behavior of citizens for the common good.",
+        "C": "To demand and collect contributions to support the government and fund public services.",
+        "D": "To review and interpret laws passed by the legislature."
+      },
+      "correctAnswer": "C",
+      "explanation": "Taxation is defined as the power to demand and collect contributions (revenues) from persons and property to support the government and its services."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "Which of the three fundamental powers is described as the \"most pervasive, the least limitable, and the most demanding\"?",
+      "choices": {
+        "A": "Eminent Domain",
+        "B": "Taxation",
+        "C": "Police Power",
+        "D": "Veto Power"
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation explicitly describes Police Power as the most pervasive, least limitable, and most demanding of the three inherent powers."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "How is \"just compensation\" determined in an expropriation case under the power of Eminent Domain?",
+      "choices": {
+        "A": "It is the original purchase price of the property.",
+        "B": "It is the amount the government is willing to pay.",
+        "C": "It is the full and fair equivalent of the property's value at the time of the taking.",
+        "D": "It is the future projected value of the property after the public project is completed."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation defines just compensation as the full and fair equivalent of the property, determined by its fair market value at the time of the taking."
+    },
+    {
+      "module": "The Three Fundamental Powers of the State",
+      "question": "The statement \"the power to tax involves the power to destroy\" implies that taxation can be used for what secondary purpose besides raising revenue?",
+      "choices": {
+        "A": "To encourage certain industries through tax breaks.",
+        "B": "To directly fund the military without congressional approval.",
+        "C": "To exterminate undesirable activities and enterprises by making them financially unviable.",
+        "D": "To confiscate private property without compensation."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation notes that besides raising revenue, taxation can be used to exterminate undesirable activities, citing the famous quote."
+    },
+    {
+      "module": "The Three Branches of Government",
+      "question": "What are the primary functions of the three branches of the Philippine government?",
+      "choices": {
+        "A": "Legislative-implements laws, Executive-interprets laws, Judiciary-makes laws.",
+        "B": "Legislative-makes laws, Executive-implements laws, Judiciary-interprets laws.",
+        "C": "Legislative-interprets laws, Executive-makes laws, Judiciary-implements laws.",
+        "D": "All three branches have the power to make, implement, and interpret laws equally."
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation outlines the separation of powers where the Legislative is the rule-making body, the Executive is the rule-implementing body, and the Judiciary is the rule-interpreting body."
+    },
+    {
+      "module": "The Three Branches of Government",
+      "question": "What is the main purpose of the system of \"checks and balances\"?",
+      "choices": {
+        "A": "To ensure that the three branches of government are completely separate and never interact.",
+        "B": "To allow one branch to become dominant in times of crisis.",
+        "C": "To provide mechanisms for each branch to limit the power of the other two, preventing any one from becoming too powerful.",
+        "D": "To ensure the national budget is always balanced."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation states that the separation of powers provides for a system of checks and balances, which keeps the branches interdependent and prevents overreach."
+    },
+    {
+      "module": "Legislative Department",
+      "question": "The Philippine Congress is bicameral, consisting of which two houses?",
+      "choices": {
+        "A": "The Senate and the House of Commons.",
+        "B": "The National Assembly and the Senate.",
+        "C": "The Senate and the House of Representatives.",
+        "D": "The House of Representatives and the Party-List Congress."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation specifies that legislative power is vested in the Congress of the Philippines, which consists of the Senate and the House of Representatives."
+    },
+    {
+      "module": "Legislative Department",
+      "question": "What is the term limit for a member of the House of Representatives?",
+      "choices": {
+        "A": "Six years, with a maximum of two consecutive terms.",
+        "B": "Three years, with a maximum of two consecutive terms.",
+        "C": "Six years, with no term limit.",
+        "D": "Three years, with a maximum of three consecutive terms."
+      },
+      "correctAnswer": "D",
+      "explanation": "Members of the House of Representatives serve for a term of three years and are limited to a maximum of three consecutive terms."
+    },
+    {
+      "module": "Legislative Department",
+      "question": "Which house of Congress holds the exclusive power to initiate all appropriation, revenue, or tariff bills (the \"power of the purse\")?",
+      "choices": {
+        "A": "The Senate",
+        "B": "The House of Representatives",
+        "C": "Both houses can initiate them simultaneously.",
+        "D": "The Commission on Appointments"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Constitution grants the House of Representatives the exclusive power to initiate these specific types of bills, often called the \"power of the purse.\""
+    },
+    {
+      "module": "Legislative Department",
+      "question": "How are impeachment proceedings structured within Congress?",
+      "choices": {
+        "A": "The Senate initiates the case, and the House of Representatives acts as the tribunal.",
+        "B": "The House of Representatives has the sole power to initiate, and the Senate has the sole power to try and decide the case.",
+        "C": "Both houses jointly investigate and vote on removal.",
+        "D": "The Chief Justice of the Supreme Court presides over impeachment proceedings in both houses."
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation clarifies that the House of Representatives has the sole power to initiate impeachment, while the Senate acts as the impeachment tribunal."
+    },
+    {
+      "module": "Legislative Department",
+      "question": "What is the key difference between amending the Constitution via a Constituent Assembly (Con-Ass) and a Constitutional Convention (Con-Con)?",
+      "choices": {
+        "A": "Con-Ass requires a plebiscite, while Con-Con does not.",
+        "B": "In a Con-Ass, Congress itself proposes amendments, while a Con-Con is composed of elected delegates for that purpose.",
+        "C": "Con-Ass can only amend, while Con-Con can revise the entire constitution.",
+        "D": "Con-Ass is faster, while Con-Con is more expensive."
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation distinguishes them by their composition: in a Con-Ass, members of Congress act as the assembly, whereas in a Con-Con, the people elect delegates specifically to craft amendments."
+    },
+    {
+      "module": "Legislative Department",
+      "question": "What is the primary limitation of using a People's Initiative to change the Constitution?",
+      "choices": {
+        "A": "It can only be used to propose revisions, not amendments.",
+        "B": "It requires the unanimous consent of all registered voters.",
+        "C": "It can only be used to propose amendments, not a full revision.",
+        "D": "It must be approved by the President before being put to a plebiscite."
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation specifies that a People's Initiative can only be used for amendments to the Constitution, not a complete repeal or revision."
+    },
+    {
+      "module": "Executive Department",
+      "question": "According to the Constitution, what is the President's primary duty with respect to the laws?",
+      "choices": {
+        "A": "To personally write and propose all new laws.",
+        "B": "To ensure that the laws be faithfully executed.",
+        "C": "To have final say on the interpretation of all laws.",
+        "D": "To veto any law that their political party disagrees with."
+      },
+      "correctAnswer": "B",
+      "explanation": "The Constitution mandates that the President \"shall ensure that the laws be faithfully executed,\" which is the core of executive power."
+    },
+    {
+      "module": "Executive Department",
+      "question": "Which of the following is NOT a power of the Philippine President?",
+      "choices": {
+        "A": "To declare the existence of a state of war.",
+        "B": "To grant pardons and amnesties (with congressional concurrence for amnesties).",
+        "C": "To act as Commander-in-Chief of the armed forces.",
+        "D": "To appoint heads of executive departments with the consent of the Commission on Appointments."
+      },
+      "correctAnswer": "A",
+      "explanation": "The power to declare the existence of a state of war is an exclusive power of Congress, not the President. The President's power is to command the military."
+    },
+    {
+      "module": "Executive Department",
+      "question": "What is meant by the President's \"immunity from suit\"?",
+      "choices": {
+        "A": "The President can never be charged with a crime, even after their term.",
+        "B": "The President is immune from all criminal and civil suits during his or her term in office.",
+        "C": "The President can only be sued in international courts.",
+        "D": "The President is only immune from civil suits but can be charged with criminal offenses while in office."
+      },
+      "correctAnswer": "B",
+      "explanation": "Presidential immunity from suit means they cannot be subjected to criminal or civil suits during their term, though this immunity ends once they step down."
+    },
+    {
+      "module": "Executive Department",
+      "question": "In the line of presidential succession, who becomes president if both the President and Vice-President are unable to serve?",
+      "choices": {
+        "A": "The Speaker of the House",
+        "B": "The Chief Justice of the Supreme Court",
+        "C": "The Senate President",
+        "D": "The Executive Secretary"
+      },
+      "correctAnswer": "C",
+      "explanation": "The line of succession outlined in the presentation is the Vice-President, followed by the Senate President, and then the Speaker of the House."
+    },
+    {
+      "module": "Executive Department",
+      "question": "Under what circumstances can the President declare Martial Law or suspend the writ of habeas corpus?",
+      "choices": {
+        "A": "In cases of invasion or rebellion, when the public safety requires it.",
+        "B": "Whenever there is a major economic crisis.",
+        "C": "To prevent protests or public demonstrations.",
+        "D": "Upon the recommendation of a foreign government."
+      },
+      "correctAnswer": "A",
+      "explanation": "The Constitution limits the President's power to declare Martial Law or suspend the writ to cases of invasion or rebellion, and only when public safety demands it."
+    },
+    {
+      "module": "Judicial Department",
+      "question": "According to the Constitution, judicial power includes the duty of the courts to do what two things?",
+      "choices": {
+        "A": "Enforce laws and appoint judges.",
+        "B": "Settle actual controversies and determine if there has been a grave abuse of discretion by any government branch.",
+        "C": "Write laws and execute them.",
+        "D": "Manage the national budget and command the armed forces."
+      },
+      "correctAnswer": "B",
+      "explanation": "The presentation defines judicial power as the duty to settle actual controversies involving legally demandable rights and to determine whether there has been a grave abuse of discretion by any branch of government (judicial review)."
+    },
+    {
+      "module": "Judicial Department",
+      "question": "What is the term of office for a Justice of the Supreme Court?",
+      "choices": {
+        "A": "A single fixed term of 9 years.",
+        "B": "They serve for life.",
+        "C": "They serve until the mandatory retirement age of 70.",
+        "D": "They are reappointed by the President every 6 years."
+      },
+      "correctAnswer": "C",
+      "explanation": "Justices of the Supreme Court hold their office until they reach the mandatory retirement age of 70."
+    },
+    {
+      "module": "Judicial Department",
+      "question": "What is the power of \"judicial review\"?",
+      "choices": {
+        "A": "The power of the Supreme Court to review and re-write laws passed by Congress.",
+        "B": "The power to determine whether there has been a grave abuse of discretion amounting to a lack or excess of jurisdiction on the part of any branch of government.",
+        "C": "The process of reviewing the qualifications of presidential appointees.",
+        "D": "The annual review of the performance of all lower court judges."
+      },
+      "correctAnswer": "B",
+      "explanation": "Judicial review is the second part of judicial power, specifically the duty to determine if there has been a grave abuse of discretion by another government branch or instrumentality."
+    },
+    {
+      "module": "Judicial Department",
+      "question": "How can a Justice of the Supreme Court be removed from office?",
+      "choices": {
+        "A": "By a majority vote of the public in a referendum.",
+        "B": "By order of the President.",
+        "C": "By a two-thirds vote of Congress.",
+        "D": "Through impeachment or a Quo Warranto petition."
+      },
+      "correctAnswer": "D",
+      "explanation": "The presentation states that Supreme Court justices can only be removed via impeachment or a Quo Warranto proceeding."
+    },
+    {
+      "module": "Judicial Department",
+      "question": "Which body has administrative supervision over all courts and court personnel in the Philippines?",
+      "choices": {
+        "A": "The Department of Justice",
+        "B": "The Office of the President",
+        "C": "The Supreme Court",
+        "D": "The Judicial and Bar Council"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Constitution vests administrative supervision over all courts and their personnel in the Supreme Court."
+    }
+  ]
+}
