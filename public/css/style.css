@@ -579,14 +579,20 @@ input.hidden:checked + .set-item-panel {
 }
 
 /* --- STUDY PAGE: Debossed Controls --- */
-.quiz-session-page .controls #backToMenu,
-.quiz-session-page .controls .theme-switcher {
+.quiz-session-page .controls #backToMenu {
   background: var(--bg-base-layer);
   border-radius: 12px;
   box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15),
               inset -3px -3px 7px rgba(255,255,255,0.8);
   transition: all 0.1s ease-in-out;
   padding: 12px;
+}
+
+.quiz-session-page .controls .theme-switcher {
+  /* No debossing here, just a flex container */
+  padding: 0;
+  background: none;
+  box-shadow: none;
 }
 
 .quiz-session-page .controls #backToMenu {
@@ -598,8 +604,7 @@ input.hidden:checked + .set-item-panel {
   font-size: 1.1rem;
 }
 
-.quiz-session-page .controls #backToMenu:hover,
-.quiz-session-page .controls .theme-switcher:hover {
+.quiz-session-page .controls #backToMenu:hover {
   background: var(--bg-middle-layer);
   transform: none;
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.15),
@@ -612,22 +617,27 @@ input.hidden:checked + .set-item-panel {
               inset -5px -5px 10px rgba(255,255,255,0.7);
 }
 
-/* Adjustments for theme switcher container */
-.quiz-session-page .controls .theme-switcher {
-    padding-left: 16px;
-    padding-right: 16px;
+/* Debossed style for the theme toggle slider itself */
+.quiz-session-page .controls .switch .slider {
+  background-color: var(--bg-base-layer);
+  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.15),
+              inset -3px -3px 7px rgba(255,255,255,0.8);
 }
 
+/* Keep the color change functionality */
+.quiz-session-page .controls .switch input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+
 /* Dark Theme Adjustments */
-[data-theme="dark"] .quiz-session-page .controls #backToMenu,
-[data-theme="dark"] .quiz-session-page .controls .theme-switcher {
+[data-theme="dark"] .quiz-session-page .controls #backToMenu {
   background: var(--bg-base-layer);
   box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5),
               inset -3px -3px 7px rgba(255,255,255,0.08);
 }
 
-[data-theme="dark"] .quiz-session-page .controls #backToMenu:hover,
-[data-theme="dark"] .quiz-session-page .controls .theme-switcher:hover {
+[data-theme="dark"] .quiz-session-page .controls #backToMenu:hover {
   background: var(--bg-middle-layer);
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5),
               inset -2px -2px 5px rgba(255,255,255,0.08);
@@ -636,4 +646,62 @@ input.hidden:checked + .set-item-panel {
 [data-theme="dark"] .quiz-session-page .controls #backToMenu:active {
   box-shadow: inset 5px 5px 10px rgba(0,0,0,0.6),
               inset -5px -5px 10px rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .quiz-session-page .controls .switch .slider {
+    box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5),
+                inset -3px -3px 7px rgba(255,255,255,0.08);
+}
+
+/* --- STUDY PAGE: Hotkey Indicator Badges --- */
+.hotkey-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hotkey-indicator-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-top-layer);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+[data-theme="dark"] .hotkey-indicator-badge {
+    border-color: var(--bg-base-layer);
+}
+
+/* --- FLASHCARD HOTKEY INDICATOR --- */
+.flashcard-hotkey-indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+  -webkit-backface-visibility: hidden; /* Fix for text rendering on back */
+  backface-visibility: hidden;
+}
+
+[data-theme="dark"] .flashcard-hotkey-indicator {
+    background-color: rgba(0, 0, 0, 0.4);
 }

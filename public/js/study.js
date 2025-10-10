@@ -278,12 +278,18 @@ document.addEventListener("DOMContentLoaded", () => {
     studyItemContainerEl.innerHTML = `
             <div class="flashcard" tabindex="0">
                 <div class="flashcard-inner">
-                    <div class="flashcard-front"><p>${formatBold(
-                      item.question
-                    )}</p></div>
-                    <div class="flashcard-back"><p>${formatBold(
-                      item.answer
-                    )}</p></div>
+                    <div class="flashcard-front">
+                        <p>${formatBold(item.question)}</p>
+                        <div class="flashcard-hotkey-indicator">
+                            <i class="fas fa-keyboard"></i> Space to Flip
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        <p>${formatBold(item.answer)}</p>
+                        <div class="flashcard-hotkey-indicator">
+                            <i class="fas fa-keyboard"></i> Space to Flip
+                        </div>
+                    </div>
                 </div>
             </div>`;
 
@@ -291,12 +297,6 @@ document.addEventListener("DOMContentLoaded", () => {
     flashcard.addEventListener("click", () =>
       flashcard.classList.toggle("is-flipped")
     );
-    flashcard.addEventListener("keydown", (e) => {
-      if (e.code === "Space" || e.code === "Enter") {
-        e.preventDefault();
-        flashcard.classList.toggle("is-flipped");
-      }
-    });
   }
 
   // --- UI/UX HELPERS ---
@@ -495,6 +495,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     switch (e.key) {
+      case " ": // Spacebar
+        if (allItems[currentItemIndex].type === 'flashcard') {
+          const flashcard = studyItemContainerEl.querySelector(".flashcard");
+          if (flashcard) {
+            flashcard.classList.toggle("is-flipped");
+          }
+          e.preventDefault();
+        }
+        break;
       case "ArrowLeft":
         previousItem();
         break;
@@ -514,6 +523,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const hotkeyMapHtml = `
           <ul style="text-align: left; list-style-position: inside;">
+            <li><strong>Space:</strong> Flip Flashcard</li>
             <li><strong>1-4:</strong> Select Answer</li>
             <li><strong>&larr; / &rarr;:</strong> Previous/Next Item</li>
             <li><strong>d / l:</strong> Dark/Light Mode</li>
