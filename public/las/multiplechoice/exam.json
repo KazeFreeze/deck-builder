@@ -1,5 +1,5 @@
 {
-  "title": "Team Management, Motivation & Execution",
+  "title": "Team Management, Motivation, and Innovation",
   "questions": [
     {
       "module": "Module 1: Team Foundations",
@@ -10,7 +10,9 @@
         "B": "Lack of Trust",
         "C": "Avoidance of Accountability",
         "D": "Fear of Conflict"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The model is a pyramid, and \"Lack of Trust\" is the base, indicating it's the fundamental dysfunction upon which others are built1111."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -21,7 +23,9 @@
         "B": "Hiding mistakes, making assumptions, and holding grudges",
         "C": "Challenging poor behavior and working out solutions",
         "D": "Focusing on team results and hitting objectives"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The diagram directly lists \"Hide mistakes,\" \"Make assumptions,\" and \"Hold grudges\" as the behaviors resulting from a Lack of Trust2."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -32,7 +36,9 @@
         "B": "Having healthy team debates",
         "C": "Keeping discussions polite and safe",
         "D": "Tolerating poor performance"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "High-performing teams embrace healthy conflict, described as having \"healthy team debates\" and working out solutions3."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -43,7 +49,9 @@
         "B": "Lack of Trust",
         "C": "Lack of Commitment",
         "D": "Fear of Conflict"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "These are the specific outcomes listed under the \"Accountability\" section for a \"Dysfunctional Team\"4."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -54,7 +62,9 @@
         "B": "Team standards being the same for all and poor performance being dealt with",
         "C": "Avoiding problems to maintain harmony",
         "D": "Making assumptions about others' work"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The \"High Performing Team\" model states that \"Poor performance is dealt with\" and \"Team standards [are] the same for all\"5."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -65,7 +75,9 @@
         "B": "Taking a personality test",
         "C": "Accomplishing the Conflict Management Style Survey",
         "D": "Doing improvisation exercises"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "Page 2 lists \"Share your Why Statement\" and \"Poster and Lifeline\"6. Page 8 asks participants to \"Share your Why Statement and Lifeline\"7."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -76,7 +88,9 @@
         "B": "Trust, Conflict, Commitment, Accountability, and Results",
         "C": "Forming, Conflicting, Planning, Producing, and Ending",
         "D": "Introduction, Disagreement, Agreement, Achievement, and Dissolving"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The presentation explicitly names these five phases based on Bruce Tuckman's model8888."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -87,7 +101,9 @@
         "B": "Storming",
         "C": "Norming",
         "D": "Performing"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "These are all listed as characteristics of the \"Forming\" phase, where team members are new to each other999."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -98,7 +114,9 @@
         "B": "Storming",
         "C": "Norming",
         "D": "Adjourning"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "These characteristics, including \"Conflict,\" \"Competition,\" and \"resistance,\" define the \"Storming\" phase101010101010101010."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -109,7 +127,9 @@
         "B": "Performing",
         "C": "Norming",
         "D": "Forming"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "These characteristics show the team is resolving conflicts and solidifying, which is the \"Norming\" phase111111111111111111."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -120,7 +140,9 @@
         "B": "Storming",
         "C": "Forming",
         "D": "Performing"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "These are the peak characteristics of a highly functional team, listed under the \"Performing\" phase12121212."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -131,7 +153,9 @@
         "B": "Transitioning or Mourning phase",
         "C": "Debriefing or Reporting phase",
         "D": "Analysis or Review phase"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The slide explicitly lists \"(Also referred to as the Transitioning or Mourning phase)\" under \"Adjourning\"13."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -142,7 +166,9 @@
         "B": "Requesting and encouraging feedback",
         "C": "Establishing clear expectations and providing the 'big picture'",
         "D": "Celebrating the team's accomplishments"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "In the \"Forming\" phase, the leader's role is directive, involving \"Providing the 'big picture'\" and \"Establishing clear expectations\"14141414."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -153,7 +179,9 @@
         "B": "Facilitating introductions",
         "C": "Encouraging collective decision-making",
         "D": "Providing an opportunity for summative evaluations"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "During the \"Storming\" phase, the leader must manage conflict by \"Identifying issues & facilitating their resolution\"15151515."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -164,7 +192,9 @@
         "B": "Performing",
         "C": "Storming",
         "D": "Forming"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "This strategy is listed for the \"Performing\" phase, as the self-managing team no longer needs direct intervention16161616."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -175,7 +205,9 @@
         "B": "KAPWA (Pagkatao) (shared identity)",
         "C": "Kagandahang-loob (shared humanity)",
         "D": "Pakikisama (companionship)"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The diagram on page 10 clearly labels \"KAPWA (Pagkatao)\" as the \"CORE VALUE\"."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -186,7 +218,9 @@
         "B": "Confrontative Surface Values",
         "C": "Colonial/Accommodative Surface Values",
         "D": "Associated Societal Values"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "These values are listed in the table under the \"Colonial/Accommodative Surface Value\" column."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -197,7 +231,9 @@
         "B": "Norming phase",
         "C": "Performing phase",
         "D": "Storming phase"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This behavior (\"Generally polite tone,\" \"Sticking to safe topics\") is characteristic of the \"Forming\" phase17."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -208,7 +244,9 @@
         "B": "Storming phase",
         "C": "Norming phase",
         "D": "Adjourning phase"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "Open disagreement (\"Conflict based on differences\"), tension (\"High emotions\"), and withdrawal (\"Lack of participation\") are all hallmarks of the \"Storming\" phase181818181818181818."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -219,7 +257,9 @@
         "B": "Storming phase",
         "C": "Norming phase",
         "D": "Forming phase"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The team is resolving its conflicts and \"Developing cohesion.\" Goals are \"well-understood\" and members are \"supportive,\" which defines the \"Norming\" phase19191919."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -230,7 +270,9 @@
         "B": "Adjourning phase",
         "C": "Performing phase",
         "D": "Forming phase"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "These are the key leadership strategies for the \"Forming\" phase, to provide direction and reduce anxiety20202020."
     },
     {
       "module": "Module 1: Team Foundations",
@@ -241,7 +283,9 @@
         "B": "Taking the 'lead' and being highly visible",
         "C": "Identifying issues & facilitating their resolution",
         "D": "Facilitating introductions"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This team is in the \"Performing\" phase (\"High motivation,\" \"self-management\")21212121. The correct leadership strategy is to be a supportive guide, not an active director22222222."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -252,7 +296,9 @@
         "B": "Recognition",
         "C": "Work itself",
         "D": "Supervision and Working Conditions"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "\"Supervision\" and \"Working Conditions\" are explicitly listed under \"Hygiene: Job Dissatisfaction\"23232323. The other options are Motivators."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -263,7 +309,9 @@
         "B": "Company Policy",
         "C": "Interpersonal Relations",
         "D": "Safety"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "\"Responsibility\" and \"Growth\" are listed under \"Motivation: Job Satisfaction\"24. The other options are Hygiene factors."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -274,7 +322,9 @@
         "B": "External Regulation",
         "C": "Introjected Regulation",
         "D": "Intrinsic Motivation"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "\"Amotivation\" is on the far left of the continuum, under the \"Nonself-Determined\" label, and is described as a state of \"Non-Regulation\"25252525."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -285,7 +335,9 @@
         "B": "Identified Regulation",
         "C": "Intrinsic Motivation",
         "D": "Introjected Regulation"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "\"Intrinsic Motivation\" is on the far right of the continuum, under the \"Self-Determined\" label26."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -296,7 +348,9 @@
         "B": "External Regulation",
         "C": "Identified Regulation",
         "D": "Amotivation"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "These are the exact regulators listed for \"External Regulation\"27."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -307,7 +361,9 @@
         "B": "External Regulation",
         "C": "Integrated Regulation",
         "D": "Intrinsic Regulation"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "These terms (\"Somewhat External,\" \"Self-control, Ego-Involvement\") are used to define \"Introjected Regulation\"28282828282828."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -318,7 +374,9 @@
         "B": "Integrated Regulation",
         "C": "Identified Regulation",
         "D": "Introjected Regulation"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "\"Identified Regulation\" is described as having a \"Somewhat Internal\" source and being regulated by \"Personal Importance, Conscious Valuing\"29292929292929. (Self-correction: The chart says \"Somewhat Internal,\" but the concept is that the person has identified with the value, making it internally important.)"
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -329,7 +387,9 @@
         "B": "Identified Regulation",
         "C": "External Regulation",
         "D": "Intrinsic Motivation"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "These are the defining regulators for \"Intrinsic Motivation\" (and its corresponding \"Intrinsic Regulation\")30."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -340,7 +400,9 @@
         "B": "Market culture",
         "C": "Clan culture",
         "D": "Hierarchy culture"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The study's findings explicitly state that \"NGOs have a clan culture type\"31."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -349,7 +411,9 @@
       "choices": {
         "A": "True",
         "B": "False"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The text states, \"Salary does not serve as a major consideration in employee motivation\"32."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -360,7 +424,9 @@
         "B": "Normative Commitment",
         "C": "Affective Commitment",
         "D": "External Commitment"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The study findings state, \"Lastly, employees are affectively committed or emotionally attached to their organizations\"33."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -371,7 +437,9 @@
         "B": "Normative Commitment",
         "C": "Affective Commitment",
         "D": "Amotivation"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the definition of \"Continuance Commitment\" — staying due to inertia or a feeling of having no other choice."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -382,7 +450,9 @@
         "B": "Normative Commitment",
         "C": "Affective Commitment",
         "D": "Introjected Regulation"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "This is the definition of \"Normative Commitment\" — loyalty from feelings of obligation or guilt."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -393,7 +463,9 @@
         "B": "Normative Commitment",
         "C": "Affective Commitment",
         "D": "Integrated Regulation"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the definition of \"Affective Commitment\" — a genuine, positive emotional attachment."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -404,7 +476,9 @@
         "B": "Physiological, Safety, Love",
         "C": "Competence, Autonomy, Relatedness",
         "D": "Achievement, Recognition, Growth"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The diagram on page 16 clearly labels \"Competence,\" \"Autonomy,\" and \"Relatedness\" as the \"Humans' three basic needs\"34343434."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -415,7 +489,9 @@
         "B": "Relatedness",
         "C": "Self-Actualization",
         "D": "Autonomy"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "This is the definition provided for \"Autonomy\" in the diagram35353535."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -426,7 +502,9 @@
         "B": "Esteem",
         "C": "Belongingness",
         "D": "Autonomy"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the definition provided for \"Relatedness\" in the diagram36."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -437,7 +515,9 @@
         "B": "Competence, Autonomy, Relatedness",
         "C": "Achievement, Recognition, Responsibility",
         "D": "Time, Money, Status"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The Venn diagram on page 18 shows these three intersecting circles: \"Autonomy,\" \"Mastery,\" and \"Purpose\"37."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -448,7 +528,9 @@
         "B": "Obliging",
         "C": "Dominating",
         "D": "Avoiding"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The \"Dominating\" style is in the quadrant for HIGH Concern for Self and LOW Concern for Others383838383838383838."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -459,7 +541,9 @@
         "B": "Obliging",
         "C": "Dominating",
         "D": "Compromising"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The \"Obliging\" style is in the quadrant for LOW Concern for Self and HIGH Concern for Others393939393939393939."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -470,7 +554,9 @@
         "B": "Obliging",
         "C": "Dominating",
         "D": "Compromising"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The \"Integrating\" style is in the quadrant for HIGH Concern for Self and HIGH Concern for Others404040404040404040."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -481,7 +567,9 @@
         "B": "Obliging",
         "C": "Dominating",
         "D": "Compromising"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The \"Avoiding\" style is in the quadrant for LOW Concern for Self and LOW Concern for Others414141414141414141."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -492,7 +580,9 @@
         "B": "The issue is trivial",
         "C": "Issues are complex and synthesis of ideas is needed",
         "D": "You believe you may be wrong"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The table lists \"Issues are complex\" and \"Synthesis of ideas is needed\" as appropriate situations for the \"Integrating\" style."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -503,7 +593,9 @@
         "B": "A speedy decision is needed or the issue is trivial",
         "C": "Both parties are equally powerful",
         "D": "Preserving the relationship is the most important goal"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The table lists \"Issue is trivial\" and \"Speedy decision is needed\" as appropriate situations for \"Dominating\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -514,7 +606,9 @@
         "B": "The other party is wrong or unethical",
         "C": "The issue is more important to the other party or you believe you may be wrong",
         "D": "A speedy decision is needed"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The table lists \"You believe that you may be wrong\" and \"Issue is more important to the other party\" as appropriate situations for \"Obliging\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -525,7 +619,9 @@
         "B": "A cooling off period is needed or the issue is trivial",
         "C": "The issue is complex and needs a solution",
         "D": "Commitment is needed from other parties"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The table lists \"Issue is trivial\" and \"Cooling off period is needed\" as appropriate situations for \"Avoiding\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -536,7 +632,9 @@
         "B": "The problem is simple",
         "C": "Goals of parties are mutually exclusive or parties are equally powerful",
         "D": "Time is available for in-depth problem solving"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The table lists \"Goals of parties are mutually exclusive\" and \"Parties are equally powerful\" as appropriate situations for \"Compromising\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -547,7 +645,9 @@
         "B": "Generation X",
         "C": "Millennials",
         "D": "Generation Z"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "These descriptors are explicitly listed for \"GENERATION X\"42."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -558,7 +658,9 @@
         "B": "Generation X",
         "C": "Millennials",
         "D": "Generation Z"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "These are the motivators listed for \"GENERATION Z\"43434343."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -569,7 +671,9 @@
         "B": "Generation X",
         "C": "Millennials",
         "D": "Generation Z"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the communication style listed for \"MILLENNIALS\"44. (Note: Gen Z also uses texts and IMs, but this specific combination is listed for Millennials) 45."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -580,7 +684,9 @@
         "B": "Identified Regulation",
         "C": "External Regulation",
         "D": "Amotivation"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The motivation is a \"Punishment\" from an \"External\" source, which is the definition of \"External Regulation\"46."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -591,7 +697,9 @@
         "B": "Identified Regulation",
         "C": "External Regulation",
         "D": "Introjected Regulation"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The employee has identified with the goal and sees its \"Personal Importance,\" which is \"Identified Regulation\"47. It's not intrinsic because the enjoyment comes from the value, not the act itself."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -602,7 +710,9 @@
         "B": "Identified Regulation",
         "C": "Integrated Regulation",
         "D": "Introjected Regulation"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The motivation comes from the \"Interest, Enjoyment, Inherent Satisfaction\" of the task itself48."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -613,7 +723,9 @@
         "B": "Introjected Regulation",
         "C": "Identified Regulation",
         "D": "Amotivation"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The motivation is regulated by \"Self-control, Ego-Involvement\" and internal punishments (guilt), which is \"Introjected Regulation\"49."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -624,7 +736,9 @@
         "B": "Relatedness",
         "C": "Competence",
         "D": "Safety"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "\"Competence\" is defined as the \"need to be effective in dealing with environment\"50."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -635,7 +749,9 @@
         "B": "Relatedness",
         "C": "Competence",
         "D": "Physiological"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "\"Autonomy\" is the \"need to control the course of their lives,\" which includes having control over how they work51515151."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -646,7 +762,9 @@
         "B": "Normative Commitment",
         "C": "Continuance Commitment",
         "D": "Lack of Commitment"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This person feels \"stuck\" due to a \"no other opportunities\" (inertia) rather than loyalty, which is \"Continuance Commitment\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -657,7 +775,9 @@
         "B": "Normative Commitment",
         "C": "Continuance Commitment",
         "D": "Obliging Conflict Style"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This person has \"strong positive attitudes\" and \"actively want[s] to stay,\" which is \"Affective Commitment\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -668,7 +788,9 @@
         "B": "Dominating",
         "C": "Avoiding",
         "D": "Obliging"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The \"Dominating\" style is appropriate when a \"Speedy decision is needed\". This is a high-stakes, low-time situation."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -679,7 +801,9 @@
         "B": "Integrating",
         "C": "Obliging",
         "D": "Avoiding"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "\"Compromising\" is appropriate when \"Goals of parties are mutually exclusive\" and a full \"Integrating\" style has not worked. Splitting 50/50 is a classic compromise."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -690,7 +814,9 @@
         "B": "Compromising",
         "C": "Avoiding",
         "D": "Obliging"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "You used the \"Obliging\" style, as the \"Issue is more important to the other party\" and \"Preserving relationship is important\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -701,7 +827,9 @@
         "B": "Avoiding style",
         "C": "Dominating style",
         "D": "Compromising style"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The \"Integrating\" style is best for \"complex\" issues that need \"synthesis of ideas\" and where \"Time is available\"."
     },
     {
       "module": "Module 2: Motivation & Conflict",
@@ -712,7 +840,9 @@
         "B": "Integrating style",
         "C": "Avoiding style",
         "D": "Dominating style"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The leader is using the \"Avoiding\" style, which is appropriate as the \"Issue is trivial\" and there is a \"Potential dysfunctional effect of confronting\"."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -723,7 +853,9 @@
         "B": "(PERSONA) (NEEDS) (PROBLEM)?",
         "C": "(PROBLEM) (SOLUTION) (OUTCOME)?",
         "D": "(VERB) (PROBLEM) (CONTEXT)?"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The slide on page 32 explicitly shows this framework: \"HOW MIGHT WE (VERB) (PERSONA) IN ADDRESSING (PROBLEM)?\"52."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -734,7 +866,9 @@
         "B": "Market Share",
         "C": "Opportunity Areas",
         "D": "Threats"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The table headings on page 36 are \"Competitor,\" \"Strengths,\" \"Gaps,\" and \"Opportunity Areas\"53."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -745,7 +879,9 @@
         "B": "Timeboxing",
         "C": "Eat The Frog",
         "D": "The 3-3-3 Method"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the definition of the \"Pomodoro Technique\"54."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -756,7 +892,9 @@
         "B": "Engage",
         "C": "End",
         "D": "Evaluate"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The five steps listed for GTD are \"Capture,\" \"Clarify,\" \"Organize,\" \"Reflect,\" and \"Engage\"55."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -767,7 +905,9 @@
         "B": "Group similar tasks together",
         "C": "If a task takes less than 2 minutes, do it immediately",
         "D": "Plan your day backward"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The \"Eat The Frog\" technique is defined as \"Do your hardest task first thing in the morning\"56."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -778,7 +918,9 @@
         "B": "1 hour of deep work, 3 hours of shallow work, 5 hours of meetings",
         "C": "1 major task, 3 medium tasks, and 5 smaller tasks",
         "D": "1 big goal, 3 weekly goals, 5 daily goals"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This method is \"1 major task, 3 medium tasks, and 5 smaller tasks\"57."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -789,7 +931,9 @@
         "B": "Meeting Management",
         "C": "Team Engagement",
         "D": "Remote Coaching"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "These are listed as strategies under the \"ENERGY MANAGEMENT\" heading58585858."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -800,7 +944,9 @@
         "B": "Meeting Management",
         "C": "Team Engagement",
         "D": "Project Planning"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "These are listed as strategies under the \"MEETING MANAGEMENT\" heading59595959."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -811,7 +957,9 @@
         "B": "Meeting Management",
         "C": "Team Engagement",
         "D": "Feedback"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "These are listed as strategies under the \"TEAM ENGAGEMENT\" heading60606060."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -822,7 +970,9 @@
         "B": "Suspend idea evaluation",
         "C": "Label the idea generators",
         "D": "Criticize ideas, not people"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The slide on brainstorming lists \"Quantity over Quality\" 61and \"Suspend idea evaluation\"62. Answer B is directly stated."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -833,7 +983,9 @@
         "B": "Black Hat",
         "C": "White Hat",
         "D": "Blue Hat"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the definition of the \"White Hat - Facts\"63."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -844,7 +996,9 @@
         "B": "Yellow Hat",
         "C": "Green Hat",
         "D": "White Hat"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the definition of the \"Red Hat - Feelings\"64."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -855,7 +1009,9 @@
         "B": "Black Hat",
         "C": "Blue Hat",
         "D": "Green Hat"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "This is the definition of the \"Black Hat - Cautions\"65."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -866,7 +1022,9 @@
         "B": "Black Hat",
         "C": "White Hat",
         "D": "Green Hat"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "This is the definition of the \"Green Hat - Creativity\"66."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -877,7 +1035,9 @@
         "B": "Green Hat",
         "C": "Blue Hat",
         "D": "Red Hat"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the definition of the \"Yellow Hat - Benefits\"67."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -888,7 +1048,9 @@
         "B": "Red Hat",
         "C": "Blue Hat",
         "D": "Black Hat"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the definition of the \"Blue Hat - Process\"68."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -899,7 +1061,9 @@
         "B": "Enhancement",
         "C": "Engagement",
         "D": "Empathy"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The four components shown on the slide are \"CONTEXT,\" \"ACTION,\" \"RESULTS,\" and \"ENHANCEMENT\"69696969696969696969696969696969."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -910,7 +1074,9 @@
         "B": "Always be Positive",
         "C": "Document Everything",
         "D": "Ask for Permission"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The four principles listed are \"Ownership,\" \"Specific,\" \"Immediacy/Timeliness,\" and \"Situation not the Person\" 70."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -921,7 +1087,9 @@
         "B": "The person who does the work",
         "C": "The person who needs to be kept informed",
         "D": "The person who provides input"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The \"Responsible\" person \"is the one who does the work to complete the task\"71."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -932,7 +1100,9 @@
         "B": "The person who provides feedback",
         "C": "The person who delegates and reviews the work (ultimately answerable)",
         "D": "The person who needs to be updated on progress"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The \"Accountable\" person \"delegates and reviews the work\" and is the one to \"make sure the responsible person... completes work\"72."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -943,7 +1113,9 @@
         "B": "At least two",
         "C": "Only one",
         "D": "None, it's optional"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The presentation states, \"Every task should have only one accountable person and no more\"73."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -954,7 +1126,9 @@
         "B": "Accountable",
         "C": "Consulted",
         "D": "Informed"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "\"Consulted people provide input and feedback on the work\"74."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -965,7 +1139,9 @@
         "B": "Apathetics (\"watch\")",
         "C": "Defenders (\"Show consideration\")",
         "D": "Promoters (\"focus\")"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "The quadrant for \"High influence, high interest\" is labeled \"Promoters,\" and the strategy is to \"focus\" on them75757575."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -976,7 +1152,9 @@
         "B": "Inform via general communications",
         "C": "Engage and consult regularly",
         "D": "Utilise their interest through involvement"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The strategy for \"Apathetics\" (labeled \"watch\") is to \"Inform via general communications\"76767676."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -987,7 +1165,9 @@
         "B": "Collaborate",
         "C": "Empower",
         "D": "Consult"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the definition of \"EMPOWER\" (level 5)."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -998,7 +1178,9 @@
         "B": "Consult",
         "C": "Involve",
         "D": "Collaborate"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "This is the specific \"Promise to stakeholders\" listed for \"CONSULT\" (level 2)."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1009,7 +1191,9 @@
         "B": "White Hat",
         "C": "Black Hat",
         "D": "Green Hat"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "The manager is asking for \"Information and data\" that is \"Neutral and objective,\" which is the \"White Hat\"77."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1020,7 +1204,9 @@
         "B": "White Hat",
         "C": "Yellow Hat",
         "D": "Blue Hat"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "This team member is expressing \"Intuition, hunches, gut instinct\" with \"No reasons given,\" which is the \"Red Hat\"78."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1031,7 +1217,9 @@
         "B": "Yellow Hat",
         "C": "Black Hat",
         "D": "Red Hat"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "The manager is asking the team to identify \"Difficulties, weaknesses, dangers\" and \"Spotting the risks,\" which is the \"Black Hat\"79."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1042,7 +1230,9 @@
         "B": "Red Hat",
         "C": "White Hat",
         "D": "Yellow Hat"
-      }
+      },
+      "correctAnswer": "D",
+      "explanation": "The leader is asking for \"Positives, plus points\" and \"Why an idea is useful,\" which is the \"Yellow Hat\"80."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1053,7 +1243,9 @@
         "B": "RACI matrix",
         "C": "Six Thinking Hats",
         "D": "GTD method"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "The feedback is clearly structured using the Context, Action, Result, and Enhancement components81818181818181818181818181818181. The positive and constructive examples 82 also follow this format."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1064,7 +1256,9 @@
         "B": "Specific",
         "C": "Situation not the Person",
         "D": "Immediacy/Timeliness"
-      }
+      },
+      "correctAnswer": "C",
+      "explanation": "This is a judgment about the \"Person\" rather than a \"Situation.\" Good feedback would be, \"In today's presentation (Situation), I observed you spoke very quickly (Specific Action)...\"83."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1075,7 +1269,9 @@
         "B": "Project Manager",
         "C": "SEO Lead",
         "D": "Senior Analyst"
-      }
+      },
+      "correctAnswer": "B",
+      "explanation": "In the table on page 58, the \"A\" for \"Product specs\" is in the \"Project Manager\" column84."
     },
     {
       "module": "Module 3 & 4: Innovation & Execution",
@@ -1086,7 +1282,9 @@
         "B": "Strategic framework",
         "C": "Delivery roadmap",
         "D": "Product specs"
-      }
+      },
+      "correctAnswer": "A",
+      "explanation": "In the table on page 58, the \"R\" is in the \"Senior Analyst\" column for both the \"Econometric model\" and \"Risk factors\" tasks85."
     }
   ]
 }
