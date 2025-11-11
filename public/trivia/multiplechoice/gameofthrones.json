@@ -1,0 +1,1110 @@
+{
+  "title": "Game of Thrones & House of the Dragon Trivia (100 Questions)",
+  "questions": [
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What is the name of the ancestral Valyrian steel greatsword of House Stark?",
+      "choices": {
+        "A": "Longclaw",
+        "B": "Ice",
+        "C": "Oathkeeper",
+        "D": "Widow's Wail"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ice was the ancestral greatsword of House Stark, famously used by Eddard Stark. It was later melted down to create Oathkeeper and Widow's Wail."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What is the name of Jon Snow's direwolf?",
+      "choices": {
+        "A": "Ghost",
+        "B": "Grey Wind",
+        "C": "Shaggydog",
+        "D": "Nymeria"
+      },
+      "correctAnswer": "A",
+      "explanation": "Ghost is the albino direwolf belonging to Jon Snow. The other direwolves belonged to his Stark siblings."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "Who gifted Arya Stark her sword, Needle?",
+      "choices": {
+        "A": "Eddard Stark",
+        "B": "Syrio Forel",
+        "C": "The Hound",
+        "D": "Jon Snow"
+      },
+      "correctAnswer": "D",
+      "explanation": "Jon Snow had Needle commissioned from Mikken, the blacksmith at Winterfell, and gave it to Arya as a parting gift."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What name does Theon Greyjoy give himself after being broken by Ramsay Bolton?",
+      "choices": {
+        "A": "Ironborn",
+        "B": "Slayer",
+        "C": "Reek",
+        "D": "Ghost"
+      },
+      "correctAnswer": "C",
+      "explanation": "Ramsay Bolton tortured Theon and forced him to adopt the new name 'Reek', shattering his original identity."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "Which Stark sibling becomes the Three-Eyed Raven?",
+      "choices": {
+        "A": "Bran",
+        "B": "Sansa",
+        "C": "Arya",
+        "D": "Robb"
+      },
+      "correctAnswer": "A",
+      "explanation": "After traveling beyond the Wall, Bran Stark is trained by the previous Three-Eyed Raven and eventually takes his place."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "Who was Robb Stark's wife, whose marriage broke his oath to Walder Frey?",
+      "choices": {
+        "A": "Margaery Tyrell",
+        "B": "Roslin Frey",
+        "C": "Talisa Maegyr",
+        "D": "Myranda"
+      },
+      "correctAnswer": "C",
+      "explanation": "Robb Stark fell in love with and married Talisa Maegyr from Volantis, breaking his promise to marry one of Walder Frey's daughters."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What is the motto of House Stark?",
+      "choices": {
+        "A": "Ours is the Fury",
+        "B": "Family, Duty, Honor",
+        "C": "Winter is Coming",
+        "D": "Unbowed, Unbent, Unbroken"
+      },
+      "correctAnswer": "C",
+      "explanation": "The words of House Stark are 'Winter is Coming', a constant warning and reminder of the need for vigilance."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "Who was Sansa Stark's first fiancé?",
+      "choices": {
+        "A": "Tyrion Lannister",
+        "B": "Ramsay Bolton",
+        "C": "Loras Tyrell",
+        "D": "Joffrey Baratheon"
+      },
+      "correctAnswer": "D",
+      "explanation": "Sansa was originally betrothed to Prince Joffrey Baratheon as part of the alliance between Houses Stark and Baratheon."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What is the name of Catelyn Stark's ancestral home?",
+      "choices": {
+        "A": "Casterly Rock",
+        "B": "Highgarden",
+        "C": "Riverrun",
+        "D": "The Eyrie"
+      },
+      "correctAnswer": "C",
+      "explanation": "Catelyn was born a Tully, and the ancestral seat of House Tully is Riverrun."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Stark",
+      "question": "What is the name of Rickon Stark's direwolf?",
+      "choices": {
+        "A": "Shaggydog",
+        "B": "Summer",
+        "C": "Lady",
+        "D": "Grey Wind"
+      },
+      "correctAnswer": "A",
+      "explanation": "Rickon, the youngest Stark, named his wild and aggressive direwolf Shaggydog."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What are the official words of House Lannister?",
+      "choices": {
+        "A": "A Lannister Always Pays His Debts",
+        "B": "Hear Me Roar!",
+        "C": "Family, Duty, Honor",
+        "D": "Fire and Blood"
+      },
+      "correctAnswer": "B",
+      "explanation": "The official motto of House Lannister is 'Hear Me Roar!'. 'A Lannister Always Pays His Debts' is their well-known unofficial motto."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "Who murdered Tywin Lannister?",
+      "choices": {
+        "A": "Tyrion Lannister",
+        "B": "Oberyn Martell",
+        "C": "Jaime Lannister",
+        "D": "Cersei Lannister"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tyrion Lannister killed his father, Tywin, with a crossbow while Tywin was on the privy, just after freeing Tyrion from his cell."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What is Jaime Lannister's nickname?",
+      "choices": {
+        "A": "The Lionheart",
+        "B": "The Kingslayer",
+        "C": "The Young Lion",
+        "D": "The Goldenhand"
+      },
+      "correctAnswer": "B",
+      "explanation": "Jaime earned the infamous nickname 'Kingslayer' after he killed King Aerys II Targaryen, whom he was sworn to protect."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What substance did Cersei Lannister use to destroy the Great Sept of Baelor?",
+      "choices": {
+        "A": "Dragonfire",
+        "B": "Milk of the Poppy",
+        "C": "Wildfire",
+        "D": "The Strangler"
+      },
+      "correctAnswer": "C",
+      "explanation": "Cersei used a massive cache of wildfire stored beneath the Great Sept to kill all her enemies inside, including the High Sparrow and Margaery Tyrell."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What was the name of the poison used to kill Joffrey Baratheon?",
+      "choices": {
+        "A": "Tears of Lys",
+        "B": "Wolfsbane",
+        "C": "Nightshade",
+        "D": "The Strangler"
+      },
+      "correctAnswer": "D",
+      "explanation": "Joffrey was poisoned at his own wedding (the Purple Wedding) with a rare poison known as The Strangler, administered by Olenna Tyrell."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "Who served as Tyrion's champion in his first trial by combat at the Eyrie?",
+      "choices": {
+        "A": "Jaime Lannister",
+        "B": "Bronn",
+        "C": "Sandor Clegane",
+        "D": "Oberyn Martell"
+      },
+      "correctAnswer": "B",
+      "explanation": "The sellsword Bronn volunteered to fight for Tyrion against Ser Vardis Egen, winning Tyrion's freedom."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "In which city was Myrcella Baratheon (Lannister) killed?",
+      "choices": {
+        "A": "King's Landing",
+        "B": "Sunspear",
+        "C": "Meereen",
+        "D": "Braavos"
+      },
+      "correctAnswer": "B",
+      "explanation": "Myrcella was poisoned with a kiss by Ellaria Sand in Sunspear, the capital of Dorne, as revenge for Oberyn Martell's death."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What is the name of the mountain-sized knight who serves Cersei?",
+      "choices": {
+        "A": "Ser Loras Tyrell",
+        "B": "Ser Barristan Selmy",
+        "C": "Ser Gregor Clegane",
+        "D": "Ser Meryn Trant"
+      },
+      "correctAnswer": "C",
+      "explanation": "Ser Gregor Clegane, 'The Mountain', was fatally wounded by Oberyn Martell but 'reanimated' by Qyburn to serve as Ser Robert Strong, Cersei's silent bodyguard."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "Who was Joffrey's younger brother who also sat on the Iron Throne?",
+      "choices": {
+        "A": "Rickon",
+        "B": "Viserys",
+        "C": "Aegon",
+        "D": "Tommen"
+      },
+      "correctAnswer": "D",
+      "explanation": "Tommen Baratheon, Joffrey's more gentle younger brother, became King after Joffrey's assassination."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Lannister",
+      "question": "What is the name of the ancestral home of House Lannister?",
+      "choices": {
+        "A": "Highgarden",
+        "B": "Storm's End",
+        "C": "Casterly Rock",
+        "D": "Dragonstone"
+      },
+      "correctAnswer": "C",
+      "explanation": "Casterly Rock, a fortress carved into a massive rock overlooking the Sunset Sea, is the seat of House Lannister."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "How many dragons did Daenerys Targaryen hatch?",
+      "choices": {
+        "A": "One",
+        "B": "Three",
+        "C": "Five",
+        "D": "Two"
+      },
+      "correctAnswer": "B",
+      "explanation": "Daenerys hatched three dragon eggs in Khal Drogo's funeral pyre: Drogon (black), Rhaegal (green), and Viserion (cream/gold)."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "What is the name of Daenerys's eldest brother, who was killed by Khal Drogo?",
+      "choices": {
+        "A": "Rhaegar",
+        "B": "Aerys",
+        "C": "Aemon",
+        "D": "Viserys"
+      },
+      "correctAnswer": "D",
+      "explanation": "Viserys Targaryen, the 'Beggar King', was killed by Khal Drogo, who gave him a 'crown' of molten gold."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "What is the real name of Jon Snow, revealing his Targaryen heritage?",
+      "choices": {
+        "A": "Aemon Targaryen",
+        "B": "Jaehaerys Targaryen",
+        "C": "Aegon Targaryen",
+        "D": "Rhaegar Targaryen"
+      },
+      "correctAnswer": "C",
+      "explanation": "Bran's vision reveals that Jon Snow's true name, given by his mother Lyanna Stark, is Aegon Targaryen."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "Which of Daenerys's dragons is killed and reanimated by the Night King?",
+      "choices": {
+        "A": "Drogon",
+        "B": "Rhaegal",
+        "C": "Viserion",
+        "D": "Balerion"
+      },
+      "correctAnswer": "C",
+      "explanation": "Viserion is killed by an ice spear thrown by the Night King, who then raises him from the dead as an ice dragon."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "Who was Daenerys's first husband?",
+      "choices": {
+        "A": "Hizdahr zo Loraq",
+        "B": "Daario Naharis",
+        "C": "Jon Snow",
+        "D": "Khal Drogo"
+      },
+      "correctAnswer": "D",
+      "explanation": "Daenerys was married to the Dothraki warlord Khal Drogo in an alliance arranged by her brother, Viserys."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "What are the words of House Targaryen?",
+      "choices": {
+        "A": "Fire and Blood",
+        "B": "Winter is Coming",
+        "C": "Ours is the Fury",
+        "D": "Unbowed, Unbent, Unbroken"
+      },
+      "correctAnswer": "A",
+      "explanation": "The motto of House Targaryen is 'Fire and Blood', reflecting their connection to dragons and their history of conquest."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "Who was Jon Snow's father?",
+      "choices": {
+        "A": "Eddard Stark",
+        "B": "Robert Baratheon",
+        "C": "Rhaegar Targaryen",
+        "D": "Aerys Targaryen"
+      },
+      "correctAnswer": "C",
+      "explanation": "It is revealed that Jon Snow is not Eddard Stark's bastard, but the trueborn son of Rhaegar Targaryen and Lyanna Stark."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "What is the name of the commander of Daenerys's Unsullied army?",
+      "choices": {
+        "A": "Grey Worm",
+        "B": "Barristan Selmy",
+        "C": "Jorah Mormont",
+        "D": "Torgo Nudho"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Unsullied chose Grey Worm as their commander after Daenerys freed them from their masters in Astapor."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "Which Maester at Castle Black was secretly a Targaryen?",
+      "choices": {
+        "A": "Maester Pycelle",
+        "B": "Maester Luwin",
+        "C": "Maester Aemon",
+        "D": "Maester Cressen"
+      },
+      "correctAnswer": "C",
+      "explanation": "Maester Aemon Targaryen was the brother of King Aegon V ('Egg') and abdicated any claim to the throne to serve at the Wall."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "House Targaryen (GoT)",
+      "question": "Who ultimately kills Daenerys Targaryen?",
+      "choices": {
+        "A": "Arya Stark",
+        "B": "Jon Snow",
+        "C": "Tyrion Lannister",
+        "D": "Sansa Stark"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fearing her tyranny after the destruction of King's Landing, Jon Snow kills Daenerys in the throne room."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the motto of House Greyjoy?",
+      "choices": {
+        "A": "Ours is the Fury",
+        "B": "We Do Not Sow",
+        "C": "Growing Strong",
+        "D": "As High as Honor"
+      },
+      "correctAnswer": "B",
+      "explanation": "'We Do Not Sow' is the motto of House Greyjoy, reflecting their reaving culture from the Iron Islands."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What god does Melisandre worship?",
+      "choices": {
+        "A": "The Drowned God",
+        "B": "The Seven",
+        "C": "R'hllor, the Lord of Light",
+        "D": "The Many-Faced God"
+      },
+      "correctAnswer": "C",
+      "explanation": "Melisandre is a Red Priestess who worships R'hllor, the Lord of Light, and believes Stannis Baratheon is a prophesied hero."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the name of House Tarly's ancestral Valyrian steel sword?",
+      "choices": {
+        "A": "Ice",
+        "B": "Dark Sister",
+        "C": "Blackfyre",
+        "D": "Heartsbane"
+      },
+      "correctAnswer": "D",
+      "explanation": "Heartsbane is the Valyrian steel greatsword belonging to House Tarly, which Samwell Tarly steals from his father."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Who is known as the 'Knight of Flowers'?",
+      "choices": {
+        "A": "Loras Tyrell",
+        "B": "Jaime Lannister",
+        "C": "Garlan Tyrell",
+        "D": "Renly Baratheon"
+      },
+      "correctAnswer": "A",
+      "explanation": "Ser Loras Tyrell, brother of Margaery, is famed for his beauty and skill at tourneys, earning him the nickname 'Knight of Flowers'."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the motto of House Martell?",
+      "choices": {
+        "A": "Winter is Coming",
+        "B": "Ours is the Fury",
+        "C": "Unbowed, Unbent, Unbroken",
+        "D": "Growing Strong"
+      },
+      "correctAnswer": "C",
+      "explanation": "The words of House Martell of Dorne are 'Unbowed, Unbent, Unbroken', reflecting their history of resisting Targaryen conquest."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the name of Sandor Clegane's older brother?",
+      "choices": {
+        "A": "Gregor",
+        "B": "Robert",
+        "C": "Bronn",
+        "D": "Gendry"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sandor's older brother is Ser Gregor Clegane, 'The Mountain', who famously scarred Sandor as a child."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Which house is in charge of The Eyrie?",
+      "choices": {
+        "A": "House Tully",
+        "B": "House Arryn",
+        "C": "House Tyrell",
+        "D": "House Baratheon"
+      },
+      "correctAnswer": "B",
+      "explanation": "House Arryn rules the Vale from their impregnable fortress, The Eyrie."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Who is Lord of Highgarden at the beginning of the series?",
+      "choices": {
+        "A": "Olenna Tyrell",
+        "B": "Loras Tyrell",
+        "C": "Mace Tyrell",
+        "D": "Randyll Tarly"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mace Tyrell is the Lord of Highgarden and head of House Tyrell. Olenna is his mother, and Loras is his son."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the motto of House Tully?",
+      "choices": {
+        "A": "Family, Duty, Honor",
+        "B": "Our Roots Go Deep",
+        "C": "We Do Not Sow",
+        "D": "Here We Stand"
+      },
+      "correctAnswer": "A",
+      "explanation": "The words of House Tully of Riverrun, Catelyn Stark's birth house, are 'Family, Duty, Honor'."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Which king did Stannis Baratheon serve as Master of Ships?",
+      "choices": {
+        "A": "Aerys II Targaryen",
+        "B": "Robert Baratheon",
+        "C": "Joffrey Baratheon",
+        "D": "Renly Baratheon"
+      },
+      "correctAnswer": "B",
+      "explanation": "Stannis served on the small council as Master of Ships for his older brother, King Robert Baratheon."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the name of the sellsword company founded by the 'Second Sons'?",
+      "choices": {
+        "A": "The Golden Company",
+        "B": "The Stormcrows",
+        "C": "The Second Sons",
+        "D": "The Brave Companions"
+      },
+      "correctAnswer": "C",
+      "explanation": "The 'Second Sons' is the name of the sellsword company that Daario Naharis, and later Tyrion and Jorah, are involved with."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Who says the line: 'Chaos is a ladder'?",
+      "choices": {
+        "A": "Tyrion Lannister",
+        "B": "Varys",
+        "C": "Cersei Lannister",
+        "D": "Petyr 'Littlefinger' Baelish"
+      },
+      "correctAnswer": "D",
+      "explanation": "Littlefinger explains his philosophy of using disruption to advance his own position to Varys, concluding that 'chaos is a ladder'."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the name of Robert Baratheon's bastard son who works as a blacksmith?",
+      "choices": {
+        "A": "Podrick",
+        "B": "Gendry",
+        "C": "Hot Pie",
+        "D": "Lancel"
+      },
+      "correctAnswer": "B",
+      "explanation": "Gendry is one of King Robert's many bastard sons, who works as a blacksmith's apprentice in King's Landing before fleeing with Arya."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "What is the motto of House Tyrell?",
+      "choices": {
+        "A": "Growing Strong",
+        "B": "Ours is the Fury",
+        "C": "Hear Me Roar!",
+        "D": "Family, Duty, Honor"
+      },
+      "correctAnswer": "A",
+      "explanation": "The words of House Tyrell of Highgarden are 'Growing Strong', symbolizing their wealth and fertile lands."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Other Houses & Characters",
+      "question": "Who is known as 'The Queen of Thorns'?",
+      "choices": {
+        "A": "Cersei Lannister",
+        "B": "Olenna Tyrell",
+        "C": "Margaery Tyrell",
+        "D": "Ellaria Sand"
+      },
+      "correctAnswer": "B",
+      "explanation": "Lady Olenna Tyrell, grandmother of Margaery and Loras, is known for her sharp wit and political savvy, earning her the nickname 'Queen of Thorns'."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the name of the massacre where Robb and Catelyn Stark were killed?",
+      "choices": {
+        "A": "The Purple Wedding",
+        "B": "The Red Wedding",
+        "C": "The Battle of the Blackwater",
+        "D": "The Field of Fire"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Red Wedding was a massacre orchestrated by Walder Frey and Roose Bolton (in league with the Lannisters) to betray and murder Robb Stark, Catelyn Stark, and his army."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "Which continent lies to the east of Westeros?",
+      "choices": {
+        "A": "Essos",
+        "B": "Sothoryos",
+        "C": "Ulthos",
+        "D": "The Summer Isles"
+      },
+      "correctAnswer": "A",
+      "explanation": "Essos is the large continent to the east of Westeros, separated by the Narrow Sea. It's home to the Free Cities, Dothraki, and Slaver's Bay."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the name of the organization that Arya Stark joins in Braavos?",
+      "choices": {
+        "A": "The Faceless Men",
+        "B": "The Second Sons",
+        "C": "The Sorrowful Men",
+        "D": "The Iron Bank"
+      },
+      "correctAnswer": "A",
+      "explanation": "Arya travels to the House of Black and White in Braavos to train as one of the Faceless Men, a guild of assassins who worship the Many-Faced God."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the common saying that follows 'Valar Morghulis'?",
+      "choices": {
+        "A": "Valar Dohaeris",
+        "B": "Dracarys",
+        "C": "Valar Rhaenis",
+        "D": "Skorī Daor"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Valar Morghulis' is High Valyrian for 'All men must die'. The traditional response is 'Valar Dohaeris', meaning 'All men must serve'."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the name of the massive battle where Jon Snow's army defeats Ramsay Bolton's?",
+      "choices": {
+        "A": "The Battle of the Blackwater",
+        "B": "The Battle of Castle Black",
+        "C": "The Battle of the Bastards",
+        "D": "The Battle of Winterfell"
+      },
+      "correctAnswer": "C",
+      "explanation": "Jon Snow and Ramsay Bolton fight for control of Winterfell in the 'Battle of the Bastards', which is won when the Knights of the Vale arrive."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the capital of the Seven Kingdoms?",
+      "choices": {
+        "A": "Oldtown",
+        "B": "King's Landing",
+        "C": "Winterfell",
+        "D": "Lannisport"
+      },
+      "correctAnswer": "B",
+      "explanation": "King's Landing, located on the east coast of Westeros, is the capital of the Seven Kingdoms and the seat of the Iron Throne."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the name of the religion dominant in the Seven Kingdoms?",
+      "choices": {
+        "A": "The Lord of Light",
+        "B": "The Old Gods",
+        "C": "The Drowned God",
+        "D": "The Faith of the Seven"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Faith of the Seven is the primary religion in the southern and central parts of Westeros, worshipping a single god with seven aspects."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the substance used to kill White Walkers?",
+      "choices": {
+        "A": "Wildfire",
+        "B": "Steel",
+        "C": "Dragonglass",
+        "D": "Fire"
+      },
+      "correctAnswer": "C",
+      "explanation": "White Walkers can be killed by two known substances: Dragonglass (obsidian) and Valyrian steel."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "Who was the first of the 'New Men' to be elected Lord Commander of the Night's Watch?",
+      "choices": {
+        "A": "Jeor Mormont",
+        "B": "Jon Snow",
+        "C": "Allister Thorne",
+        "D": "Mance Rayder"
+      },
+      "correctAnswer": "B",
+      "explanation": "Jon Snow is elected as the 998th Lord Commander of the Night's Watch after his bravery during the Battle of Castle Black."
+    },
+    {
+      "module": "Game of Thrones",
+      "section": "Lore, Geography & Events",
+      "question": "What is the name of the citadel where Maesters are trained?",
+      "choices": {
+        "A": "King's Landing",
+        "B": "Oldtown",
+        "C": "Pentos",
+        "D": "Qarth"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Citadel, located in the ancient city of Oldtown, is the center of learning in Westeros and the place where men train to become Maesters."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "Who is the mother of King Aegon II, Aemond, and Helaena Targaryen?",
+      "choices": {
+        "A": "Rhaenyra Targaryen",
+        "B": "Alicent Hightower",
+        "C": "Laena Velaryon",
+        "D": "Rhaenys Targaryen"
+      },
+      "correctAnswer": "B",
+      "explanation": "Queen Alicent Hightower is the second wife of King Viserys I and the mother of the 'Green' claimants to the throne."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "What is the name of King Aegon II's golden dragon?",
+      "choices": {
+        "A": "Vhagar",
+        "B": "Sunfyre",
+        "C": "Arrax",
+        "D": "Dreamfyre"
+      },
+      "correctAnswer": "B",
+      "explanation": "Aegon II rides the magnificent golden dragon Sunfyre, considered one of the most beautiful dragons ever seen."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "How does Prince Aemond Targaryen lose his eye?",
+      "choices": {
+        "A": "In a dragon-riding accident",
+        "B": "In a fight with Lucerys Velaryon",
+        "C": "During a tourney",
+        "D": "He was born without it"
+      },
+      "correctAnswer": "B",
+      "explanation": "Aemond loses his eye in a childhood fight with his nephew, Lucerys Velaryon, after Aemond claims the dragon Vhagar."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "Who is Alicent Hightower's father, who serves as Hand of the King?",
+      "choices": {
+        "A": "Corlys Velaryon",
+        "B": "Lyonel Strong",
+        "C": "Otto Hightower",
+        "D": "Larys Strong"
+      },
+      "correctAnswer": "C",
+      "explanation": "Otto Hightower serves as Hand of the King to both Jaehaerys I and Viserys I, and is the chief architect of the Green council."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "Which massive, ancient dragon does Aemond Targaryen claim?",
+      "choices": {
+        "A": "Balerion",
+        "B": "Meraxes",
+        "C": "Vhagar",
+        "D": "Caraxes"
+      },
+      "correctAnswer": "C",
+      "explanation": "Aemond claims Vhagar, the oldest and largest living dragon, who was once ridden by Queen Visenya during Aegon's Conquest."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "Who is known as 'The Clubfoot' and serves as Lord of Harrenhal and Master of Whisperers?",
+      "choices": {
+        "A": "Larys Strong",
+        "B": "Harwin Strong",
+        "C": "Mysaria",
+        "D": "Tyland Lannister"
+      },
+      "correctAnswer": "A",
+      "explanation": "Larys 'Clubfoot' Strong is the cunning and ruthless spymaster who aligns himself with Queen Alicent and the Greens."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "What is the name of Helaena Targaryen's dragon?",
+      "choices": {
+        "A": "Sunfyre",
+        "B": "Tessarion",
+        "C": "Dreamfyre",
+        "D": "Syrax"
+      },
+      "correctAnswer": "C",
+      "explanation": "Helaena Targaryen, wife and sister to Aegon II, rides the dragon Dreamfyre."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "Who is the primary knight and protector of Queen Alicent, known for his unwavering loyalty?",
+      "choices": {
+        "A": "Ser Harwin Strong",
+        "B": "Ser Criston Cole",
+        "C": "Ser Erryk Cargyll",
+        "D": "Ser Harrold Westerling"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ser Criston Cole, once Princess Rhaenyra's protector, becomes Queen Alicent's staunchest defender and Lord Commander of the Kingsguard."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "What symbol does Alicent Hightower wear to signal the start of her faction at Rhaenyra's wedding feast?",
+      "choices": {
+        "A": "A black dress",
+        "B": "A green dress",
+        "C": "The Targaryen sigil",
+        "D": "The Faith of the Seven's star"
+      },
+      "correctAnswer": "B",
+      "explanation": "Alicent interrupts the feast by arriving in a green dress, the color of the Hightower beacon, signaling her defiance and the formation of 'the Greens'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Greens",
+      "question": "What tragic event is known as 'Blood and Cheese'?",
+      "choices": {
+        "A": "The death of Lucerys Velaryon",
+        "B": "The burning of Harrenhal",
+        "C": "The murder of Aegon II's son",
+        "D": "The riot at King's Landing"
+      },
+      "correctAnswer": "C",
+      "explanation": "As revenge for Lucerys's death, Daemon Targaryen hires two assassins (Blood and Cheese) who infiltrate the Red Keep and murder Aegon II's young son, Jaehaerys."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "Who does King Viserys I name as his official heir?",
+      "choices": {
+        "A": "Daemon Targaryen",
+        "B": "Aegon II Targaryen",
+        "C": "Rhaenyra Targaryen",
+        "D": "Rhaenys Targaryen"
+      },
+      "correctAnswer": "C",
+      "explanation": "After the death of his first wife and infant son, King Viserys I breaks tradition and names his daughter, Princess Rhaenyra, as his heir."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "What is the name of Princess Rhaenyra's yellow dragon?",
+      "choices": {
+        "A": "Syrax",
+        "B": "Caraxes",
+        "C": "Meleys",
+        "D": "Vermax"
+      },
+      "correctAnswer": "A",
+      "explanation": "Rhaenyra has ridden the she-dragon Syrax since she was a young girl."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "Who is Princess Rhaenyra's second husband?",
+      "choices": {
+        "A": "Laenor Velaryon",
+        "B": "Daemon Targaryen",
+        "C": "Criston Cole",
+        "D": "Harwin Strong"
+      },
+      "correctAnswer": "B",
+      "explanation": "After her first husband, Laenor Velaryon, fakes his death, Rhaenyra marries her uncle, Prince Daemon Targaryen."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "What is the name of Prince Daemon Targaryen's fearsome red dragon?",
+      "choices": {
+        "A": "Balerion",
+        "B": "Vhagar",
+        "C": "Caraxes",
+        "D": "Sunfyre"
+      },
+      "correctAnswer": "C",
+      "explanation": "Daemon Targaryen, a fierce warrior, rides the formidable and battle-hardened red dragon Caraxes, also known as the 'Blood Wyrm'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "Who is known as 'The Queen Who Never Was'?",
+      "choices": {
+        "A": "Rhaenyra Targaryen",
+        "B": "Alicent Hightower",
+        "C": "Rhaenys Targaryen",
+        "D": "Laena Velaryon"
+      },
+      "correctAnswer": "C",
+      "explanation": "Princess Rhaenys Targaryen, wife of Corlys Velaryon, was passed over for the throne in favor of her cousin Viserys, earning her the title 'The Queen Who Never Was'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "What is the name of Lord Corlys Velaryon's nickname, referring to his many voyages?",
+      "choices": {
+        "A": "The Sea Snake",
+        "B": "The Driftmark",
+        "C": "The Voyager",
+        "D": "The Kraken"
+      },
+      "correctAnswer": "A",
+      "explanation": "Lord Corlys Velaryon is famed for his 'Nine Voyages' to Essos, which brought immense wealth to his house, earning him the name 'The Sea Snake'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "What is the name of Rhaenyra's eldest son, who rides the dragon Vermax?",
+      "choices": {
+        "A": "Lucerys Velaryon",
+        "B": "Jacaerys Velaryon",
+        "C": "Joffrey Velaryon",
+        "D": "Aegon III Targaryen"
+      },
+      "correctAnswer": "B",
+      "explanation": "Jacaerys Velaryon is Rhaenyra's first-born son and heir, and he rides the dragon Vermax."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "Which of Rhaenyra's sons is killed by Aemond Targaryen at Storm's End, sparking the war?",
+      "choices": {
+        "A": "Jacaerys",
+        "B": "Lucerys",
+        "C": "Joffrey",
+        "D": "Viserys II"
+      },
+      "correctAnswer": "B",
+      "explanation": "Prince Lucerys Velaryon is killed along with his dragon Arrax by Aemond and Vhagar, marking the first kinslaying of the Dance of the Dragons."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "What is the name of Princess Rhaenys's red dragon?",
+      "choices": {
+        "A": "Syrax",
+        "B": "Vhagar",
+        "C": "Meleys",
+        "D": "Dreamfyre"
+      },
+      "correctAnswer": "C",
+      "explanation": "Princess Rhaenys Targaryen rides the swift and powerful red dragon Meleys, known as the 'Red Queen'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "The Blacks",
+      "question": "Who is rumored to be the real father of Rhaenyra's first three sons?",
+      "choices": {
+        "A": "Ser Criston Cole",
+        "B": "Laenor Velaryon",
+        "C": "Ser Harwin 'Breakbones' Strong",
+        "D": "Daemon Targaryen"
+      },
+      "correctAnswer": "C",
+      "explanation": "It is widely rumored at court that Rhaenyra's sons Jacaerys, Lucerys, and Joffrey are the bastards of Ser Harwin Strong, not Laenor Velaryon."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the name of the Targaryen civil war chronicled in 'House of the Dragon'?",
+      "choices": {
+        "A": "The Dance of the Dragons",
+        "B": "Robert's Rebellion",
+        "C": "The Blackfyre Rebellion",
+        "D": "The Doom of Valyria"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Dance of the Dragons is the name given to the brutal civil war fought between Rhaenyra's 'Blacks' and Aegon II's 'Greens' for the Iron Throne."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the ancestral seat of House Velaryon?",
+      "choices": {
+        "A": "Dragonstone",
+        "B": "King's Landing",
+        "C": "Driftmark",
+        "D": "Storm's End"
+      },
+      "correctAnswer": "C",
+      "explanation": "House Velaryon, a family of Valyrian descent, rules from the island of Driftmark in Blackwater Bay. Their castle is also called High Tide."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What ailment plagues King Viserys I throughout the show?",
+      "choices": {
+        "A": "Greyscale",
+        "B": "A form of leprosy",
+        "C": "Madness",
+        "D": "Dragonpox"
+      },
+      "correctAnswer": "B",
+      "explanation": "King Viserys suffers from a severe, progressive illness that rots his flesh, often compared to leprosy, which he endures for decades."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the name of the prophecy King Viserys shares with Rhaenyra?",
+      "choices": {
+        "A": "The Prince That Was Promised",
+        "B": "A Song of Ice and Fire",
+        "C": "The Doom of Man",
+        "D": "The Winter King"
+      },
+      "correctAnswer": "B",
+      "explanation": "Viserys passes down the secret prophecy of Aegon the Conqueror, 'A Song of Ice and Fire', which foretells the coming of the White Walkers."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "Who was the rider of Balerion the Black Dread?",
+      "choices": {
+        "A": "Aegon the Conqueror",
+        "B": "Daemon Targaryen",
+        "C": "Viserys I",
+        "D": "Rhaenyra Targaryen"
+      },
+      "correctAnswer": "A",
+      "explanation": "Balerion the Black Dread was ridden by Aegon I during the conquest. King Viserys I was the last person to ride him, but he was most famously Aegon's dragon."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the name of Daemon Targaryen's Valyrian steel sword?",
+      "choices": {
+        "A": "Blackfyre",
+        "B": "Dark Sister",
+        "C": "Longclaw",
+        "D": "Heartsbane"
+      },
+      "correctAnswer": "B",
+      "explanation": "Daemon Targaryen wields Dark Sister, one of the two ancestral Targaryen swords, famously wielded by Queen Visenya."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the name of the alliance of Free Cities that wars with Daemon and Corlys in the Stepstones?",
+      "choices": {
+        "A": "The Iron Bank",
+        "B": "The Triarchy",
+        "C": "The Ninepenny Kings",
+        "D": "The Dothraki Sea"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Triarchy is an alliance between the Free Cities of Myr, Lys, and Tyrosh, led by Craghas Drahar, 'The Crabfeeder'."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What title does Daemon Targaryen claim after winning the war in the Stepstones?",
+      "choices": {
+        "A": "Lord of the Tides",
+        "B": "King of the Seven Kingdoms",
+        "C": "King of the Narrow Sea",
+        "D": "Prince of Dragonstone"
+      },
+      "correctAnswer": "C",
+      "explanation": "After defeating the Crabfeeder, Daemon's men crown him 'King of the Narrow Sea', a title he later relinquishes to his brother Viserys."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "How does Laena Velaryon, Daemon's second wife, die?",
+      "choices": {
+        "A": "In a dragon battle",
+        "B": "Childbirth complications, then by her dragon",
+        "C": "Poisoned by Larys Strong",
+        "D": "Sickness"
+      },
+      "correctAnswer": "B",
+      "explanation": "After being unable to deliver her child, a dying Laena walks out and commands her dragon, Vhagar, to burn her, choosing a dragonrider's death."
+    },
+    {
+      "module": "House of the Dragon",
+      "section": "Dragons & Lore",
+      "question": "What is the name of the ancestral Targaryen Valyrian steel sword, wielded by King Viserys and Aegon II?",
+      "choices": {
+        "A": "Dark Sister",
+        "B": "Ice",
+        "C": "Blackfyre",
+        "D": "Oathkeeper"
+      },
+      "correctAnswer": "C",
+      "explanation": "Blackfyre is the sword of Aegon the Conqueror, passed down to subsequent Targaryen kings. Viserys wields it, and the Greens give it to Aegon II."
+    }
+  ]
+}
